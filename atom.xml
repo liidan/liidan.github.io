@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https:// dankekek.github.io</id>
     <title>Gridea</title>
-    <updated>2020-09-21T18:07:24.541Z</updated>
+    <updated>2020-09-21T20:26:59.369Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https:// dankekek.github.io"/>
     <link rel="self" href="https:// dankekek.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https:// dankekek.github.io/images/avatar.png</logo>
     <icon>https:// dankekek.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[测试]]></title>
+        <id>https:// dankekek.github.io/post/ce-shi/</id>
+        <link href="https:// dankekek.github.io/post/ce-shi/">
+        </link>
+        <updated>2020-09-21T20:26:26.000Z</updated>
+        <content type="html"><![CDATA[<p>设施</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https:// dankekek.github.io/post/hello-gridea/</id>
