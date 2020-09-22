@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://liidan.github.io</id>
     <title>Danker&apos;s Blog</title>
-    <updated>2020-09-22T16:40:15.019Z</updated>
+    <updated>2020-09-22T21:25:53.761Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://liidan.github.io"/>
     <link rel="self" href="https://liidan.github.io/atom.xml"/>
@@ -11,56 +11,120 @@
     <icon>https://liidan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Danker&apos;s Blog</rights>
     <entry>
-        <title type="html"><![CDATA[测试2]]></title>
+        <title type="html"><![CDATA[我开启了新大陆之旅！]]></title>
+        <id>https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu/</id>
+        <link href="https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu/">
+        </link>
+        <updated>2020-09-22T20:06:15.000Z</updated>
+        <content type="html"><![CDATA[<p>我前天看到一篇关于自己创建静态博客的文章，于兴趣来了，就开始搜索此类相关的信息，就找到了Gride，然后开始安装，又发现写文章需要了解Markdown语法，然后又开始搜索关于语法的信息，真是越来越有趣了。在学习语法夫人过程中，我在插入图片这里，产生了疑问，本地保存的图片长期累积不是会占用大量的电脑空间，于是又开始搜索关于图片的信息，哇！我发现新大陆了（原谅我这个土鳖)，可以利用图床来完成图片的存储，多翻折腾后，最后，找到我现在的搭配：Gridea+Typora+PicGo+Github图床+阿里云oss图床。不过到这里，依然还存在问题，但是这个过程还是很有趣，这种探索新知识，新领域的感觉相当不错呢！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Markdonw语法规则]]></title>
         <id>https://liidan.github.io/post/ce-shi-2/</id>
         <link href="https://liidan.github.io/post/ce-shi-2/">
         </link>
         <updated>2020-09-21T20:52:58.000Z</updated>
-        <summary type="html"><![CDATA[<p>![](https:// dankekek.github.io/post-images/1600721602812.jpg)</p>
-]]></summary>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://liidan.github.io/post-images/1600721602812.jpg" alt="" loading="lazy"></figure>
-<!-- more -->
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[测试]]></title>
-        <id>https://liidan.github.io/post/ce-shi/</id>
-        <link href="https://liidan.github.io/post/ce-shi/">
-        </link>
-        <updated>2020-09-21T20:26:26.000Z</updated>
-        <content type="html"><![CDATA[<p>设施</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://liidan.github.io/post/hello-gridea/</id>
-        <link href="https://liidan.github.io/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+        <content type="html"><![CDATA[<p><mark>（1） 标题</mark></p>
+<h1 id="一级标题">一级标题#</h1>
+<h2 id="二级标题">二级标题##</h2>
+<h3 id="三级标题">三级标题##</h3>
+<h4 id="四级标题">四级标题####</h4>
+<h5 id="五级标题">五级标题#####</h5>
+<h6 id="六级标题">六级标题######</h6>
+<p><mark>（2）列表</mark></p>
+<h6 id="无序列表">无序列表</h6>
+<p>加号，减号，星号都可以，下一级别前加两个空格</p>
+<ul>
+<li>我爱学习-
+<ul>
+<li>我很爱学习+
+<ul>
+<li>我真的很爱学习*</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="有序列表">有序列表</h6>
+<p>数字前加英文句号 . 按空格</p>
+<ol>
+<li>我是美女</li>
+<li>我长的很像美女</li>
+<li>我真的是一个长得很像的美女</li>
+</ol>
+<p><mark>（3）引用</mark></p>
+<p>在文本前加入 &gt;，下一级别前加 &gt;&gt;，以此类推</p>
+<blockquote>
+<p>世界真美好</p>
+<blockquote>
+<p>现实很残酷</p>
+<blockquote>
+<p>今年我失恋了</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>要注意符号和文本之间的空格</p>
+<p><mark>（4）图片和链接</mark></p>
+<h6 id="插入链接">插入链接</h6>
+<ul>
+<li>在需要添加超链接的位置，[ ] 中括号内输入描述信息，( ) 括号内输入超链接地址</li>
+<li>菜单方式，点击“格式”-&gt; “超链接”，同样在 [ ] 和 ( ) 内编辑相应信息</li>
+<li>快捷键 Ctrl+k</li>
+</ul>
+<p><a href="https://www.baidu.com/">遇到问题不要慌，上百度</a></p>
+<h6 id="插入图片">插入图片</h6>
+<ul>
+<li>
+<p>不建议本地存储，建议使用图床：picgo+github图床+阿里云图床</p>
+</li>
+<li>
+<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2020/09/23/nmX5Agh98coEUWG.jpg" alt="" loading="lazy"></figure>
+</li>
+</ul>
+<p><mark>（5）字体</mark></p>
+<p><strong>这里是粗体</strong> ：前后用两个 * *包含一段文本</p>
+<p><em>这里是斜体</em>：用一个 * 包含一段文本</p>
+<p><em><strong>这里是斜体加粗</strong></em> ：前后用三个 * **包含一段文本</p>
+<p><s>这里是删除线</s>：删除线：前后用两个 ~~ 包含一段文字</p>
+<p>这里是<sup>上标</sup>：用两个 ^^ 包含一段文字，注意用英文字符</p>
+<p>这里是<sub>下标</sub>：用两个 ~~ 包含一段文字，注意用英文字符</p>
+<p><mark>（6）表格</mark></p>
+<ul>
+<li>语法添加：用 | 隔开，如：|你好|你好|你好|，横线|----|----|----|，类推多加几行就可以了</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>一</th>
+<th>二</th>
+<th>三</th>
+<th>四</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>学习</td>
+<td>学习</td>
+<td>学习</td>
+<td>学习</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>在 Typora 中，也可以按 Ctrl+T 直接添加表格</li>
+</ul>
+<h2 id="7分割线"><mark>（7）分割线</mark></h2>
+<p>用-或者*，多输入几个，按回车</p>
+<p><mark>（8）代码框</mark></p>
+<p>用两个 ` 把中间的代码/文字包裹起来</p>
+<p>用三个 ` 把中间的代码/文字包裹起来，就是代码框</p>
+<p><code>我是代码</code></p>
+<pre><code>这个代码框
+可以用来画流程图之类的
+	按 tab 键即可缩进
+
+</code></pre>
 ]]></content>
     </entry>
 </feed>
