@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://liidan.github.io</id>
     <title>Danker&apos;s Blog</title>
-    <updated>2020-09-22T21:32:26.893Z</updated>
+    <updated>2020-09-22T21:34:14.982Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://liidan.github.io"/>
     <link rel="self" href="https://liidan.github.io/atom.xml"/>
@@ -75,12 +75,7 @@
 <p><a href="https://www.baidu.com/">遇到问题不要慌，上百度</a></p>
 <h6 id="插入图片">插入图片</h6>
 <ul>
-<li>
-<p>不建议本地存储，建议使用图床：picgo+github图床+阿里云图床</p>
-</li>
-<li>
-<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2020/09/23/nmX5Agh98coEUWG.jpg" alt="" loading="lazy"></figure>
-</li>
+<li>不建议本地存储，建议使用图床：picgo+github图床+阿里云图床</li>
 </ul>
 <p><mark>（5）字体</mark></p>
 <p><strong>这里是粗体</strong> ：前后用两个 * *包含一段文本</p>
