@@ -1,123 +1,154 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" >
+<html lang="zh-CN">
 
-<title>Markdonw语法规则 | Danker&#39;s Blog</title>
-
+<head>
+  <meta charset="UTF-8" />
+<title>Markdonw语法规则 - Danker&#39;s Blog</title>
+<meta name="description" content="一句话，就是干！">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://liidan.github.io/favicon.ico?v=1600818998720">
-<link rel="stylesheet" href="https://liidan.github.io/styles/main.css">
+<link type='text/css' rel='stylesheet' href='https://liidan.github.io/styles/main.css' media='screen' />
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript" src='https://liidan.github.io/media/scripts/jquery.js'></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</head>
+
+<body>
+  <div class="layout theme-dark">
+    <div class="layout-header">
+
+	<div class="layout-header-main">
+		<div class="container">
+			<div class="row justify-content-lg-center">
+				<div class="col-12 col-lg-9">
+
+					<div class="navbar">
+
+						<div class="logo">
+							<a href="https://liidan.github.io">
+								<img class="logo"
+									src="https://liidan.github.io/media/images/site_avatar.png?v=1600819346335"
+									alt="">
+							</a>
+						</div>
+
+						<div class="menu d-md-inline-block d-none">
+							<ul class="layout-navigation-list">
+								
+								<li class="layout-navigation-item"><a title="首页"
+										href="/">首页</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="归档"
+										href="/archives">归档</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="标签"
+										href="/tags">标签</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="关于"
+										href="/post/about">关于</a>
+								</li>
+								
+							</ul>
+						</div>
+
+						<div class="item d-md-inline-block d-none">
+							<div class="search-icon">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</div>
+						</div>
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+						<div class="d-md-inline-block d-none">
+							<div class="search-lightbox">
+								<div class="search-body">
+
+									<form id="gridea-search-form" data-update="1600819346335" action="/search/" class="search-form">
+										<input type="text" name="q" id="s" value="" class="search-field" placeholder="请输入搜索关键词" aria-label="请输入搜索关键词" required="">
+										<button type="submit" class="submit" aria-label="Submit">
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</button>
+									</form>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="nav d-md-none d-inline-block">
+							<div class="trigger">
+								<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
 
 
 
-    <meta name="description" content="（1） 标题
-一级标题#
-二级标题##
-三级标题##
-四级标题####
-五级标题#####
-六级标题######
-（2）列表
-无序列表
-加号，减号，星号都可以，下一级别前加两个空格
 
-我爱学习-
+		</div>
+	</div>
 
-我很爱学习+
+</div>
+    <div class="layout-collapse d-md-none">
+	<div class="layout-collapse-main">
+		<ul class="layout-collapse-list">
+			
+			<li class="layout-collapse-item"><a title="首页" href="/">首页</a></li>
+			
+			<li class="layout-collapse-item"><a title="归档" href="/archives">归档</a></li>
+			
+			<li class="layout-collapse-item"><a title="标签" href="/tags">标签</a></li>
+			
+			<li class="layout-collapse-item"><a title="关于" href="/post/about">关于</a></li>
+			
 
-我真的很爱学习*
-
-
-
-
-..." />
-    <meta name="keywords" content="Markdown语法" />
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://liidan.github.io">
-        <img src="https://liidan.github.io/images/avatar.png?v=1600818998720" class="site-logo">
-        <h1 class="site-title">Danker&#39;s Blog</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      一句话，就是干！
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://liidan.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
+		</ul>
+	</div>
 </div>
 
+    <div class="layout-content">
+      <div class="layout-content-main">
+        <div class="container">
+          <div class="row justify-content-lg-center">
+            <div class="col-12 col-lg-9">
+              <div class="layout-post">
+                <div class="layout-post-body">
+                  <div class="row">
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">Markdonw语法规则</h2>
-            <div class="post-date">2020-09-22</div>
-            
-              <div class="feature-container" style="background-image: url('https://i.loli.net/2020/09/23/nmX5Agh98coEUWG.jpg')">
-              </div>
-            
-            <div class="post-content" v-pre>
-              <p><mark>（1） 标题</mark></p>
+                    <div class="col-12 col-lg-10">
+                      <div class="layout-post-main m-right m-md-right">
+                        <div class="layout-post-header">
+                          <h1 class="layout-post-title">Markdonw语法规则</h1>
+                          <div class="layout-post-meta">
+                            <div class="item">
+                               <a href="https://liidan.github.io/tag/VUuXTctZ4/" class="post--keyword"
+                                data-title="Markdown语法" data-type="post_tag" data-term-id="39">Markdown语法</a>
+                              
+                            </div>
+                            <div class="item">
+                              <span>2020-09-22</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="layout-post-content">
+                          <div class="layout-post-item">
+                            
+                            <p class="with-img"><img src="https://i.loli.net/2020/09/23/nmX5Agh98coEUWG.jpg"
+                                class="attachment-full size-full wp-post-image" alt="Markdonw语法规则" /></p>
+                            
+                            <p><mark>（1） 标题</mark></p>
 <h1 id="一级标题">一级标题#</h1>
 <h2 id="二级标题">二级标题##</h2>
 <h3 id="三级标题">三级标题##</h3>
@@ -221,44 +252,148 @@
 
 </code></pre>
 
-            </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://liidan.github.io/tag/VUuXTctZ4/" class="tag">
-                    Markdown语法
-                  </a>
-                
+                          </div>
+                        </div>
+                        <div class="layout-post-social">
+                          <div class="item reader">
+                            <div id="/post/ce-shi-2/" class="leancloud-visitors view"
+                              data-flag-title="Markdonw语法规则">
+                              <span class="post-meta-item-text">阅读 </span>
+                              <span class="leancloud-visitors-count"></span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="layout-post-navigation">
+                          <div class="navigation-list">
+                            
+                            <div class="post-card row">
+                              
+                              <div class="card-content col-12">
+                                <div class="card-body">
+                                  <div class="header">
+                                    <a href="https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu/" class="title">
+                                      <h4>我开启了新大陆之旅！</h4>
+                                    </a>
+                                  </div>
+                                  <div class="inner">
+                                    <div class="abstract">
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card-footer">
+                                  <div class="item"><span>上一篇</span></div>
+                                  <div class="item">2020-09-23</div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                        <div class="layout-comments"></div>
+                        
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-2 d-none d-lg-block">
+                      <div class="layout-post-sidebar">
+                        <div class="layout-sidebar-item">
+                          <ul class="markdownIt-TOC">
+<li><a href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98">一级标题#</a>
+<ul>
+<li><a href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98">二级标题##</a>
+<ul>
+<li><a href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98">三级标题##</a>
+<ul>
+<li><a href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98">四级标题####</a>
+<ul>
+<li><a href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98">五级标题#####</a>
+<ul>
+<li><a href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98">六级标题######</a></li>
+<li><a href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8">无序列表</a></li>
+<li><a href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8">有序列表</a></li>
+<li><a href="#%E6%8F%92%E5%85%A5%E9%93%BE%E6%8E%A5">插入链接</a></li>
+<li><a href="#%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87">插入图片</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#7%E5%88%86%E5%89%B2%E7%BA%BF">==（7）分割线==</a></li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            
-            
-
-            
-
+            </div>
           </div>
-
         </div>
       </div>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+    <div class="layout-totop d-none"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
 
-AOS.init();
+    	<div class="layout-footer">
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+		<div class="container">
+			<div class="row justify-content-lg-center">
+				<div class="col-12 col-lg-9">
+					<div class="footer">
+						<div class="row">
+							<div class="col-12 col-md-9">
+								<div class="footer-copy">
+									
+									Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+									<div class="footer-icp d-none d-sm-inline-block">
+										<span class="px-2">⋅</span>
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 d-none d-md-block">
+								<div class="footer-links">
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-</script>
+	</div>
 
+	<script type="text/javascript" src='https://liidan.github.io/media/scripts/main.js'></script>
+	
 
+  </div>
+</body>
 
-
-
-
-  </body>
 </html>
