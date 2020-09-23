@@ -8,7 +8,7 @@
 <meta name="keywords" content="&lt;meta name=&#34;keywords&#34; content=&#34;博客语法&#34;/&gt;">
 <meta name="description" content="一句话，就是干！">
 <meta name="theme-color" content="#ff6b6b">
-<title>Markdonw语法规则 | liidan&#39;s blog</title>
+<title>关于手机端不能访问的问题 | liidan&#39;s blog</title>
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/favicon.ico?v=1600849063578">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/css/gemini.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/fonts/font-awesome.css">
@@ -62,8 +62,8 @@
 </script>
 
 
-  <meta name="description" content="Markdonw语法规则" />
-  <meta name="keywords" content="Markdown语法" />
+  <meta name="description" content="关于手机端不能访问的问题" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -214,8 +214,7 @@
       <div class="sidebar-body gemini" id="sidebar_body">
         
           
-            <div class="post-side-meta" id="post_side_meta">
-              
+            
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/images/avatar.png"/>
@@ -285,216 +284,6 @@
 
 
 </div>
-            </div>
-            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
-              <div class="toc-box right-motion">
-  <div class="toc-wrapper auto-number auto"
-    id="toc_wrapper">
-    <ul class="markdownIt-TOC">
-<li><a href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98">一级标题#</a>
-<ul>
-<li><a href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98">二级标题##</a>
-<ul>
-<li><a href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98">三级标题##</a>
-<ul>
-<li><a href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98">四级标题####</a>
-<ul>
-<li><a href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98">五级标题#####</a>
-<ul>
-<li><a href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98">六级标题######</a></li>
-<li><a href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8">无序列表</a></li>
-<li><a href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8">有序列表</a></li>
-<li><a href="#%E6%8F%92%E5%85%A5%E9%93%BE%E6%8E%A5">插入链接</a></li>
-<li><a href="#%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87">插入图片</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#7%E5%88%86%E5%89%B2%E7%BA%BF">==（7）分割线==</a></li>
-</ul>
-</li>
-</ul>
-
-  </div>
-</div>
-
-<script>
-
-  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
-  let active = 'active-show', activeClass = 'active-current';
-  let tocWrapper = document.querySelector('#toc_wrapper');
-  let tocContent = tocWrapper.children[0];
-  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
-
-  function addTocNumber(elem, deep) {
-    if (!elem) {
-      return;
-    }
-    let prop = elem.__proto__;
-
-    if (prop === HTMLUListElement.prototype) {
-      for (let i = 0; i < elem.children.length; i++) {
-        addTocNumber(elem.children[i], deep + (i + 1) + '.');
-      }
-    } else if (prop === HTMLLIElement.prototype) {
-      // 保存li元素
-      if (elem.children[0] && elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
-        lList.push(elem);
-      }
-      for (let i = 0; i < elem.children.length; i++) {
-        let cur = elem.children[i];
-        if (cur.__proto__ === HTMLAnchorElement.prototype) {
-          if (autoNumber) {
-            cur.text = deep + ' ' + cur.text;
-          }
-        } else if (cur.__proto__ === HTMLUListElement.prototype) {
-          addTocNumber(cur, deep);
-        }
-      }
-    }
-  }
-
-  function removeParentActiveClass() {
-    let parents = tocContent.querySelectorAll('.' + active)
-    parents.forEach(function (elem) {
-      elem.classList.remove(active);
-    });
-  }
-
-  function addActiveClass(index) {
-    if (index >= 0 && index < hList.length) {
-      lList[index].classList.add(activeClass);
-    }
-  }
-
-  function removeActiveClass(index) {
-    if (index >= 0 && index < hList.length) {
-      lList[index].classList.remove(activeClass);
-    }
-  }
-
-  function addActiveLiElemment(elem, parent) {
-    if (!elem || elem === parent) {
-      return;
-    } else {
-      if (elem.__proto__ === HTMLLIElement.prototype) {
-        elem.classList.add(active);
-      }
-      addActiveLiElemment(elem.parentElement, parent);
-    }
-  }
-
-  function showToc() {
-    if (tocWrapper) {
-      postBody = document.querySelector('#post_body');
-      for (let i = 0; i < postBody.children.length; i++) {
-        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
-          hList.push(postBody.children[i]);
-        }
-      }
-      if (tocWrapper.classList.contains('compress')) {
-        tocContent.classList.add('closed');
-      } else if (tocWrapper.classList.contains('no_compress')) {
-        tocContent.classList.add('expanded');
-      } else {
-        if (hList.length > 10) {
-          active = 'active-hidden'
-          tocContent.classList.add('closed');
-        } else {
-          tocContent.classList.add('expanded');
-        }
-      }
-    }
-  }
-
-  (function () {
-    // 处理不是从#一级标题开始目录
-    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
-      let con = tocContent.children[0].children[0];
-      tocContent.innerHTML = con.innerHTML;
-    }
-    let markdownItTOC = document.querySelector('.markdownIt-TOC');
-    let innerHeight = window.innerHeight;
-    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
-    addTocNumber(tocContent, '');
-  })();
-
-  document.addEventListener('scroll', function (e) {
-    if (lList.length <= 0) {
-      return;
-    }
-    let scrollTop = document.scrollingElement.scrollTop + 10;
-    let dir;
-
-    if (lastTop - scrollTop > 0) {
-      dir = 'up';
-    } else {
-      dir = 'down';
-    }
-
-    lastTop = scrollTop;
-    if (scrollTop <= 0) {
-      if (lastIndex >= 0 && lastIndex < hList.length) {
-        lList[lastIndex].classList.remove(activeClass);
-      }
-      return;
-    }
-
-    let current = 0, hasFind = false;
-    for (let i = 0; i < hList.length; i++) {
-      if (hList[i].offsetTop > scrollTop) {
-        current = i;
-        hasFind = true;
-        break;
-      }
-    }
-    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
-      current = hList.length - 1;
-    } else {
-      current--;
-    }
-    if (dir === 'down') {
-      if (current > lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex)
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
-      }
-    } else {
-      if (current < lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex);
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
-      }
-    }
-  });
-
-
-  window.addEventListener('load', function () {
-    showToc();
-    document.querySelector('#sidebar').style = 'display: block;';
-    tocWrapper.classList.add('toc-active');
-    setTimeout(function () {
-      if ("createEvent" in document) {
-        let evt = document.createEvent("HTMLEvents");
-        evt.initEvent("scroll", false, true);
-        document.dispatchEvent(evt);
-      }
-      else {
-        document.fireEvent("scroll");
-      }
-    }, 500)
-  })
-
-</script>
-            </div>
           
         
       </div>
@@ -582,37 +371,18 @@
           <div class="section bg-color post post-page">
             <section class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://liidan.github.io/post/ce-shi-2/">
-      Markdonw语法规则
+    <a class="post-title-link" href="https://liidan.github.io/post/guan-yu-shou-ji-duan-bu-neng-fang-wen-de-wen-ti/">
+      关于手机端不能访问的问题
     </a>
   </h1>
   <div class="post-meta">
     
-    <span class="meta-item">
-      <i class="fa fa-thumb-tack"></i>
-      <span class="language" data-lan="top">置顶</span>
-      <span class="post-meta-divider">|</span>
-    </span>
-    
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span class="publish-time" data-t="2020-09-22 04:52:58">2020-09-22</span>
+      <span class="publish-time" data-t="2020-09-23 16:00:01">2020-09-23</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-folder-o"></i>
-      <span class="pc-show language" data-lan="category-in">分类于</span>
-      
-      
-      <a href="https://liidan.github.io/tag/VUuXTctZ4/">
-        <span>Markdown语法</span>
-      </a>
-      
-      
-    </span>
-    <span class="post-meta-divider">|</span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
@@ -621,12 +391,12 @@
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>557<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>330<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
     
     
-    <span id="/post/ce-shi-2/" data-flag-title="Markdonw语法规则" class="meta-item pc-show leancloud_visitors">
+    <span id="/post/guan-yu-shou-ji-duan-bu-neng-fang-wen-de-wen-ti/" data-flag-title="关于手机端不能访问的问题" class="meta-item pc-show leancloud_visitors">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-eye"></i>
       <span><span class="language" data-lan="view">浏览量</span>：<span class="leancloud-visitors-count"></span></span>
@@ -635,109 +405,16 @@
   </div>
 </section>
             <div class="post-body next-md-body" id="post_body">
-              <p><mark>（1） 标题</mark></p>
-<h1 id="一级标题">一级标题#</h1>
-<h2 id="二级标题">二级标题##</h2>
-<h3 id="三级标题">三级标题##</h3>
-<h4 id="四级标题">四级标题####</h4>
-<h5 id="五级标题">五级标题#####</h5>
-<h6 id="六级标题">六级标题######</h6>
-<p><mark>（2）列表</mark></p>
-<h6 id="无序列表">无序列表</h6>
-<p>加号，减号，星号都可以，下一级别前加两个空格</p>
-<ul>
-<li>我爱学习-
-<ul>
-<li>我很爱学习+
-<ul>
-<li>我真的很爱学习*</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h6 id="有序列表">有序列表</h6>
-<p>数字前加英文句号 . 按空格</p>
-<ol>
-<li>我是美女</li>
-<li>我长的很像美女</li>
-<li>我真的是一个长得很像的美女</li>
-</ol>
-<p><mark>（3）引用</mark></p>
-<p>在文本前加入 &gt;，下一级别前加 &gt;&gt;，以此类推</p>
-<blockquote>
-<p>世界真美好</p>
-<blockquote>
-<p>现实很残酷</p>
-<blockquote>
-<p>今年我失恋了</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>要注意符号和文本之间的空格</p>
-<p><mark>（4）图片和链接</mark></p>
-<h6 id="插入链接">插入链接</h6>
-<ul>
-<li>在需要添加超链接的位置，[ ] 中括号内输入描述信息，( ) 括号内输入超链接地址</li>
-<li>菜单方式，点击“格式”-&gt; “超链接”，同样在 [ ] 和 ( ) 内编辑相应信息</li>
-<li>快捷键 Ctrl+k</li>
-</ul>
-<p><a href="https://www.baidu.com/">遇到问题不要慌，上百度</a></p>
-<h6 id="插入图片">插入图片</h6>
-<ul>
-<li>
-<p>语法输入：英文感叹号+英文中括号（内容为名称）+英文圆括号（内容为链接）</p>
-</li>
-<li>
-<p>中括号里是名称，圆括号里是链接</p>
-</li>
-<li>
-<p>不建议本地存储，建议使用图床：picgo+github图床+阿里云图床</p>
-</li>
-</ul>
-<p><mark>（5）字体</mark></p>
-<p><strong>这里是粗体</strong> ：前后用两个 * *包含一段文本</p>
-<p><em>这里是斜体</em>：用一个 * 包含一段文本</p>
-<p><em><strong>这里是斜体加粗</strong></em> ：前后用三个 * **包含一段文本</p>
-<p><s>这里是删除线</s>：删除线：前后用两个 ~~ 包含一段文字</p>
-<p>这里是<sup>上标</sup>：用两个 ^^ 包含一段文字，注意用英文字符</p>
-<p>这里是<sub>下标</sub>：用两个 ~~ 包含一段文字，注意用英文字符</p>
-<p><mark>（6）表格</mark></p>
-<ul>
-<li>语法添加：用 | 隔开，如：|你好|你好|你好|，横线|----|----|----|，类推多加几行就可以了</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>一</th>
-<th>二</th>
-<th>三</th>
-<th>四</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>学习</td>
-<td>学习</td>
-<td>学习</td>
-<td>学习</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>在 Typora 中，也可以按 Ctrl+T 直接添加表格</li>
-</ul>
-<h2 id="7分割线"><mark>（7）分割线</mark></h2>
-<p>用-或者*，多输入几个，按回车</p>
-<p><mark>（8）代码框</mark></p>
-<p>用两个 ` 把中间的代码/文字包裹起来</p>
-<p>用三个 ` 把中间的代码/文字包裹起来，就是代码框</p>
-<p><code>我是代码</code></p>
-<pre><code>这个代码框
-可以用来画流程图之类的
-	按 tab 键即可缩进
-
-</code></pre>
+              <p>嗯嘛，本来一切都坎坎坷坷的一步一步的，总算是建立好了这个博客网站，但是问题总是有的，手机端不能访问！！<br>
+这个也不是绝对的不能访问，我询问了我的朋友，他说可能是手机机型的问题，又或者网络服务器的问题，但他也不能确定具体是什么原因。<br>
+我也让我妹妹打开网站，她和她的朋友可以打开，她们的手机是：opp，也让朋友尝试打开，也有打开的，vivo，苹果手机好像都可以打开，就我的荣耀20 pro 不能打开，我真的快郁闷了。<br>
+建立这个网站的过程中，问题多到爆炸，可能我是小白吧，啥都不懂，代码啥的也看不懂，虽说这个是个傻瓜式的，但对我这种小白来说就是有点挑战性了。😂😂<br>
+尝试多方操作，也翻烂了网上的回答，关于这方面的问题简直是少的可怜，那是根本没有啊！！抓狂，有不有！😣<br>
+然后，我认命了。<br>
+我尝试了最后一种方式，科学上网，竟然可以访问。😱<br>
+具体是什么原因，我是真的不懂。<br>
+要是有懂的朋友，欢迎留言救助在下。<br>
+😘😘</p>
 
             </div>
             
@@ -750,7 +427,7 @@
     </li>
     <li class="post-copyright-link">
       <strong class="language" data-lan="link">本文链接：</strong>
-      <a href="https://liidan.github.io/post/ce-shi-2/" title="Markdonw语法规则">https://liidan.github.io/post/ce-shi-2/</a>
+      <a href="https://liidan.github.io/post/guan-yu-shou-ji-duan-bu-neng-fang-wen-de-wen-ti/" title="关于手机端不能访问的问题">https://liidan.github.io/post/guan-yu-shou-ji-duan-bu-neng-fang-wen-de-wen-ti/</a>
     </li>
     <li class="post-copyright-license">
       <strong class="language" data-lan="copyright">版权声明： </strong>
@@ -759,18 +436,16 @@
   </ul>
   <div class="tags">
     
-      <a href="https://liidan.github.io/tag/VUuXTctZ4/"># Markdown语法</a>
-    
   </div>
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="我开启了新大陆之旅！" href="https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu/">我开启了新大陆之旅！</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="我开启了新大陆之旅！" href="https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu/">上一篇</a>
-      
     </div>
     <div class="nav-next">
+      
+        <a class="nav-pc-next" title="我开启了新大陆之旅！" href="https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu/">我开启了新大陆之旅！</a>
+        <a class="nav-mobile-next" title="我开启了新大陆之旅！" href="https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
