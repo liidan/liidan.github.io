@@ -2120,9 +2120,8 @@ body {
     .next-md-body a:hover, .friends-box a:hover {
       color: #339af0;
       border-bottom-color: #339af0;
-    }
-    .nav-toggle .line {
-      background-color:  !important;
+    }.nav-toggle .line {
+      background-color: #ff6b6b !important;
     }
       .nav-item a {
         color:  #555;
