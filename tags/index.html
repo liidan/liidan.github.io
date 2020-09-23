@@ -5,18 +5,18 @@
   <meta charset="UTF-8" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="keywords" content="">
+<meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="一句话，就是干！">
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#000">
 <title>Danker&#39;s Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1600820712042">
+<link rel="shortcut icon" href="/favicon.ico?v=1600820838701">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
   href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
   rel="stylesheet" type="text/css">
 
-<link href="/media/hljs/styles/github.css"
+<link href="/media/hljs/styles/default.css"
   rel="stylesheet">
 
 <link rel="stylesheet" href="/styles/main.css">
@@ -63,11 +63,15 @@
           
         </div>
         
+          <p class="subtitle">精于心，简于形</p>
+        
       </div>
       <nav class="site-nav" id="site_nav">
         <ul id="nav_ul">
           
             
+            
+              
             
             <li class="nav-item ">
               
@@ -80,6 +84,8 @@
           
             
             
+              
+            
             <li class="nav-item ">
               
               
@@ -90,6 +96,8 @@
             </li>
           
             
+            
+              
             
             <li class="nav-item nav-item-active">
               
@@ -102,6 +110,8 @@
           
             
             
+              
+            
             <li class="nav-item ">
               
               
@@ -112,6 +122,22 @@
             </li>
           
           
+            
+              <li class="nav-item ">
+                <a href="/friends/" target="_self">
+                  
+                    <i class="fa fa-address-book"></i> 友情链接
+                  
+                </a>
+              </li>
+            
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
           
         </ul>
       </nav>
@@ -151,7 +177,7 @@
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
-    <p class="site-author-name"></p>
+    <p class="site-author-name">适用 Gemini,Pisces 布局,版权说明需配置</p>
     
   </div>
   <div class="sidebar-item side-item-stat right-motion">
@@ -180,15 +206,13 @@
   
   
 
-  
-
 
 
 </div>
 </div>
 <script>
   let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = '';
+  let scheme = 'pisces';
   let sidebarWrapper = document.querySelector('.sidebar-wrapper');
   if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
     document.addEventListener('scroll', function(e) {
@@ -298,12 +322,6 @@
   </div>
   
   
-  
-  
-  
-  
-  
-
   
 </div>
 <script>
@@ -433,7 +451,7 @@
   }
 
   // 链接跳转
-  let newWindow = ''
+  let newWindow = 'false'
   if (newWindow === 'true') {
     let links = document.querySelectorAll('.post-body a')
     links.forEach(item => {
@@ -467,6 +485,257 @@
 </script>
   </div>
 </body>
+
+<div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu/"" data-c="
+          &lt;p&gt;我前天看到一篇关于自己创建静态博客的文章，于兴趣来了，就开始搜索此类相关的信息，就找到了Gride，然后开始安装，又发现写文章需要了解Markdown语法，然后又开始搜索关于语法的信息，真是越来越有趣了。在学习语法夫人过程中，我在插入图片这里，产生了疑问，本地保存的图片长期累积不是会占用大量的电脑空间，于是又开始搜索关于图片的信息，哇！我发现新大陆了（原谅我这个土鳖)，可以利用图床来完成图片的存储，多翻折腾后，最后，找到我现在的搭配：Gridea+Typora+PicGo+Github图床+阿里云oss图床。不过到这里，依然还存在问题，但是这个过程还是很有趣，这种探索新知识，新领域的感觉相当不错呢！&lt;/p&gt;
+">我开启了新大陆之旅！</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://liidan.github.io/post/ce-shi-2/"" data-c="
+          &lt;p&gt;&lt;mark&gt;（1） 标题&lt;/mark&gt;&lt;/p&gt;
+&lt;h1 id=&#34;一级标题&#34;&gt;一级标题#&lt;/h1&gt;
+&lt;h2 id=&#34;二级标题&#34;&gt;二级标题##&lt;/h2&gt;
+&lt;h3 id=&#34;三级标题&#34;&gt;三级标题##&lt;/h3&gt;
+&lt;h4 id=&#34;四级标题&#34;&gt;四级标题####&lt;/h4&gt;
+&lt;h5 id=&#34;五级标题&#34;&gt;五级标题#####&lt;/h5&gt;
+&lt;h6 id=&#34;六级标题&#34;&gt;六级标题######&lt;/h6&gt;
+&lt;p&gt;&lt;mark&gt;（2）列表&lt;/mark&gt;&lt;/p&gt;
+&lt;h6 id=&#34;无序列表&#34;&gt;无序列表&lt;/h6&gt;
+&lt;p&gt;加号，减号，星号都可以，下一级别前加两个空格&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;我爱学习-
+&lt;ul&gt;
+&lt;li&gt;我很爱学习+
+&lt;ul&gt;
+&lt;li&gt;我真的很爱学习*&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;有序列表&#34;&gt;有序列表&lt;/h6&gt;
+&lt;p&gt;数字前加英文句号 . 按空格&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;我是美女&lt;/li&gt;
+&lt;li&gt;我长的很像美女&lt;/li&gt;
+&lt;li&gt;我真的是一个长得很像的美女&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;mark&gt;（3）引用&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;在文本前加入 &amp;gt;，下一级别前加 &amp;gt;&amp;gt;，以此类推&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;世界真美好&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;现实很残酷&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;今年我失恋了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;要注意符号和文本之间的空格&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;（4）图片和链接&lt;/mark&gt;&lt;/p&gt;
+&lt;h6 id=&#34;插入链接&#34;&gt;插入链接&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;在需要添加超链接的位置，[ ] 中括号内输入描述信息，( ) 括号内输入超链接地址&lt;/li&gt;
+&lt;li&gt;菜单方式，点击“格式”-&amp;gt; “超链接”，同样在 [ ] 和 ( ) 内编辑相应信息&lt;/li&gt;
+&lt;li&gt;快捷键 Ctrl+k&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.baidu.com/&#34;&gt;遇到问题不要慌，上百度&lt;/a&gt;&lt;/p&gt;
+&lt;h6 id=&#34;插入图片&#34;&gt;插入图片&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;语法输入：英文感叹号+英文中括号（内容为名称）+英文圆括号（内容为链接）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;中括号里是名称，圆括号里是链接&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不建议本地存储，建议使用图床：picgo+github图床+阿里云图床&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;mark&gt;（5）字体&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这里是粗体&lt;/strong&gt; ：前后用两个 * *包含一段文本&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;这里是斜体&lt;/em&gt;：用一个 * 包含一段文本&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;这里是斜体加粗&lt;/strong&gt;&lt;/em&gt; ：前后用三个 * **包含一段文本&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;这里是删除线&lt;/s&gt;：删除线：前后用两个 ~~ 包含一段文字&lt;/p&gt;
+&lt;p&gt;这里是&lt;sup&gt;上标&lt;/sup&gt;：用两个 ^^ 包含一段文字，注意用英文字符&lt;/p&gt;
+&lt;p&gt;这里是&lt;sub&gt;下标&lt;/sub&gt;：用两个 ~~ 包含一段文字，注意用英文字符&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;（6）表格&lt;/mark&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;语法添加：用 | 隔开，如：|你好|你好|你好|，横线|----|----|----|，类推多加几行就可以了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;一&lt;/th&gt;
+&lt;th&gt;二&lt;/th&gt;
+&lt;th&gt;三&lt;/th&gt;
+&lt;th&gt;四&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;学习&lt;/td&gt;
+&lt;td&gt;学习&lt;/td&gt;
+&lt;td&gt;学习&lt;/td&gt;
+&lt;td&gt;学习&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;在 Typora 中，也可以按 Ctrl+T 直接添加表格&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7分割线&#34;&gt;&lt;mark&gt;（7）分割线&lt;/mark&gt;&lt;/h2&gt;
+&lt;p&gt;用-或者*，多输入几个，按回车&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;（8）代码框&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;用两个 ` 把中间的代码/文字包裹起来&lt;/p&gt;
+&lt;p&gt;用三个 ` 把中间的代码/文字包裹起来，就是代码框&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;我是代码&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;这个代码框
+可以用来画流程图之类的
+	按 tab 键即可缩进
+
+&lt;/code&gt;&lt;/pre&gt;
+">Markdonw语法规则</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
 
 <input hidden id="copy" />
 <script>
