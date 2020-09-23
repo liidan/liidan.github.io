@@ -2054,23 +2054,27 @@ p > code {
 body {
       background-color: #ffe3e3;
     }.header {
-        width: 960px;
+        width: 1080px;
         margin: 0 auto;
       }
 
       .main-continer {
-        width: 960px;
+        width: 1080px;
         margin: 0 auto;
       }
     @font-face {
       font-family: '站酷快乐体2016修订版';
-      src: url('/media/fonts/站酷快乐体2016修订版.ttf');
+      src: url('https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/fonts/站酷快乐体2016修订版.ttf');
     }
     * {
         font-family: '站酷快乐体2016修订版';
     }
     .katex-block *{
       font-family: 'KaTeX_Main';
+    }
+    
+    .post-body {
+      font-size: 18px !important
     }
     body {
       color: #212529;
@@ -2082,7 +2086,7 @@ body {
       border-bottom-color: #212529;
     }
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
-      background: #eeeeeefe;
+      background: #ffe3e3fe;
     }h1, h2, h3, h4, h5, h6 {
       color: #212529;
     }
@@ -2147,28 +2151,34 @@ body {
       color: #eee;
       border-bottom-color: #eee;
     }.markdownIt-TOC a:hover {
-      color: #fff;
-      border-bottom-color: #fff;
+      color: #e599f7;
+      border-bottom-color: #e599f7;
     }.active-current > a {
-      color: #fc6423 !important;
-      border-bottom-color: #fc6423 !important;
+      color: #f03e3e !important;
+      border-bottom-color: #f03e3e !important;
     }
     .sidebar-title-active {
-      color: #fc6423 !important;
-      border-bottom-color: #fc6423 !important;
+      color: #f03e3e;
+      border-bottom-color: #f03e3e;
     }
     .sidebar-title-item:hover {
-      color: #fc6423 !important;
+      color: #f03e3e !important;
     }
     .active-show > a {
-      color: #fc6423;
-      border-bottom-color: #fc6423;
+      color: #f03e3e;
+      border-bottom-color: #f03e3e;
     }
     .active-hidden > a {
-      color: #fc6423;
-      border-bottom-color: #fc6423;
+      color: #f03e3e;
+      border-bottom-color: #f03e3e;
     }.bg-color {
       background-color: #f8f9fafe;
+    }
+    .gemini .blog-header, .gemini .sidebar-wrapper, .gemini .article-wrapper, .gemini .post, .gemini .page, .gemini .section, .gemini .section-box, .gemini .sidebar-box, .gemini .friends-section {
+      border-radius: 10px;
+    }
+    .pisces .blog-header, .pisces .sidebar-wrapper, .pisces .article-wrapper, .pisces .section, .pisces .sidebar-box, .pisces .friends-section {
+      border-radius: 10px;
     }
     .site-meta {
       background: #ff6b6b !important;
@@ -2184,18 +2194,20 @@ body {
     }
     .mist .site-title i {
       background: #f8f9fafe;
+    }.box-scale > #landlord {
+      transform: scale(0.8);
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }body {
-      cursor: default;
+      cursor: url('https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/curs/AppStarting.cur'), default;
     }a {
-      cursor: pointer;
+      cursor: url('https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/curs/Hand.cur'), pointer !important;
     }input, textarea, code {
-      cursor: text;
+      cursor: url('https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/curs/IBeam.cur'), text !important;
     }code > span.copy-code {
-      cursor: pointer;
+      cursor: url('https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/curs/Arrow.cur'), text !important;
     }.post img {
-      cursor: zoom-in;
+      cursor: url('https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/curs/SizeNESW.cur'), zoom-in !important;
     }.post img {
-      cursor: zoom-out;
+      cursor: url('https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/curs/SizeNWSE.cur'), zoom-out !important;
     }
