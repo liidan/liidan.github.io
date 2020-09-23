@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://liidan.github.io</id>
     <title>liidan&apos;s blog</title>
-    <updated>2020-09-23T08:28:39.760Z</updated>
+    <updated>2020-09-23T08:57:43.799Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://liidan.github.io"/>
     <link rel="self" href="https://liidan.github.io/atom.xml"/>
@@ -42,16 +42,17 @@
         <link href="https://liidan.github.io/post/ce-shi-2/">
         </link>
         <updated>2020-09-21T20:52:58.000Z</updated>
-        <content type="html"><![CDATA[<p><mark>（1） 标题</mark></p>
-<h1 id="一级标题">一级标题#</h1>
-<h2 id="二级标题">二级标题##</h2>
-<h3 id="三级标题">三级标题##</h3>
-<h4 id="四级标题">四级标题####</h4>
-<h5 id="五级标题">五级标题#####</h5>
-<h6 id="六级标题">六级标题######</h6>
-<p><mark>（2）列表</mark></p>
-<h6 id="无序列表">无序列表</h6>
-<p>加号，减号，星号都可以，下一级别前加两个空格</p>
+        <content type="html"><![CDATA[<h1 id="一-标题">一、标题</h1>
+<p><mark>几个#号表示几级</mark></p>
+<h1 id="这里是一级标题">这里是一级标题#</h1>
+<h2 id="这里是二级标题">这里是二级标题##</h2>
+<h3 id="这里是三级标题">这里是三级标题##</h3>
+<h4 id="这里是四级标题">这里是四级标题####</h4>
+<h5 id="这里是五级标题">这里是五级标题#####</h5>
+<h6 id="这里是六级标题">这里是六级标题######</h6>
+<h1 id="二-列表">二、列表</h1>
+<h2 id="1-无序列表">1. 无序列表</h2>
+<p><mark>加号，减号，星号都可以，下一级别前加两个空格</mark></p>
 <ul>
 <li>我爱学习-
 <ul>
@@ -63,15 +64,15 @@
 </ul>
 </li>
 </ul>
-<h6 id="有序列表">有序列表</h6>
-<p>数字前加英文句号 . 按空格</p>
+<h2 id="2-序列表">2. 序列表</h2>
+<p><mark>数字前加英文句号 . 按空格</mark></p>
 <ol>
 <li>我是美女</li>
 <li>我长的很像美女</li>
 <li>我真的是一个长得很像的美女</li>
 </ol>
-<p><mark>（3）引用</mark></p>
-<p>在文本前加入 &gt;，下一级别前加 &gt;&gt;，以此类推</p>
+<h1 id="三-引用">三、引用</h1>
+<p><mark>在文本前加入 &gt;，下一级别前加 &gt;&gt;，以此类推</mark></p>
 <blockquote>
 <p>世界真美好</p>
 <blockquote>
@@ -81,16 +82,16 @@
 </blockquote>
 </blockquote>
 </blockquote>
-<p>要注意符号和文本之间的空格</p>
-<p><mark>（4）图片和链接</mark></p>
-<h6 id="插入链接">插入链接</h6>
+<p><mark>要注意符号和文本之间的空格</mark></p>
+<h1 id="四-图片和链接">四、图片和链接</h1>
+<h2 id="1-插入链接">1. 插入链接</h2>
 <ul>
 <li>在需要添加超链接的位置，[ ] 中括号内输入描述信息，( ) 括号内输入超链接地址</li>
 <li>菜单方式，点击“格式”-&gt; “超链接”，同样在 [ ] 和 ( ) 内编辑相应信息</li>
 <li>快捷键 Ctrl+k</li>
 </ul>
 <p><a href="https://www.baidu.com/">遇到问题不要慌，上百度</a></p>
-<h6 id="插入图片">插入图片</h6>
+<h2 id="2-插入图片">2. 插入图片</h2>
 <ul>
 <li>
 <p>语法输入：英文感叹号+英文中括号（内容为名称）+英文圆括号（内容为链接）</p>
@@ -102,17 +103,29 @@
 <p>不建议本地存储，建议使用图床：picgo+github图床+阿里云图床</p>
 </li>
 </ul>
-<p><mark>（5）字体</mark></p>
+<h1 id="五-字体">五、字体</h1>
+<ol>
+<li>
 <p><strong>这里是粗体</strong> ：前后用两个 * *包含一段文本</p>
+</li>
+<li>
 <p><em>这里是斜体</em>：用一个 * 包含一段文本</p>
+</li>
+<li>
 <p><em><strong>这里是斜体加粗</strong></em> ：前后用三个 * **包含一段文本</p>
+</li>
+<li>
 <p><s>这里是删除线</s>：删除线：前后用两个 ~~ 包含一段文字</p>
+</li>
+<li>
 <p>这里是<sup>上标</sup>：用两个 ^^ 包含一段文字，注意用英文字符</p>
+</li>
+<li>
 <p>这里是<sub>下标</sub>：用两个 ~~ 包含一段文字，注意用英文字符</p>
-<p><mark>（6）表格</mark></p>
-<ul>
-<li>语法添加：用 | 隔开，如：|你好|你好|你好|，横线|----|----|----|，类推多加几行就可以了</li>
-</ul>
+</li>
+</ol>
+<h1 id="六-表格">六、表格</h1>
+<p><mark>语法添加：用 | 隔开，如：|你好|你好|你好|，横线|----|----|----|，类推多加几行就可以了</mark></p>
 <table>
 <thead>
 <tr>
@@ -131,20 +144,33 @@
 </tr>
 </tbody>
 </table>
-<ul>
-<li>在 Typora 中，也可以按 Ctrl+T 直接添加表格</li>
-</ul>
-<h2 id="7分割线"><mark>（7）分割线</mark></h2>
-<p>用-或者*，多输入几个，按回车</p>
-<p><mark>（8）代码框</mark></p>
-<p>用两个 ` 把中间的代码/文字包裹起来</p>
-<p>用三个 ` 把中间的代码/文字包裹起来，就是代码框</p>
+<p><mark>在 Typora 中，也可以按 Ctrl+T 直接添加表格</mark></p>
+<h1 id="七-分割线">七、分割线</h1>
+<hr>
+<p><mark>用-或者*，多输入几个，按回车</mark></p>
+<p>八、代码框</p>
+<p><mark>用两个 ` 把中间的代码/文字包裹起来</mark></p>
+<p><mark>用三个 ` 把中间的代码/文字包裹起来，就是代码框</mark></p>
 <p><code>我是代码</code></p>
-<pre><code>这个代码框
+<pre><code>我是 代码框
 可以用来画流程图之类的
 	按 tab 键即可缩进
 
 </code></pre>
+<hr>
+<p><em>新增内容 2020/9/23</em></p>
+<h1 id="九-首行缩进">九、首行缩进</h1>
+<ol>
+<li>输入法半角改为全角，两次空格之后就有两个汉字的缩进</li>
+<li>输入下代码，然后紧跟着输入文本，分号也不要掉</li>
+</ol>
+<ul>
+<li>半方大的空白 &amp; ensp; 或 &amp; #8194;</li>
+<li>全方大的空白 &amp; emsp; 或 &amp; #8195;</li>
+<li>不断行的空白格&amp; nbsp; 或 &amp; #160;</li>
+<li>一个 &amp; emsp; 的宽度刚好是一个中文字符的宽度，两个 &amp; emsp; 即可替代传统的缩进两个字符</li>
+</ul>
+<p><mark><strong>（这里的&amp;和ensp; 之间没有空格健，写再一起的）</strong></mark></p>
 ]]></content>
     </entry>
 </feed>
