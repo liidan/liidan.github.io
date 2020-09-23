@@ -1,286 +1,160 @@
 <html>
-
 <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>
-    Markdown语法 | liidan&#39;s blog
-</title>
-<link rel="shortcut icon" href="https://liidan.github.io/favicon.ico?v=1600824765160">
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
-<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Markdown语法 | liidan&#39;s blog</title>
+
+<link rel="shortcut icon" href="https://liidan.github.io/favicon.ico?v=1600825329404">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://liidan.github.io/styles/main.css">
-<!-- js -->
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://liidan.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
 
 
 </head>
-
 <body>
-    <div class="main">
-        <div class="header">
-    <div class="nav">
-        <div class="logo">
-            <a href="https://liidan.github.io">
-                <img class="avatar" src="https://liidan.github.io/images/avatar.png?v=1600824765160" alt="">
-            </a>
-            <div class="site-title">
-                <h1>
-                    liidan&#39;s blog
-                </h1>
-            </div>
+<div class="main gt-bg-theme-color-first">
+    <div class="main-content">
+        <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            liidan&#39;s blog
         </div>
-        <span class="menu-btn fa fa-align-justify"></span>
-        <div class="menu-container">
-            <ul>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://liidan.github.io/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1600825329404" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+        <div class="current-tag-container">
+            <h2 class="title gt-c-content-color-first">
+                #Markdown语法
+            </h2>
+        </div>
+        <div class="post-list-container">
+    <div class="post-inner">
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                            <span class="sticky-top-flag gt-bg-accent-color-first">置顶</span>
+                        
+                        <a href="https://liidan.github.io/post/ce-shi-2/">
+                            <span class="post-title gt-c-content-color-first">Markdonw语法规则</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2020-09-22 ·
+                        </time>
+                        
+                            <a href="https://liidan.github.io/tag/VUuXTctZ4/" class="post-tag">
+                                # Markdown语法
+                            </a>
+                        
+                    </div>
+                </div>
                 
-                    
-                            <li>
-                                <a href="/" class="menu">
-                                    首页
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="/archives" class="menu">
-                                    归档
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="https://liidan.github.io/tags" class="menu">
-                                    标签
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu" class="menu">
-                                    关于
-                                </a>
-                            </li>
-                            
-                                
-            </ul>
-        </div>
+                    <a href="https://liidan.github.io/post/ce-shi-2/" class="post-feature-image"
+                       style="background-image: url('https://i.loli.net/2020/09/23/nmX5Agh98coEUWG.jpg')">
+                    </a>
+                
+            </div>
+        
     </div>
 </div>
-
-<script>
-    $(document).ready(function() {
-        $(".menu-btn").click(function() {
-            $(".menu-container").slideToggle();
-        });
-        $(window).resize(function() {
-
-            if (window.matchMedia('(min-width: 960px)').matches) {
-                $(".menu-container").css('display', 'block')
-            } else {
-                $(".menu-container").css('display', 'none')
-            }
-
-        });
-    });
-</script>
-
-            <div id="main-content" class="post-container main-container">
-                <div id="content" class="main-container-left">
-                    
-    <div class="i-card">
-        <b>标签：#
-        Markdown语法</b>
-    </div>
+        <div class="pagination-container">
     
+    
+</div>
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">一句话，就是干！</div>
+    <div class="social-container">
         
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="https://liidan.github.io/post/ce-shi-2/">
-                        Markdonw语法规则
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2020-09-22</time>
-                    
-                        <a href="https://liidan.github.io/tag/VUuXTctZ4/" class="post-tag i-tag
-                            i-tag-other_2">
-            #Markdown语法
-        </a>
-                        
-                </div>
-                <div class="post-article">
-                    
-                        <a href="https://liidan.github.io/post/ce-shi-2/" class="post-feature-image" style="background-image:url(https://i.loli.net/2020/09/23/nmX5Agh98coEUWG.jpg) ">
-                        </a>
-                        
-                            <div class="post-content">
-                                
-                                        <div class="post-content-content">
-                                            （1） 标题
-一级标题#
-二级标题##
-三级标题##
-四级标题####
-五级标题#####
-六级标题######
-（2）列表
-无序列表
-加号，减号，星号都可以，下一级别前加两个空格
-
-我爱学习-
-
-我很爱学习+
-
-我真的很爱学习*
-
-
-
-
-
-有序列表
-数字前加英文句号 . 按空格
-
-我是美女
-我长的很像美女
-我真的是一个长得很像的美女
-
-（3）引用
-在文本前加入 &amp;gt;，下一级别前加 &amp;gt;&amp;gt;，以此类推
-
-世界真美好
-
-现实很残酷
-
-今年我失恋了
-
-
-
-要注意符号和文本之间的空格
-（4）图片和链接
-插入链接
-
-在需要添加超链接的位置，[ ] 中括号内输入描述信息，( ) 括号内输入超链接地址
-菜单方式，点击“格式”-&amp;gt; “超链接”，同样在 [ ] 和 ( ) 内编辑相应信息
-快捷键 Ctrl+k
-
-遇到问题不要慌，上百度
-插入图片
-
-
-语法输入：英文感叹号+英文中括号（内容为名称）+英文圆括号（内容为链接）
-
-
-中括号里是名称，圆括号里是链接
-
-
-不建议本地存储，建议使用图床：picgo+github图床+阿里云图床
-
-
-（5）字体
-这里是粗体 ：前后用两个 * *包含一段文本
-这里是斜体：用一个 * 包含一段文本
-这里是斜体加粗 ：前后用三个 * **包含一段文本
-这里是删除线：删除线：前后用两个 ~~ 包含一段文字
-这里是上标：用两个 ^^ 包含一段文字，注意用英文字符
-这里是下标：用两个 ~~ 包含一段文字，注意用英文字符
-（6）表格
-
-语法添加：用 | 隔开，如：|你好|你好|你好|，横线|----|----|----|，类推多加几行就可以了
-
-
-
-
-一
-二
-三
-四
-
-
-
-
-学习
-学习
-学习
-学习
-
-
-
-
-在 Typora 中，也可以按 Ctrl+T 直接添加表格
-
-（7）分割线
-用-或者*，多输入几个，按回车
-（8）代码框
-用两个 ` 把中间的代码/文字包裹起来
-用三个 ` 把中间的代码/文字包裹起来，就是代码框
-我是代码
-这个代码框
-可以用来画流程图之类的
-	按 tab 键即可缩进
-
-
-
-                                        </div>
-                                        
-                                            <a class="btn btn-text" href="https://liidan.github.io/post/ce-shi-2/">Read More ~</a>
-                            </div>
-                </div>
-            </article>
             
-                <!-- 翻页 -->
-                
-                </div>
-                <!--  -->
-                <div class="main-container-middle"></div>
-                <!--  -->
-                <div id="sidebar" class="main-container-right">
-
-                    <!-- 个人信息 -->
-                    
-    <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://liidan.github.io/images/avatar.png?v=1600824765160)">
-        </div>
-        <h1 class="id_card-title">
-            liidan&#39;s blog
-        </h1>
-        <h2 class="id_card-description">
-            一句话，就是干！
-        </h2>
-        <!--  -->
-        <div class="id_card-sns">
-            <!-- github -->
+        
             
-                    <!-- twitter -->
-                    
-                            <!-- weibo -->
-                            
-                                    <!-- facebook -->
-                                    
-
-        </div>
+        
+            
+        
+            
+        
+            
+        
+            
+        
     </div>
-    
-
-                        <!-- 公告栏 -->
-                        
-
-                </div>
-            </div>
-
-
-
-            <div class="site-footer">
-  Powered by <a href="https://github.com/liidan/liidan.github.io" target="_blank">liidan</a> | 
-  <a class="rss" href="https://liidan.github.io/atom.xml" target="_blank">RSS</a>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/liidan/liidan.github.io" target="_blank">liidan</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://liidan.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
 </div>
 
 <script>
@@ -288,12 +162,6 @@
 </script>
 
     </div>
-    <script>
-        $('#sidebar').stickySidebar({
-            topSpacing: 80,
-            // bottomSpacing: 60
-        });
-    </script>
+</div>
 </body>
-
 </html>
