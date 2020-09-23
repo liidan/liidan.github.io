@@ -1,890 +1,299 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-  <meta charset="UTF-8" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="keywords" content="Gridea静态个人博客">
-<meta name="description" content="一句话，就是干！">
-<meta name="theme-color" content="#000">
-<title>liidan&#39;s blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1600822350292">
-<link rel="stylesheet" href="/media/css/gemini.css">
-<link rel="stylesheet" href="/media/fonts/font-awesome.css">
-<link
-  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
-  rel="stylesheet" type="text/css">
-
-<link href="/media/hljs/styles/default.css"
-  rel="stylesheet">
-
-<link rel="stylesheet" href="/styles/main.css">
-
-<script src="/media/hljs/highlight.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
-  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
-  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
-  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
-  onload="renderMathInElement(document.body);"></script>
-
-
-
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    Markdown语法 | liidan&#39;s blog
+</title>
+<link rel="shortcut icon" href="https://liidan.github.io/favicon.ico?v=1600824765160">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://liidan.github.io/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://liidan.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
 </head>
 
 <body>
-  <div class="head-top-line"></div>
-  <div class="header-box">
-    
-<div class="gemini">
-  <header class="header  ">
-    <div class="blog-header box-shadow-wrapper bg-color " id="header">
-      <div class="nav-toggle" id="nav_toggle">
-        <div class="toggle-box">
-          <div class="line line-top"></div>
-          <div class="line line-center"></div>
-          <div class="line line-bottom"></div>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://liidan.github.io">
+                <img class="avatar" src="https://liidan.github.io/images/avatar.png?v=1600824765160" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    liidan&#39;s blog
+                </h1>
+            </div>
         </div>
-      </div>
-      <div class="site-meta">       
-        <div class="site-title">
-          
-            <a href="/" class="brand">
-              <span>liidan&#39;s blog</span>
-            </a>  
-          
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="https://liidan.github.io/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
         </div>
-        
-          <p class="subtitle">做一个快乐的人儿有点难呀！</p>
-        
-      </div>
-      <nav class="site-nav" id="site_nav">
-        <ul id="nav_ul">
-          
-            
-            
-              
-            
-            <li class="nav-item ">
-              
-              
-                <a href="/" target="_self">
-                  <i class="fa fa-home"></i> 首页
-                </a>
-              
-            </li>
-          
-            
-            
-              
-            
-            <li class="nav-item ">
-              
-              
-                <a href="/archives/" target="_self">
-                  <i class="fa fa-archive"></i> 归档
-                </a>
-              
-            </li>
-          
-            
-            
-              
-            
-            <li class="nav-item ">
-              
-              
-                <a href="https://liidan.github.io/tags/" target="_self">
-                  <i class="fa fa-globe"></i> 标签
-                </a>
-              
-            </li>
-          
-            
-            
-              
-            
-            <li class="nav-item ">
-              
-              
-                <a href="https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu/" target="_self">
-                  <i class="fa fa-globe"></i> 关于
-                </a>
-              
-            </li>
-          
-          
-            
-              <li class="nav-item ">
-                <a href="/friends/" target="_self">
-                  
-                    <i class="fa fa-address-book"></i> 友情链接
-                  
-                </a>
-              </li>
-            
-          
-          
-            <li id="fa_search" class="nav-item">
-              <a href="javascript:void(0);">
-                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
-              </a>
-            </li>
-          
-        </ul>
-      </nav>
     </div>
-  </header>
 </div>
 
-<script type="text/javascript"> 
- 
-  let showNav = true;
-
-  let navToggle = document.querySelector('#nav_toggle'),
-  siteNav = document.querySelector('#site_nav');
-  
-  function navClick() {
-    let sideBar = document.querySelector('.sidebar');
-    let navUl = document.querySelector('#nav_ul');
-    navToggle.classList.toggle('nav-toggle-active');
-    siteNav.classList.toggle('nav-menu-active');
-    if (siteNav.classList.contains('nav-menu-active')) {
-      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
-    } else {
-      siteNav.style = "";
-    }
-  }
-
-  navToggle.addEventListener('click',navClick);  
-</script>
-  </div>
-  <div class="main-continer">
-    
-    <div
-      class="section-layout  gemini">
-      <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
-    
-<div class="sidebar-wrapper box-shadow-wrapper bg-color">
-  <div class="sidebar-item">
-    <img class="site-author-image right-motion" src="/images/avatar.png"/>
-    <p class="site-author-name">liidan</p>
-    
-    <div class="site-description right-motion">
-      
-      
-      
-        <p>2020年，一年都很无聊的我，偶然间遇到了Gridea，于是开启了我的博客之旅。</p>
-      
-        <p>虽然搭建的过程充满各种问题，但依然有趣。</p>
-      
-        <p>探索新的领域，学习新的知识，也许这是我的新篇章。</p>
-      
-        <p>这里主要分享我平时的生活感悟和学习中的笔记记录，希望能和你们交朋友，嘿嘿🤭</p>
-      
-      
-    </div>
-    
-  </div>
-  <div class="sidebar-item side-item-stat right-motion">
-    <div class="sidebar-item-box">
-      <a href="/archives/">
-        
-        <span class="site-item-stat-count">2</span>
-        <span class="site-item-stat-name language" data-lan="article">文章</span>
-      </a>
-    </div>
-    <div class="sidebar-item-box">
-      <a href="">
-        <span class="site-item-stat-count">1</span>
-        <span class="site-item-stat-name language" data-lan="category">分类</span>
-      </a>
-    </div>
-    <div class="sidebar-item-box">
-      <a href="/tags/">
-        <span class="site-item-stat-count">1</span>
-        <span class="site-item-stat-name language" data-lan="tag">标签</span>
-      </a>
-    </div>
-  </div>
-  
-    
-  
-  
-
-
-
-</div>
-</div>
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'gemini';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
-      }
-    });
-  }
-  </script>
-        <div class="section-box tag-line box-shadow-wrapper">
-          <section class="section tags-section posts-expand bg-color">
-            <div class="padding-wrapper">
-  <div class="tag-timeline-box">
-    <div class="tag-timeline-wrapper">
-      <div class="tag-timeline-title">
-        <h2>
-          Markdown语法
-          <small class="language" data-lan="tag">标签</small>
-        </h2>
-      </div>
-      
-      
-      
-      
-      
-      <a href="https://liidan.github.io/post/ce-shi-2/">
-        <div class="motion-warpper">
-          <div class="tag-post-node">
-            <h1>
-              09-22
-              <small>Markdonw语法规则</small>
-            </h1>
-          </div>
-        </div>
-      </a>
-      
-      
-      
-    </div>
-  </div>
-</div>
-          </section>
-        </div>
-      </div>
-    </div>
-    <div class="footer-box">
-  <footer class="footer">
-    <div class="copyright">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a
-        href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
-    </div>
-    <div class="poweredby">
-      Powered by <a href="https://github.com/liidan/liidan.github.io" target="_blank">liidan</a>
-    </div>
-  </footer>
-  
-  
-  <div class="gemini back-to-top" id="back_to_top">
-    <i class="fa fa-arrow-up"></i>
-    
-    <span class="scrollpercent">
-      <span id="back_to_top_text">0</span>%
-    </span>
-    
-  </div>
-  
-  
-  
-</div>
-<script>
-
-  let sideBarOpen = 'sidebar-open';
-  let body = document.body;
-  let back2Top = document.querySelector('#back_to_top'),
-    back2TopText = document.querySelector('#back_to_top_text'),
-    drawerBox = document.querySelector('#drawer_box'),
-    rightSideBar = document.querySelector('.sidebar'),
-    viewport = document.querySelector('body');
-
-  function scrollAnimation(currentY, targetY) {
-
-    let needScrollTop = targetY - currentY
-    let _currentY = currentY
-    setTimeout(() => {
-      const dist = Math.ceil(needScrollTop / 10)
-      _currentY += dist
-      window.scrollTo(_currentY, currentY)
-      if (needScrollTop > 10 || needScrollTop < -10) {
-        scrollAnimation(_currentY, targetY)
-      } else {
-        window.scrollTo(_currentY, targetY)
-      }
-    }, 1)
-  }
-
-  back2Top.addEventListener("click", function (e) {
-    scrollAnimation(document.scrollingElement.scrollTop, 0);
-    e.stopPropagation();
-    return false;
-  });
-
-  window.addEventListener('scroll', function (e) {
-    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
-    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
-      back2Top.classList.add('back-top-active');
-    }
-    if (percent == 0) {
-      back2Top.classList.remove('back-top-active');
-    }
-    if (back2TopText) {
-      back2TopText.textContent = Math.floor(percent);
-    }
-  });
-
-
-  let hasCacu = false;
-  window.onresize = function () {
-    calcuHeight();
-  }
-
-  function calcuHeight() {
-    // 动态调整站点概览高度
-    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
-      let sideBar = document.querySelector('.sidebar');
-      let navUl = document.querySelector('#site_nav');
-      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
-      hasCacu = true;
-    }
-  }
-  calcuHeight();
-
-  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
-
-  if (drawerBox) {
-    let rightMotions = document.querySelectorAll('.right-motion');
-    let right = drawerBox.classList.contains('right');
-
-    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
-
-    let openProp, closeProp;
-    if (right) {
-      openProp = {
-        paddingRight: RIGHT_MOVE_DIS
-      };
-      closeProp = {
-        paddingRight: '0px'
-      };
-    } else {
-      openProp = {
-        paddingLeft: RIGHT_MOVE_DIS
-      };
-      closeProp = {
-        paddingLeft: '0px'
-      };
-    }
-
-    drawerBox.onclick = function () {
-      open = !open;
-      window.Velocity(rightSideBar, 'stop');
-      window.Velocity(viewport, 'stop');
-      window.Velocity(rightMotions, 'stop');
-      if (open) {
-        window.Velocity(rightSideBar, {
-          width: RIGHT_MOVE_DIS
-        }, {
-          duration: MOTION_TIME,
-          begin: function () {
-            window.Velocity(rightMotions, transitionDir, {});
-          }
-        })
-        window.Velocity(viewport, openProp, {
-          duration: MOTION_TIME
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
         });
-      } else {
-        window.Velocity(rightSideBar, {
-          width: '0px'
-        }, {
-          duration: MOTION_TIME,
-          begin: function () {
-            window.Velocity(rightMotions, {
-              opacity: 0
-            });
-          }
-        })
-        window.Velocity(viewport, closeProp, {
-          duration: MOTION_TIME
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
         });
-      }
-      for (let i = 0; i < drawerBox.children.length; i++) {
-        drawerBox.children[i].classList.toggle('muse-line');
-      }
-      drawerBox.classList.toggle(sideBarOpen);
-    }
-  }
-
-  // 链接跳转
-  let newWindow = 'false'
-  if (newWindow === 'true') {
-    let links = document.querySelectorAll('.post-body a')
-    links.forEach(item => {
-      if (!item.classList.contains('btn')) {
-        item.setAttribute("target", "_blank");
-      }
-    })
-  }
-
-  let faSearch = document.querySelector('#fa_search');
-  faSearch.addEventListener('click', function () {
-    document.querySelector('#search_mask').style = ''
-  })
-
-  // 代码高亮
-  hljs.initHighlightingOnLoad();
-  
-  // 离开当前页title变化
-  var leaveTitle = "";
-  if (leaveTitle) {
-    document.addEventListener('visibilitychange', function () {
-      if (document.visibilityState == 'hidden') {
-        normal_title = document.title;
-        document.title = leaveTitle;
-      } else {
-        document.title = normal_title;
-      }
     });
-  }
-
 </script>
-  </div>
-</body>
 
-<div class="search-mask" id="search_mask" style="display: none;">
-  <div class="search-box">
-    <div class="search-title">
-      <i class="fa fa-search"></i>
-      <div class="input-box">
-        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
-      </div>
-      <i id="close" class="fa fa-times-circle"></i>
+            <div id="main-content" class="post-container main-container">
+                <div id="content" class="main-container-left">
+                    
+    <div class="i-card">
+        <b>标签：#
+        Markdown语法</b>
     </div>
-    <div class="stat-box">
-      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
-      <hr>
-    </div>
-    <div class="result" id="result">
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu/"" data-c="
-          &lt;p&gt;我前天看到一篇关于自己创建静态博客的文章，于兴趣来了，就开始搜索此类相关的信息，就找到了Gride，然后开始安装，又发现写文章需要了解Markdown语法，然后又开始搜索关于语法的信息，真是越来越有趣了。在学习语法夫人过程中，我在插入图片这里，产生了疑问，本地保存的图片长期累积不是会占用大量的电脑空间，于是又开始搜索关于图片的信息，哇！我发现新大陆了（原谅我这个土鳖)，可以利用图床来完成图片的存储，多翻折腾后，最后，找到我现在的搭配：Gridea+Typora+PicGo+Github图床+阿里云oss图床。不过到这里，依然还存在问题，但是这个过程还是很有趣，这种探索新知识，新领域的感觉相当不错呢！&lt;/p&gt;
-">我开启了新大陆之旅！</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://liidan.github.io/post/ce-shi-2/"" data-c="
-          &lt;p&gt;&lt;mark&gt;（1） 标题&lt;/mark&gt;&lt;/p&gt;
-&lt;h1 id=&#34;一级标题&#34;&gt;一级标题#&lt;/h1&gt;
-&lt;h2 id=&#34;二级标题&#34;&gt;二级标题##&lt;/h2&gt;
-&lt;h3 id=&#34;三级标题&#34;&gt;三级标题##&lt;/h3&gt;
-&lt;h4 id=&#34;四级标题&#34;&gt;四级标题####&lt;/h4&gt;
-&lt;h5 id=&#34;五级标题&#34;&gt;五级标题#####&lt;/h5&gt;
-&lt;h6 id=&#34;六级标题&#34;&gt;六级标题######&lt;/h6&gt;
-&lt;p&gt;&lt;mark&gt;（2）列表&lt;/mark&gt;&lt;/p&gt;
-&lt;h6 id=&#34;无序列表&#34;&gt;无序列表&lt;/h6&gt;
-&lt;p&gt;加号，减号，星号都可以，下一级别前加两个空格&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;我爱学习-
-&lt;ul&gt;
-&lt;li&gt;我很爱学习+
-&lt;ul&gt;
-&lt;li&gt;我真的很爱学习*&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h6 id=&#34;有序列表&#34;&gt;有序列表&lt;/h6&gt;
-&lt;p&gt;数字前加英文句号 . 按空格&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;我是美女&lt;/li&gt;
-&lt;li&gt;我长的很像美女&lt;/li&gt;
-&lt;li&gt;我真的是一个长得很像的美女&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;mark&gt;（3）引用&lt;/mark&gt;&lt;/p&gt;
-&lt;p&gt;在文本前加入 &amp;gt;，下一级别前加 &amp;gt;&amp;gt;，以此类推&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;世界真美好&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;现实很残酷&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;今年我失恋了&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;要注意符号和文本之间的空格&lt;/p&gt;
-&lt;p&gt;&lt;mark&gt;（4）图片和链接&lt;/mark&gt;&lt;/p&gt;
-&lt;h6 id=&#34;插入链接&#34;&gt;插入链接&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;在需要添加超链接的位置，[ ] 中括号内输入描述信息，( ) 括号内输入超链接地址&lt;/li&gt;
-&lt;li&gt;菜单方式，点击“格式”-&amp;gt; “超链接”，同样在 [ ] 和 ( ) 内编辑相应信息&lt;/li&gt;
-&lt;li&gt;快捷键 Ctrl+k&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.baidu.com/&#34;&gt;遇到问题不要慌，上百度&lt;/a&gt;&lt;/p&gt;
-&lt;h6 id=&#34;插入图片&#34;&gt;插入图片&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;语法输入：英文感叹号+英文中括号（内容为名称）+英文圆括号（内容为链接）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;中括号里是名称，圆括号里是链接&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;不建议本地存储，建议使用图床：picgo+github图床+阿里云图床&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;mark&gt;（5）字体&lt;/mark&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这里是粗体&lt;/strong&gt; ：前后用两个 * *包含一段文本&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;这里是斜体&lt;/em&gt;：用一个 * 包含一段文本&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;这里是斜体加粗&lt;/strong&gt;&lt;/em&gt; ：前后用三个 * **包含一段文本&lt;/p&gt;
-&lt;p&gt;&lt;s&gt;这里是删除线&lt;/s&gt;：删除线：前后用两个 ~~ 包含一段文字&lt;/p&gt;
-&lt;p&gt;这里是&lt;sup&gt;上标&lt;/sup&gt;：用两个 ^^ 包含一段文字，注意用英文字符&lt;/p&gt;
-&lt;p&gt;这里是&lt;sub&gt;下标&lt;/sub&gt;：用两个 ~~ 包含一段文字，注意用英文字符&lt;/p&gt;
-&lt;p&gt;&lt;mark&gt;（6）表格&lt;/mark&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;语法添加：用 | 隔开，如：|你好|你好|你好|，横线|----|----|----|，类推多加几行就可以了&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;一&lt;/th&gt;
-&lt;th&gt;二&lt;/th&gt;
-&lt;th&gt;三&lt;/th&gt;
-&lt;th&gt;四&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;学习&lt;/td&gt;
-&lt;td&gt;学习&lt;/td&gt;
-&lt;td&gt;学习&lt;/td&gt;
-&lt;td&gt;学习&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;ul&gt;
-&lt;li&gt;在 Typora 中，也可以按 Ctrl+T 直接添加表格&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;7分割线&#34;&gt;&lt;mark&gt;（7）分割线&lt;/mark&gt;&lt;/h2&gt;
-&lt;p&gt;用-或者*，多输入几个，按回车&lt;/p&gt;
-&lt;p&gt;&lt;mark&gt;（8）代码框&lt;/mark&gt;&lt;/p&gt;
-&lt;p&gt;用两个 ` 把中间的代码/文字包裹起来&lt;/p&gt;
-&lt;p&gt;用三个 ` 把中间的代码/文字包裹起来，就是代码框&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;我是代码&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;这个代码框
+    
+        
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://liidan.github.io/post/ce-shi-2/">
+                        Markdonw语法规则
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2020-09-22</time>
+                    
+                        <a href="https://liidan.github.io/tag/VUuXTctZ4/" class="post-tag i-tag
+                            i-tag-other_2">
+            #Markdown语法
+        </a>
+                        
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://liidan.github.io/post/ce-shi-2/" class="post-feature-image" style="background-image:url(https://i.loli.net/2020/09/23/nmX5Agh98coEUWG.jpg) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                        <div class="post-content-content">
+                                            （1） 标题
+一级标题#
+二级标题##
+三级标题##
+四级标题####
+五级标题#####
+六级标题######
+（2）列表
+无序列表
+加号，减号，星号都可以，下一级别前加两个空格
+
+我爱学习-
+
+我很爱学习+
+
+我真的很爱学习*
+
+
+
+
+
+有序列表
+数字前加英文句号 . 按空格
+
+我是美女
+我长的很像美女
+我真的是一个长得很像的美女
+
+（3）引用
+在文本前加入 &amp;gt;，下一级别前加 &amp;gt;&amp;gt;，以此类推
+
+世界真美好
+
+现实很残酷
+
+今年我失恋了
+
+
+
+要注意符号和文本之间的空格
+（4）图片和链接
+插入链接
+
+在需要添加超链接的位置，[ ] 中括号内输入描述信息，( ) 括号内输入超链接地址
+菜单方式，点击“格式”-&amp;gt; “超链接”，同样在 [ ] 和 ( ) 内编辑相应信息
+快捷键 Ctrl+k
+
+遇到问题不要慌，上百度
+插入图片
+
+
+语法输入：英文感叹号+英文中括号（内容为名称）+英文圆括号（内容为链接）
+
+
+中括号里是名称，圆括号里是链接
+
+
+不建议本地存储，建议使用图床：picgo+github图床+阿里云图床
+
+
+（5）字体
+这里是粗体 ：前后用两个 * *包含一段文本
+这里是斜体：用一个 * 包含一段文本
+这里是斜体加粗 ：前后用三个 * **包含一段文本
+这里是删除线：删除线：前后用两个 ~~ 包含一段文字
+这里是上标：用两个 ^^ 包含一段文字，注意用英文字符
+这里是下标：用两个 ~~ 包含一段文字，注意用英文字符
+（6）表格
+
+语法添加：用 | 隔开，如：|你好|你好|你好|，横线|----|----|----|，类推多加几行就可以了
+
+
+
+
+一
+二
+三
+四
+
+
+
+
+学习
+学习
+学习
+学习
+
+
+
+
+在 Typora 中，也可以按 Ctrl+T 直接添加表格
+
+（7）分割线
+用-或者*，多输入几个，按回车
+（8）代码框
+用两个 ` 把中间的代码/文字包裹起来
+用三个 ` 把中间的代码/文字包裹起来，就是代码框
+我是代码
+这个代码框
 可以用来画流程图之类的
 	按 tab 键即可缩进
 
-&lt;/code&gt;&lt;/pre&gt;
-">Markdonw语法规则</a>
-      </div>
-      
+
+
+                                        </div>
+                                        
+                                            <a class="btn btn-text" href="https://liidan.github.io/post/ce-shi-2/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+                <!-- 翻页 -->
+                
+                </div>
+                <!--  -->
+                <div class="main-container-middle"></div>
+                <!--  -->
+                <div id="sidebar" class="main-container-right">
+
+                    <!-- 个人信息 -->
+                    
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://liidan.github.io/images/avatar.png?v=1600824765160)">
+        </div>
+        <h1 class="id_card-title">
+            liidan&#39;s blog
+        </h1>
+        <h2 class="id_card-description">
+            一句话，就是干！
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
+
+        </div>
     </div>
-    <div class="page">
-      <div id="page_ul"></div>
-    </div>
-  </div>
-</div>
-<script>
-  !function () {
-    let searchMask = document.querySelector('#search_mask');
-    let result = document.querySelector('#result');
-    let items = document.querySelectorAll('.item');
-    let searchBox = document.querySelector('#search');
-    let statCount = document.querySelector('#stat_count');
-    let statTimes = document.querySelector('#stat_times');
-    let pageUl = document.querySelector('#page_ul');
-    let close = document.querySelector('#close');
     
-    close.addEventListener('click', function() {
-      searchMask.style = 'display: none;'
-    })
 
-    let finds = [];
-    let contents = [];
-    let pageSize = 10;
-    items.forEach(item => {
-      let a = item.querySelector('a');
-      contents.push({
-        title: a.innerText,
-        details: a.dataset.c,
-        link: a.href
-      })
-      item.remove();
-    })
+                        <!-- 公告栏 -->
+                        
 
-    function insertStr(soure, start, count) {
-      let newStr = soure.substr(start, count);
-      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
-    }
+                </div>
+            </div>
 
-    pageUl.addEventListener('click', function(event) {
-      let target = event.target;
-      if (target.__proto__ === HTMLSpanElement.prototype) {
-        appendResults(parseInt(target.dataset.i));
-      }
-    })
 
-    function appendResults(index) {
-      let htmlResult = '';
-      let start = index || 0;
-      let end = Math.min(start + pageSize, finds.length);
-      for (let i = start; i < end; i++) {
-        const current = finds[i];
-        let html = current.title;
-        let sum = 0;
-        let positions = current.positions;
-        positions.forEach(position => {
-          html = insertStr(html, position.start + sum, position.count);
-          sum += 9;
-        })
-        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
-      }
-      result.innerHTML = htmlResult;
-      pageUl.innerHTML = '';
-      let count = finds.length / pageSize;
-      let lis = '';
-      if (start !== 0) {
-        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
-      }
-      for (let i = 0; i < count; i++) {
-        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
-      }
-      if (start+1 < count) {
-        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
-      }
-      pageUl.innerHTML = lis;
-    }
 
-    function search(delay) {
-      let timer = null
-      return function () {
-        clearTimeout(timer)
-        timer = setTimeout(() => {
-          let start = Date.now();
-          let segments = searchBox.value.split(' ').filter(c => c != '');
-          if (segments.length <= 0) {
-            return;
-          }
-          finds = [];
-          let htmlResult = '';
-          contents.forEach(content => {
-            let title = content.title;
-            let positions = [];
-            let find = false;
-            segments.forEach((segment) => {
-              if (content.title.includes(segment)) {
-                find = true;
-                positions.push({
-                  start: content.title.indexOf(segment),
-                  count: segment.length
-                })
-              } else if (content.details.includes(segment)) {
-                find = true;
-              }
-            });
-            if (find) {
-              finds.push({
-                title: content.title,
-                link: content.link,
-                positions
-              });
-            }
-          })
-          appendResults(0);
-          statCount.textContent = finds.length;
-          statTimes.textContent = Date.now() - start;
-        }, delay)
-      }
-    }
-    searchBox.addEventListener('input', search(200));
-  }()
-</script>
-
-<input hidden id="copy" />
-<script>
-  !function () {
-    let times = document.querySelectorAll('.publish-time');
-    for (let i = 0; i < times.length; i++) {
-      let date = times[i].dataset.t;
-      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
-      if (time < 60) {
-        str = time + '秒之前';
-      } else if (time < 3600) {
-        str = Math.floor(time / 60) + '分钟之前';
-      } else if (time >= 3600 && time < 86400) {
-        str = Math.floor(time / 3600) + '小时之前';
-      } else if (time >= 86400 && time < 259200) {
-        str = Math.floor(time / 86400) + '天之前';
-      } else {
-        str = times[i].textContent;
-      }
-      times[i].textContent = str;
-    }
-  }();
-</script>
+            <div class="site-footer">
+  Powered by <a href="https://github.com/liidan/liidan.github.io" target="_blank">liidan</a> | 
+  <a class="rss" href="https://liidan.github.io/atom.xml" target="_blank">RSS</a>
+</div>
 
 <script>
-  let language = '';
-  if (language !== '') {
-    let map = new Map();
-    if (language === 'en') {
-      map.set('search', 'Search');
-      map.set('category', 'Categories');
-      map.set('article', 'Articles');
-      map.set('tag', 'Tags');
-      map.set('top', 'Top');
-      map.set('publish', 'published');
-      map.set('minute', ' minutes');
-      map.set('read-more', 'Read More');
-      map.set('view', 'View');
-      map.set('words', ' words');
-      map.set('category-in', 'category in');
-      map.set('preview', 'Meta');
-      map.set('index', 'Toc');
-      map.set('no-archives', "You haven't created yet");
-      map.set('archives', " articles in total");
-      map.set('cloud-tags', " tags in total");
-      map.set('copyright', "Copyright: ");
-      map.set('author', "Author: ");
-      map.set('link', "Link: ");
-      map.set('leave-message', "Leave a message");
-      map.set('format', "Links Format");
-      map.set('site-name', "Name: ");
-      map.set('site-link', "Link: ");
-      map.set('site-desc', "Desc: ");
-      map.set('stat', " related results, taking ");
-      map.set('stat-time', " ms");
-      map.set('site-img', "Image: ");
-    }
-
-    if (map.size > 0) {
-      let lanElems = document.querySelectorAll('.language');
-      lanElems.forEach(elem => {
-        let lan = elem.dataset.lan, text = map.get(lan);
-        if (elem.__proto__ === HTMLInputElement.prototype) {
-          elem.placeholder = text
-        } else {
-          if (elem.dataset.count) {
-            text = elem.dataset.count + text;
-          }
-          elem.textContent = text;
-        }
-      })
-    }
-  }
-  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
-  window.Clipboard = (function (window, document, navigator) {
-    var textArea,
-      copy;
-
-    // 判断是不是ios端
-    function isOS() {
-      return navigator.userAgent.match(/ipad|iphone/i);
-    }
-    //创建文本元素
-    function createTextArea(text) {
-      textArea = document.createElement('textArea');
-      textArea.value = text;
-      textArea.style.width = 0;
-      textArea.style.height = 0;
-      textArea.clientHeight = 0;
-      textArea.clientWidth = 0;
-      document.body.appendChild(textArea);
-    }
-    //选择内容
-    function selectText() {
-      var range,
-        selection;
-
-      if (isOS()) {
-        range = document.createRange();
-        range.selectNodeContents(textArea);
-        selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-        textArea.setSelectionRange(0, 999999);
-      } else {
-        textArea.select();
-      }
-    }
-
-    //复制到剪贴板
-    function copyToClipboard() {
-      try {
-        document.execCommand("Copy")
-      } catch (err) {
-        alert("复制错误！请手动复制！")
-      }
-      document.body.removeChild(textArea);
-    }
-
-    copy = function (text) {
-      createTextArea(text);
-      selectText();
-      copyToClipboard();
-    };
-
-    return {
-      copy: copy
-    };
-  })(window, document, navigator);
-
-  function copyCode(e) {
-    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
-      let code = e.currentTarget.querySelector('code');
-      var text = code.innerText;
-      if (e.srcElement.textContent === '复制成功') {
-        return;
-      }
-      e.srcElement.textContent = '复制成功';
-      (function (elem) {
-        setTimeout(() => {
-          if (elem.textContent === '复制成功') {
-            elem.textContent = '复制代码'
-          }
-        }, 1000);
-      })(e.srcElement)
-      Clipboard.copy(text);
-    }
-  }
-
-  let pres = document.querySelectorAll('pre');
-  pres.forEach(pre => {
-    let code = pre.querySelector('code');
-    let copyElem = document.createElement('span');
-    copyElem.classList.add('copy-code');
-    copyElem.textContent = '复制代码';
-    pre.appendChild(copyElem);
-    pre.onclick = copyCode
-  })
-
-</script>
-<script src="/media/js/motion.js"></script>
-
-<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-<script>
-  var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 200
-  });
+  hljs.initHighlightingOnLoad()
 </script>
 
-
-<script src="/media/js/mouse/love.js"></script>
-
-
-
-
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+</body>
 
 </html>
