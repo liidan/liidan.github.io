@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://liidan.github.io</id>
+    <id>https://coding-pages-bucket-3476179-7957873-1022-324728-1303236458.cos-website.ap-hongkong.myqcloud.com/</id>
     <title>liidan&apos;s blog</title>
-    <updated>2020-09-23T09:10:34.268Z</updated>
+    <updated>2020-09-23T19:18:48.887Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://liidan.github.io"/>
-    <link rel="self" href="https://liidan.github.io/atom.xml"/>
+    <link rel="alternate" href="https://coding-pages-bucket-3476179-7957873-1022-324728-1303236458.cos-website.ap-hongkong.myqcloud.com/"/>
+    <link rel="self" href="https://coding-pages-bucket-3476179-7957873-1022-324728-1303236458.cos-website.ap-hongkong.myqcloud.com/atom.xml"/>
     <subtitle>一句话，就是干！</subtitle>
-    <logo>https://liidan.github.io/images/avatar.png</logo>
-    <icon>https://liidan.github.io/favicon.ico</icon>
+    <logo>https://coding-pages-bucket-3476179-7957873-1022-324728-1303236458.cos-website.ap-hongkong.myqcloud.com/images/avatar.png</logo>
+    <icon>https://coding-pages-bucket-3476179-7957873-1022-324728-1303236458.cos-website.ap-hongkong.myqcloud.com/favicon.ico</icon>
     <rights>All rights reserved 2020, liidan&apos;s blog</rights>
     <entry>
+        <title type="html"><![CDATA[测试1]]></title>
+        <id>https://coding-pages-bucket-3476179-7957873-1022-324728-1303236458.cos-website.ap-hongkong.myqcloud.com/post/ce-shi-1/</id>
+        <link href="https://coding-pages-bucket-3476179-7957873-1022-324728-1303236458.cos-website.ap-hongkong.myqcloud.com/post/ce-shi-1/">
+        </link>
+        <updated>2020-09-23T19:18:27.000Z</updated>
+        <content type="html"><![CDATA[<p>coning测试</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[关于手机端不能访问的问题]]></title>
-        <id>https://liidan.github.io/post/guan-yu-shou-ji-duan-bu-neng-fang-wen-de-wen-ti/</id>
-        <link href="https://liidan.github.io/post/guan-yu-shou-ji-duan-bu-neng-fang-wen-de-wen-ti/">
+        <id>https://coding-pages-bucket-3476179-7957873-1022-324728-1303236458.cos-website.ap-hongkong.myqcloud.com/post/guan-yu-shou-ji-duan-bu-neng-fang-wen-de-wen-ti/</id>
+        <link href="https://coding-pages-bucket-3476179-7957873-1022-324728-1303236458.cos-website.ap-hongkong.myqcloud.com/post/guan-yu-shou-ji-duan-bu-neng-fang-wen-de-wen-ti/">
         </link>
         <updated>2020-09-23T08:00:01.000Z</updated>
         <content type="html"><![CDATA[<p>  嗯嘛，本来一切都坎坎坷坷的一步一步的，总算是建立好了这个博客网站，但是问题总是有的，手机端不能访问！！</p>
@@ -29,8 +38,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[我开启了新大陆之旅！]]></title>
-        <id>https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu/</id>
-        <link href="https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu/">
+        <id>https://coding-pages-bucket-3476179-7957873-1022-324728-1303236458.cos-website.ap-hongkong.myqcloud.com/post/wo-kai-qi-liao-xin-da-lu-zhi-lu/</id>
+        <link href="https://coding-pages-bucket-3476179-7957873-1022-324728-1303236458.cos-website.ap-hongkong.myqcloud.com/post/wo-kai-qi-liao-xin-da-lu-zhi-lu/">
         </link>
         <updated>2020-09-22T20:06:15.000Z</updated>
         <content type="html"><![CDATA[<p>我前天看到一篇关于自己创建静态博客的文章，于兴趣来了，就开始搜索此类相关的信息，就找到了Gride，然后开始安装，又发现写文章需要了解Markdown语法，然后又开始搜索关于语法的信息，真是越来越有趣了。在学习语法夫人过程中，我在插入图片这里，产生了疑问，本地保存的图片长期累积不是会占用大量的电脑空间，于是又开始搜索关于图片的信息，哇！我发现新大陆了（原谅我这个土鳖)，可以利用图床来完成图片的存储，多翻折腾后，最后，找到我现在的搭配：Gridea+Typora+PicGo+Github图床+阿里云oss图床。不过到这里，依然还存在问题，但是这个过程还是很有趣，这种探索新知识，新领域的感觉相当不错呢！</p>
@@ -38,8 +47,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Markdonw语法规则]]></title>
-        <id>https://liidan.github.io/post/ce-shi-2/</id>
-        <link href="https://liidan.github.io/post/ce-shi-2/">
+        <id>https://coding-pages-bucket-3476179-7957873-1022-324728-1303236458.cos-website.ap-hongkong.myqcloud.com/post/ce-shi-2/</id>
+        <link href="https://coding-pages-bucket-3476179-7957873-1022-324728-1303236458.cos-website.ap-hongkong.myqcloud.com/post/ce-shi-2/">
         </link>
         <updated>2020-09-21T20:52:58.000Z</updated>
         <content type="html"><![CDATA[<h1 id="一-标题">一、标题</h1>
@@ -64,7 +73,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="2-序列表">2. 序列表</h2>
+<h2 id="2-有序列表">2. 有序列表</h2>
 <p><mark>数字前加英文句号 . 按空格</mark></p>
 <ol>
 <li>我是美女</li>
