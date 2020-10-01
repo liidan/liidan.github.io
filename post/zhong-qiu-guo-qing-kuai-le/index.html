@@ -1,2598 +1,2023 @@
-<!doctype html>
-<html amp lang="zh-Hans">
+<!DOCTYPE html>
+<html>
 
 <head>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="今天是中秋节，也是国庆节的第一天。
-虽然，是一个人，但也要保持快乐。
-一个人，也要有节日的氛围和过节的仪式。
-😊😊😊😊😊😊
-" />
-<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
-<link rel="preconnect dns-prefetch" href="https://cdn.jsdelivr.net/" crossorigin>
-<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="&lt;meta name=&#34;keywords&#34; content=&#34;博客语法&#34;/&gt;">
+<meta name="description" content="要么忙着活，要么忙着死！">
+<meta name="theme-color" content="#ff6b6b">
 <title>中秋+国庆+快乐！ | liidan&#39;s blog</title>
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/favicon.ico?v=1601542259422">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/css/gemini.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/hljs/styles/monokai-sublime.css"
+  rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/styles/main.css">
+
+<script src="https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
 
 
-  
-
-    
-        <style amp-custom>
-            body {
-                width: 100vw;
-                display: flex;
-                flex-direction: column;
-                font-family: 'PT Serif',-apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif, serif;
-                background: white;
-            }
-            *:focus{
-                outline: none;
-            }
-            @font-face {
-                font-family: 'iconfont';
-                src: url('https://cdn.jsdelivr.net/gh/jiansing/gridea-theme-inlineamp/inlineamp/assets/media/fonts/iconfont.eot?20200105#iefix') format('embedded-opentype'),
-                    url('https://cdn.jsdelivr.net/gh/jiansing/gridea-theme-inlineamp/inlineamp/assets/media/fonts/iconfont.woff2?20200105') format('woff2'),
-                    url('https://cdn.jsdelivr.net/gh/jiansing/gridea-theme-inlineamp/inlineamp/assets/media/fonts/iconfont.woff?20200105') format('woff'),
-                    url('https://cdn.jsdelivr.net/gh/jiansing/gridea-theme-inlineamp/inlineamp/assets/media/fonts/iconfont.ttf?20200105') format('truetype'),
-                    url('https://cdn.jsdelivr.net/gh/jiansing/gridea-theme-inlineamp/inlineamp/assets/media/fonts/iconfont.svg?20200105#iconfont') format('svg');
-            }
-            @font-face {
-              font-family: 'PT Serif';
-              font-style: normal;
-              font-weight: 400;
-              font-display: swap;
-              src: local('PT Serif'), local('PTSerif-Regular'), url('https://cdn.jsdelivr.net/gh/jiansing/gridea-theme-inlineamp/inlineamp/assets/media/fonts/ptserif.woff2') format('woff2');
-              unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-            }
-            .iconfont {
-                font-family: "iconfont";
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-            }
-            /* CSS reset */
-            textarea,
-            input[type="password"],
-            input[type="text"],
-            input[type="url"],
-            input[type="email"],
-            input[type="submit"]
-            {
-                -webkit-appearance: none;
-                border-radius: 0;
-            }
-            header {
-                width: 100vw;
-                background: #000000;
-                display: flex;
-                justify-content: center;
-            }
-            .top-container {
-                width: 71.4286vw;
-                height: 100%;
-            }
-            .title-menus-area {
-                display: flex;
-                width: 100%;
-                height: 5.8095vw;
-                justify-content: space-between;
-            }
-            .blog-title {
-                display: flex;
-                font-size: 1.6667vw;
-                font-weight: bold;
-                color: white;
-                margin-top: 1.2857vw;
-                white-space: nowrap;
-                text-decoration: none;
-                line-height: 1.6667vw;
-            }
-            .tagline {
-                display: flex;
-                width: 100%;
-                flex-direction: column;
-                align-items: center;
-            }
-            .tagline-main {
-                color: white;
-                font-size: 2.9286vw;
-                margin-bottom: 1.6667vw;
-                line-height: 2.9286vw;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .tagline-main:after {
-                content: '';
-                display: flex;
-                background: #F6F8FA;
-                width: 4.7619vw;
-                height: 0.2381vw;
-                margin-top: 1.6667vw;
-            }
-            .tagline-sub {
-                color: #8A8A8A;
-                font-size: 0.9524vw;
-                line-height: 1.6667vw;
-                margin-bottom: 3.5119vw;
-            }
-            .tagline-sub a {
-                text-decoration: none;
-                color: unset;
-            }
-            .tagline-sub a:hover {
-                color: #004578;
-            }
-            /* go top button */
-            .scrolltop-wrap {
-                box-sizing: border-box;
-                position: absolute;
-                top: 11.6667vw;
-                right: -3.9048vw;
-                bottom: 0;
-            }
-            .go-top {
-                width: 2.9762vw;
-                height: 2.9762vw;
-                font-size: 1.1905vw;
-                text-decoration: none;
-                background: #004578;
-                border-radius: 100%;
-                color: white;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                cursor: pointer;
-                
-                position: fixed;
-                position: -webkit-sticky;
-                position: sticky;
-                top: -5.9524vw;
-                transform: translateY(100vh);
-                overflow: hidden;
-            }
-            @media only screen and (max-width: 640px){
-                .top-container {
-                    width: 100%;
-                }
-                .title-menus-area {
-                    padding-top: 4.6667vw;
-                    height: auto;
-                    position: relative;
-                }
-                .blog-title { 
-                    margin-top: 0;
-                    margin-left: 5.3333vw;
-                    font-size: 3.7333vw;
-                    line-height: 3.7333vw;
-                }
-                .tagline {
-                    margin: 6vw auto 0 auto;
-                    width:89.3333vw;
-                }
-                .tagline-main {
-                    font-size: 5.0667vw;
-                    line-height: 5.0667vw;
-                    margin-bottom: 2vw;
-                }
-                .tagline-main:after {
-                    width: 8.8vw;
-                    height: 0.44vw;
-                    margin-top: 3.0667vw;
-                }
-                .tagline-sub {
-                    font-size: 2.9333vw;
-                    line-height: 5.1333vw;
-                }
-                .scrolltop-wrap {
-                    display: none;      
-                }
-            }/* top menu */
-            .top-menus {
-                display: flex;
-                padding-right: 1.7619vw;
-                padding-top: 1.5833vw;
-                height: 0.9524vw;
-            }
-            .top-menus>nav>ul>li {
-                display: flex;
-                list-style: none;
-                margin-left: 2.393vw;
-                margin-bottom: 0.2976vw;
-                position: relative;
-                height: 1.9644vw;
-            }
-            .top-menus>nav>ul>li>a{
-                color: white;
-                font-size: 0.9524vw;
-                line-height: 0.9524vw;
-                text-decoration: none;
-            }
-            .top-menus .menu {
-                display: flex;
-                margin: 0;
-                padding: 0;
-                white-space: nowrap;
-                list-style: none;
-                justify-content: flex-end;
-                flex-wrap: wrap;
-            }
-            /* sub menu */
-            .top-menus>nav>ul>li.menu-item-has-children>a:after {
-                font-family: "iconfont";
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-                content: '\e62b';
-                margin-left: 0.5952vw;
-                font-size: 0.9524vw;
-            }
-            .top-menus>nav>ul>li:hover a {
-                color: #004578;
-            }
-            .top-menus>nav>ul>li:hover>ul {
-                opacity: 1;
-                visibility: visible;
-                transition: 0.2s all ease;
-            }
-            .top-menus>nav>ul>li>.sub-menu {
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                margin-top:1.9345vw;
-                display: flex;
-                flex-direction: column;
-                background: #2A2A2A;
-                border: #4A4A4A 0.0595vw solid;
-                padding-top: 0.4167vw;
-                padding-bottom: 0.4167vw;
-                padding-left: 1.2501vw;
-                padding-right: 1.2501vw;
-                z-index: 1;
-                overflow:hidden;   
-                opacity: 0;
-                visibility: hidden;
-                transition: 0.2s all ease; 
-            }
-            .top-menus>nav>ul>li>.sub-menu>li {
-                list-style:none;
-                border-bottom: #4A4A4A 0.0595vw solid;
-            }
-            .top-menus>nav>ul>li>.sub-menu>li:last-child {
-                border-bottom: 0
-            }
-            .top-menus ul>li>.sub-menu>li>a {
-                font-size: 0.8333vw;
-                line-height: 0.8333vw;
-                color: white;
-                text-decoration: none;
-                width: 100%;
-                min-height: 2.4405vw;
-                display: flex;
-                align-items: center;
-            }
-            /* third level menu */
-            .top-menus>nav>ul>li>.sub-menu>li ul {
-                padding-left: 0.893vw;
-            }
-            .top-menus>nav>ul>li>.sub-menu>li>ul li {
-                list-style:none;
-            }
-            .top-menus>nav>ul>li>.sub-menu>li ul li a{
-                color: rgba(255,255,255,0.4);
-                min-height: unset;
-                margin-bottom: 0.6548vw;
-            }
-            .top-menus>nav>ul>li>.sub-menu>li ul li a:before {
-                content: '-';
-                margin-right: 0.2976vw;
-            }
-            .top-menus>nav>ul>li>.sub-menu>li a:hover {
-                color: #004578;
-            }
-            #header-menu-button {
-                display: none;
-            }
-            @media only screen and (max-width: 640px){
-                /* expand menu */
-                #header-menu-button + header .top-menus {
-                    display: flex;
-                    position: absolute;
-                    width: 100%;
-                    padding: 0;
-                    height: auto;
-                    top: 0;
-                    z-index: 1;
-                    pointer-events: none;
-                }
-                #header-menu-button:checked + header .top-menus {
-                    pointer-events: auto;
-                }
-                #header-menu-button:checked + header .top-menus nav>ul{
-                    padding-left: 4vw;
-                    padding-right: 4vw;
-                    opacity: 1;
-                    visibility: visible;
-                    padding-bottom: 16vw;
-                }
-                #header-menu-button + header .top-menus nav>ul {
-                    min-height: 100vh;
-                    position:fixed;
-                    top: 0;
-                    bottom: 0;
-                    overflow: scroll;
-                    flex-wrap: nowrap;
-                    opacity: 0;
-                    transition: 0.6s all ease;
-                    visibility: hidden;
-                    display: flex;
-                    width: 100%;
-                    flex-direction: column;
-                    background: #000000;
-                    justify-content: start;
-                    padding-top: 0;
-                    padding-bottom: 4.1333vw;
-                    box-sizing: border-box;
-                }
-                #header-menu-button + header .top-menus nav>ul>li{
-                    margin: 0;
-                    height: auto;
-                    padding-left: 1.3333vw;
-                    padding-right: 1.3333vw;
-                    border-bottom: 0.1333vw #4A4A4A solid;
-                    flex-direction: column;
-                    padding-top: 4.0667vw;
-                    padding-bottom: 4.0667vw;
-                }
-                #header-menu-button + header .top-menus nav>ul>li:first-child>a {
-                    padding-top: 0;
-                }
-                #header-menu-button + header .top-menus nav>ul>li:last-child {
-                    border-bottom: none;
-                }
-                #header-menu-button + header .top-menus nav>ul>li>a {
-                    font-size: 3.7333vw;
-                    line-height: 3.7333vw;
-                }
-                .top-menus>nav>ul>li.menu-item-has-children>a:after {
-                    display: none;
-                }
-                ul#menu-top-menu li {
-                    display: inline-flex;
-                    white-space: normal;
-                }
-                .top-menus>nav>ul>li>.sub-menu {
-                    display: flex;
-                    transform: none;
-                    position: relative;
-                    left: 0;
-                    margin-top: 0;
-                    margin-bottom: 4vw;
-                    background: inherit;
-                    border: none;
-                    padding: 0;
-                    padding-left: 3vw;
-                    opacity: 1;
-                    visibility: visible;
-                }
-                .top-menus>nav>ul>li:hover a {
-                    color: white;
-                }
-                .top-menus>nav>ul li a:hover {
-                    color: #004578;
-                }
-                .top-menus>nav>ul>li>.sub-menu>li {
-                    border: none;
-                    margin-top: 3.7067vw;
-                    flex-direction: column;
-                }
-                .top-menus>nav>ul>li>.sub-menu>li>a:before {
-                    content: '-';
-                    margin-right: 0.8vw;
-                    color: rgba(255,255,255,0.4);
-                }
-                .top-menus>nav>ul>li>.sub-menu>li ul {
-                    padding-left: 3vw;
-                }
-                .top-menus>nav>ul>li>.sub-menu>li ul li a {
-                    margin-bottom: 0;
-                    margin-top: 3.7067vw;
-                }
-                .top-menus ul>li>.sub-menu>li>a {
-                    font-size: 3.7333vw;
-                    line-height: 3.7333vw;
-                    color: rgba(255,255,255,0.4);
-                }
-                #header-menu-button{
-                    display:flex;
-                    margin: 0;
-                    -webkit-appearance: none;
-                    appearance: none;
-                    line-height: 3.7333vw;
-                    width: 4vw;
-                    height: 4vw;
-                    z-index: 2;
-                    position: absolute;
-                    right: 4vw;
-                    top: 4vw;
-                    border: none;
-                    background: transparent;
-                }
-                /* hide for menu scroll */
-                #header-menu-button:checked + header + main {
-                    animation: mainhide 2s ease;
-                    animation-fill-mode: forwards; 
-                    -webkit-animation-fill-mode: forwards; 
-                    overflow: hidden;
-                }
-                @keyframes mainhide {
-                    from {
-                        max-height: auto;
-                    }
-                    to {
-                        overflow: hidden;
-                        max-height: 0;
-                    }
-                }
-                #header-menu-button:checked {
-                    position: fixed;
-                }
-                #header-menu-button:checked:after{
-                    display: flex;
-                    content: '\e63c';
-                    transform: scale(0.7);
-                }
-                #header-menu-button:after{
-                    content: '';  
-                    color: white;
-                    font-family: "iconfont";
-                    font-size: 5.3333vw;
-                    -webkit-font-smoothing: antialiased;
-                    -moz-osx-font-smoothing: grayscale;
-                    content: '\e63e';
-                }
-            }            
-            /* body content */
-            main {
-                width: 71.4286vw;
-                display: flex;
-                margin: 0 auto;
-                justify-content: space-between;
-                padding-top: 2.9762vw;
-                position: relative;
-            }
-            .main-container {
-                width: 48.2143vw;
-            }
-            .list-box {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 2.9762vw;
-            }
-            .title-img {
-                width: 48.2143vw;
-                height: 17.8571vw;
-                position: relative;
-            }
-            .title-img amp-img.contain img {
-                object-fit: cover;
-                object-position: top;
-                transition: all .5s;
-            }
-            a.title-img:hover amp-img.contain img {
-                object-fit: cover;
-                transform: scale(1.08);
-                -webkit-transform: scale(1.08);
-                -moz-transform: scale(1.08);
-            }
-            .post-info {
-                position: relative;
-                padding-left: 1.7857vw;
-                padding-top: 1.5119vw;
-                padding-right: 1.7857vw;
-                padding-bottom: 1.7857vw;
-                width: 48.2143vw;
-                border: 0.0595vw solid #E6E6E6;
-                box-sizing: border-box;
-                display: flex;
-                flex-direction: column;
-            }
-            .post-cate {
-                font-size: 0.9524vw;
-                line-height: 1.5476vw;
-                color: #004578;
-                text-decoration: none;
-                margin-right: 0.9644vw;  
-                display: flex;
-                align-items: center;
-            }
-            .sticky-tag {
-                display: flex;
-                align-items: center;  
-                color: #004578;
-            }
-            .post-cate:before,
-            .sticky-tag:before {
-                display: flex;
-                content: '';
-                width:0.0595vw;
-                min-width: 1px;
-                height: 0.6548vw;
-                background: #004578; 
-                margin-right: 0.9524vw;       
-            }
-            .post-cate:first-child:before {
-                display: none;
-            }
-            .sticky-tag .sticky-text {
-                font-size: 0.9524vw;
-                text-transform: uppercase;
-            }
-            .sticky-tag .sticky-text:before {
-                font-family: "iconfont";
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-                content: '\e63f';
-                font-size: 0.9524vw;
-                margin-right: 0.4167vw;
-            }
-            .post-title {
-                font-size: 1.3613vw;
-                line-height: 2.381vw;
-                margin-top: 0.5952vw;
-                margin-bottom: 0;
-                width: 39.881vw;
-                word-break: break-all;
-            }
-            .post-title:after {
-                display: flex;
-                content: '';
-                width: 4.1667vw;
-                height: 0.2976vw;
-                background: #004578;
-                margin-top: 0.7321vw;
-            }
-            .post-title a {
-                text-decoration: none;
-                color: #000000;
-            }
-            .post-excerpt {
-                margin-top: 1.4286vw;
-                margin-bottom: 1.1905vw;
-                font-size: 0.9524vw;
-                line-height: 1.6667vw;
-                color: #8A8A8A;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 3;
-                overflow: hidden;
-                visibility:visible;
-            }
-            .flex-box {
-                display: flex;
-                align-items: center;
-            }
-            .meta-category {
-                flex-wrap: wrap;
-                padding-right: 4.1667vw;
-            }
-            .justify-between {
-                justify-content: space-between;
-            }
-            .read-more {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 0.8333vw;
-                line-height: 0.8333vw;
-                text-decoration: none;
-                min-width: 9.1667vw;
-                min-height: 2.1429vw;
-                box-sizing: border-box;
-                padding-left: 1.1905vw;
-                padding-right: 1.1905vw;
-                padding-top: 0.7143vw;
-                padding-bottom: 0.7143vw;
-                color: #004578;
-                border: 0.0595vw #004578 solid;
-                transition: all .2s;
-                text-transform: uppercase;
-            }
-            .read-more:hover {
-                background: #004578;
-                color: white;
-            }
-            .icon-ml-readmore {
-                margin-left: 0.625vw;
-                font-size: 1.1905vw;
-            }
-            .post-meta-box {
-                margin-top: 0.7143vw;
-                font-size: 0.8333vw;
-            }
-            .post-meta {
-                font-size: 0.8333vw;
-                color: #1A1A1A;
-                text-decoration: none;
-                margin-left: 1.4881vw;
-                display: inline-flex;
-                align-items: center;
-            }
-            .icon-mr-postmeta {
-                margin-right: 0.5952vw;
-                font-size: 1.4881vw;
-            }
-            .post-meta .icon-like-sp {
-                font-size: 1.1905vw;
-            }
-            .post-meta-box a.edit-link:after {
-                content: '';
-                display: flex;
-                background: #979797;
-                margin-left: 1.4881vw;
-                width: 0.0595vw;
-                height: 0.6548vw;
-            }
-            .post-publish-date {
-                width: 4.1667vw;
-                height: 4.7619vw;
-                background: #F6F6F7;
-                position: absolute;
-                right: 1.2501vw;
-                top: -0.8333vw;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            .post-publish-date .post-date {
-                color: #004578;
-                font-size: 1.3095vw;
-                line-height: 2.2916vw;
-                font-weight: bold;
-            }
-            .post-publish-date .post-month {
-                color: #000000;
-                font-size: 0.8333vw;
-                line-height: 1.4583vw;
-                text-transform: uppercase;
-            }
-            .list-box:last-child {
-                margin-bottom: 2.381vw;
-            }
-            .pagination .screen-reader-text {
-                display: none;
-            }
-            .nav-links {
-                margin-top: 2.9762vw;
-                margin-bottom: 2.9762vw;
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-            }
-            .nav-links .page-numbers,.nav-links .post-page-numbers {
-                min-width: 2.1429vw;
-                height: 2.1429vw;
-                border: 0.0595vw #004578 solid;
-                color: #004578;
-                font-size: 1.0714vw;
-                line-height: 1.0714vw;
-                text-decoration: none;
-                display: inline-flex;
-                justify-content: center;
-                align-items: center;
-                margin-left: 0.4762vw;
-                margin-right: 0.4762vw;
-                margin-bottom: 0.4762vw;
-                box-sizing: border-box;
-            }
-            .nav-links .current, .nav-links a.page-numbers:hover,.nav-links a.post-page-numbers:hover {
-                background: #004578;
-                color: white;
-            }
-            .pagination>.nav-links>.dots {
-                border: none;
-                padding-bottom: 0.5714vw;
-            }
-            @media only screen and (max-width: 640px){
-                /* main body */
-                main {
-                    width: 100%;
-                    flex-direction: column;
-                    align-items: center;
-                    padding-top: 6.6667vw;
-                }
-                .main-container {
-                    width: 92vw;
-                }
-                .title-img {
-                    width: 92vw;
-                    height: 34.1333vw;
-                }
-                .post-info {
-                    width: 92vw;
-                    padding: 3.4667vw;
-                    border: 0.2667vw solid #E6E6E6;
-                }
-                .post-publish-date {
-                    width: 10.6667vw;
-                    height: 12.1333vw;
-                    top: -2vw;
-                    right: 2.8vw;
-                }
-                .post-publish-date .post-date {
-                    font-size: 3.4667vw;
-                    line-height: 6.0667vw;
-                }
-                .post-publish-date .post-month {
-                    font-size: 2.1333vw;
-                    line-height: 3.7333vw;
-                }
-                .post-cate {
-                    font-size: 3.4667vw;
-                    line-height: 4.8vw;
-                    margin-right: 2.2133vw;
-                }
-                .post-cate:before,
-                .sticky-tag:before {
-                    width: 0.1333vw;
-                    height: 1.8933vw;
-                    margin-right: 2.2vw;
-                }
-                .sticky-tag .sticky-text {
-                    font-size: 2.9333vw;
-                    line-height: 2.9333vw;
-                }
-                .sticky-tag .sticky-text:before {
-                    font-size: 2.8vw;
-                    margin-right: 2vw;
-                }
-                .post-title {
-                    margin-top: 2.5333vw;
-                    margin-bottom: 0;
-                    font-size: 4.8vw;
-                    line-height: 6.6667vw;
-                    width: 74.4vw;
-                }
-                .post-title:after {
-                    width: 9.3333vw;
-                    height: 0.8vw;
-                    margin-top: 2.2667vw;
-                }
-                .post-excerpt {
-                    margin-top:3.3333vw;
-                    margin-bottom: 3.3333vw;
-                    font-size: 4vw;
-                    line-height: 5.6vw;
-                }
-                .read-more {
-                    font-size: 2.4533vw;
-                    line-height: 2.4533vw;
-                    min-width: 26.4933vw;
-                    min-height: 6.1333vw;
-                    padding-left: 3.7333vw;
-                    padding-right: 3.7333vw;
-                    padding-top: 2vw;
-                    padding-bottom: 2vw;
-                    border: 0.1333vw #004578 solid;
-                }
-                .icon-ml-readmore {
-                    margin-left: 1.3333vw;
-                    font-size: 3.3333vw;
-                }
-                .post-meta {
-                    font-size: 2.1333vw;
-                    margin-left: 3.2vw;
-                }
-                .icon-mr-postmeta {
-                    margin-right: 1.8667vw;
-                    font-size: 3.4667vw;
-                }
-                .post-meta-box a.edit-link:after {
-                    margin-left: 3.2133vw;
-                    width: 0.1333vw;
-                    height: 1.68vw;
-                }
-                .post-meta .icon-like-sp {
-                    font-size: 2.4vw;
-                }
-                .list-box {
-                    margin-bottom: 5.3333vw;
-                }
-                .nav-links .page-numbers,.nav-links .post-page-numbers {
-                    min-width: 8vw;
-                    height: 8vw;
-                    border: 0.1333vw #004578 solid;
-                    font-size: 4vw;
-                    line-height: 4vw;
-                    margin-left: 1.7733vw;
-                    margin-right: 1.7733vw;
-                    margin-bottom: 1.7733vw;
-                }
-                .pagination>.nav-links>.dots {
-                    padding-bottom: 2.6667vw;
-                }
-                .list-box:last-child {
-                    margin-bottom: 5.3333vw;
-                }
-                .meta-category {
-                    flex-wrap: wrap;
-                    padding-right: 10.6667vw;
-                }
-            }  
-            .sidebar {
-                width: 19.6429vw;
-                min-height: 29.7619vw;
-            }
-            .sidebar>aside:first-child {
-                margin-top: 0;
-            }
-            .widget {
-                width: 100%;
-            }
-            .widget-title {
-                color: black;
-                font-size: 1.0714vw;
-                line-height: 1.0714vw;
-                margin-top: 0;
-                margin-bottom: 1.6667vw;
-                text-transform: uppercase;
-            }
-            .widget-title:after {
-                display: flex;
-                margin-top: 1.1131vw;
-                content: '';
-                width: 3.7501vw;
-                height: 0.119vw;
-                min-height: 1.5px;
-                background: #DEDEDE;
-            }
-            .widget {
-                border-bottom: 0.0595vw #EBEBEB solid;
-                padding-bottom: 2.1429vw;
-                margin-bottom: 2.9762vw;
-            }
-            .widget:last-child {
-                margin-bottom: 0;
-                border-bottom: none;
-            }
-            .widget>ul {
-                overflow-wrap: break-word;
-                margin: 0;
-                padding-left: 0;
-                
-            }
-            .widget_categories>ul>li>ul.children>li.cat-item {
-                color: black;
-                font-size: 0.9524vw;
-                margin-top: 1.1905vw;
-            }
-            .widget_categories>ul>li>ul.children>li.cat-item ul.children li {
-                color: black;
-                font-size: 0.9524vw;
-                margin-top: 0.9524vw;
-            }
-            .widget_categories>ul>li.cat-item:before {
-                content: '\e641';
-                font-family: "iconfont";
-                color: #004578;
-                font-size: 0.9524vw;
-                margin-right: 0.7143vw;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-            }
-            .widget_categories>ul>li>ul.children {
-                padding-left: 1.4286vw;
-            }
-            .widget_categories>ul>li>ul.children>li>ul.children {
-                padding-left: 2.619vw;
-            }
-            .widget_categories>ul>li>ul.children>li>ul.children>li ul {
-                padding-left: 1.3095vw;
-            }
-            .widget_categories ul.children {
-                padding-left: 0.2976vw;
-                display: flex;
-                flex-direction: column;
-            }
-            .widget_categories>ul>li>ul.children>li:before {
-                content: "\e642";
-                display: inline-flex;
-                font-family: "iconfont";
-                color: #004578;
-                font-size: 0.9524vw;
-                margin-right: 0.5952vw;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-            }
-            .widget_categories li.cat-item a {
-                color: black;
-                text-decoration: none;
-            }
-            .widget_categories ul{
-                list-style: none;
-            }
-            .widget_categories .screen-reader-text {
-                display: none;
-            }
-            /* common widgets */
-            .widget ul li{
-                font-size: 0.9524vw;
-                line-height: 1.5476vw;
-                margin-top: 1.25vw;
-                list-style: none;
-                position: relative;
-                padding-left: 1.6667vw;
-            }
-            .widget ul li:first-child {
-                margin-top: 0;
-            }
-            .widget ul li a {
-                color: black;
-                text-decoration: none;
-            }
-            .widget ul li a:hover {
-                color: #004578;
-            }
-            .widget>ul>li:before {
-                content: '\e62d';
-                font-family: "iconfont";
-                color: #004578;
-                font-size: 0.893vw;
-                margin-right: 0.7143vw;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-                position: absolute;
-                left: 0;
-            }
-            .widget .screen-reader-text {
-                display: none;
-            }
-            /* search widgets */
-            .widget_search form {
-                display: flex;
-                position: relative;
-                align-items: center;
-            }
-            .widget_search {
-                border-bottom: none;
-                padding-bottom: 0;
-            }
-            .widget_search form input[type='text'] {
-                width: 19.5833vw;
-                height: 2.6787vw;
-                border: 0.0595vw #E6E6E6 solid;
-                border-radius: 0.2381vw;
-                padding-left: 1.1905vw;
-                padding-right: 2.9762vw;
-                font-size: 0.8333vw;
-            }
-            .widget_search form input[type='text']::placeholder {
-                font-size: 0.8333vw;
-                color: #8A8A8A;
-            }
-            .widget_search form button[type='submit'] {
-                position: absolute;
-                right: 0;
-                padding: 0;
-                border: none;
-                background: unset;
-                z-index: 1;
-                cursor:pointer;
-            }
-            .widget_search form button[type='submit']:before {
-                content: '\e62c';
-                font-family: "iconfont";
-                color: #B0B0B0;
-                font-size: 1.7857vw;
-                margin-right: 0.7143vw;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-            }
-            /* profile widgets */
-            .widget_profile {
-                padding-bottom: 0;
-                border-bottom: 0;
-            }
-            .widget_profile .profile-box {
-                width:19.6429vw;
-                min-height:9.2262vw;
-                border:0.0595vw #E6E6E6 solid;
-                display: flex;
-                justify-content: center;
-                position: relative;
-                margin-top: 2.6787vw;
-            }
-            .widget_profile .profile-avatar {
-                width: 5.3571vw;
-                height: 5.3571vw;
-                position: absolute;
-                top: -2.6787vw;
-            }
-            .widget_profile .profile-avatar img {
-                border-radius: 100%;
-            }
-            .widget_profile .profile-content {
-                font-size: 0.9524vw;
-                padding: 2.9762vw 1.6667vw 1.9048vw 1.6667vw;
-                width: 100%;
-                box-sizing: border-box;
-                word-break: break-word;
-                line-height: 1.8;
-            }
-            .widget_profile .profile-content li {
-                margin-top: 0.5952vw;
-            }
-            .widget_profile  ol, .widget_profile ul {
-                padding-left: 0.9524vw;
-                margin-top: 0.5952vw;
-                margin-bottom: 0.5952vw;
-            }
-            .widget_profile  .profile-content p {
-                margin-block-start: auto;
-                margin-block-end: auto;
-                margin-top: 0.5952vw;
-            }
-            .widget_profile img {
-                max-width: 100%;
-                height: auto;
-            }
-            .widget_profile .wp-video, .widget_profile .wp-video video{
-                max-width: 100%;
-                height: auto;
-            }
-            .widget_profile a {
-                font-size: 0.9524vw;
-                color: #004578;
-                text-decoration: none;
-            }
-            .widget ul li span, .widget ul li a {
-                color: black;
-            }
-            .widget ul li span.post-date {
-                color: #888888;
-                font-style: italic;
-            }
-            li.recentcomments {
-                color: #888888;
-            }
-            @media only screen and (max-width: 640px){
-                /* side bar */
-                .sidebar {
-                    width: 92vw;
-                    margin-top: 8vw;
-                }
-                .widget_profile .profile-box {
-                    width: 92vw;
-                    margin-top: 12.5333vw;
-                    border: 0.2667vw #E6E6E6 solid;
-                }
-                .widget_profile .profile-avatar {
-                    width: 25.0667vw;
-                    height: 25.0667vw;
-                    top: -12.5333vw;
-                }
-                .widget_profile .profile-content{
-                    font-size: 4vw;
-                    line-height: 5.8667vw;
-                    padding: 17.8667vw 8.0667vw 4.8267vw 8.0667vw;
-                }
-                .widget_profile .profile-content li {
-                    font-size: 4vw;
-                    line-height: 5.8667vw;
-                    margin-top: 1.3333vw;
-                    list-style: unset;
-                }
-                .widget_profile  ol, .widget_profile ul {
-                    padding-left: 2.1333vw;
-                    margin-top: 1.3333vw;
-                    margin-bottom: 1.3333vw;
-                }
-                .widget_profile  .profile-content p {
-                    margin-block-start: auto;
-                    margin-block-end: auto;
-                    margin-top: 1.3333vw;
-                }
-                .widget_profile img {
-                    max-width: 100%;
-                    height: auto;
-                }
-                .widget_profile a {
-                    font-size: 4vw;
-                    color: #004578;
-                    text-decoration: none;
-                }
-                .widget_search {
-                    margin-top: 8vw;
-                    margin-bottom: 8vw;
-                }
-                .widget_search form input[type='text'] {
-                    width: 92vw;
-                    height: 10.6667vw;
-                    border: 0.2667vw #E6E6E6 solid;
-                    border-radius: 0.5333vw;
-                    padding-left: 5.3333vw;
-                    padding-right: 6.6667vw;
-                    font-size: 4vw;
-                }
-                .widget_search form input[type='text']::placeholder {
-                    font-size: 4vw;
-                }
-                .widget_search form button[type='submit']:before {
-                    font-size: 6.4vw;
-                    margin-right: 4.1333vw;
-                }
-                .widget {
-                    border-bottom: 0.2667vw #EBEBEB solid;
-                    padding-bottom: 8.0667vw;
-                    margin-bottom: 8.0667vw;
-                }
-                .widget_search,.widget_profile {
-                    border-bottom: none;
-                    padding-bottom: 0;
-                }
-                .widget:last-child {
-                    margin-bottom: 0;
-                    border-bottom: none;
-                }
-                .widget-title {
-                    font-size: 4.5333vw;
-                    line-height: 4.5333vw;
-                    margin-bottom: 7.4133vw;
-                }
-                .widget-title:after {
-                    margin-top: 4.5067vw;
-                    width: 15.2133vw;
-                    height: 0.48vw;
-                }
-                .widget_categories>ul>li.cat-item:before {
-                    font-size: 3.6vw;
-                    margin-right: 2.8933vw;
-                }
-                .widget ul li {
-                    font-size: 4vw;
-                    line-height: 6.6667vw;
-                    margin-top: 4vw;
-                    padding-left: 6.6667vw;
-                }
-                .widget_categories>ul>li>ul.children {
-                    padding-left: 3.7333vw;
-                }
-                .widget_categories>ul>li>ul.children>li:before {
-                    font-size: 4vw;
-                    margin-right: 1.3333vw;
-                }
-                .widget_categories>ul>li>ul.children>li.cat-item {
-                    font-size: 3.3333vw;
-                    margin-top:2.6667vw;
-                }
-                .widget_categories>ul>li>ul.children>li>ul.children {
-                    padding-left: 6.6667vw;
-                }
-                .widget_categories>ul>li>ul.children>li.cat-item ul.children li {
-                    font-size: 3.3333vw;
-                    margin-top:2.6667vw;
-                }
-                .widget>ul>li:before {
-                    font-size: 3.6vw;
-                    margin-right: 2.5333vw;
-                }
-            }  
-            /* common bottom */
-            footer {
-                width: 100vw;
-                background: #000000;
-                display: flex;
-                justify-content: center;
-            }
-            .footer-container {
-                width: 71.4286vw;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-            }
-            .footer-container .footer-copyright {
-                margin-bottom: 1.1905vw;
-                margin-top: 2.893vw;
-            }
-            .footer-container .footer-copyright, .footer-container .footer-copyright a{
-                text-align: center;
-                font-size: 0.8333vw;
-                color: #8A8A8A;
-                line-height: 0.5952vw;
-                text-decoration: none;
-            }
-            .footer-menus>nav {
-                margin-top: 2.893vw;
-                margin-bottom: 0.875vw;
-            }
-            .footer-menus>nav>ul {
-                display: flex;
-                margin-top: 0;
-                margin-bottom: 0;
-                display: flex;
-                justify-content: center;
-            }
-            .footer-menus>nav>ul>li {
-                font-size: 1.0714vw;
-                line-height: 1.0714vw;
-                text-transform: uppercase;
-                display: flex;
-                flex-direction: column;
-            }
-            .footer-menus>nav>ul>li>a:after {
-                display: flex;
-                content: '';
-                margin-top: 0.7798vw;
-                width: 2.381vw;
-                height: 0.119vw;
-                background: #444444;
-            }
-            .footer-menus>nav>ul>li>a {
-                color: #004578;
-            }
-            .footer-menus>nav a {
-                text-decoration: none;
-                font-size: 1.0714vw;
-            }
-            .footer-menus>nav ul, .footer-menus>nav li {
-                list-style: none;
-                justify-content: space-around;
-                justify-content: space-evenly;
-                display: flex;
-                padding-left: 0;
-            }
-            .footer-menus>nav>ul>li .sub-menu {
-                display: flex;
-                flex-direction: column;
-                text-transform: none;
-            }
-            .footer-menus>nav>ul>li ul li {
-                margin-top: 1.2143vw;
-                line-height: 0.9524vw;
-                display: flex;
-                justify-content: start;
-            }
-            .footer-container a:hover {
-                color:#004578;
-            }
-            .footer-menus>nav>ul>li ul li:first-child {
-                margin-top: 0.893vw;
-            }
-            .footer-menus>nav>ul>li ul li a{
-                font-size: 0.9524vw;
-                color: rgba(255,255,255,0.6);
-                display: flex;
-            }
-            @media only screen and (max-width: 640px){
-                /* footer */
-                .footer-container {
-                    width: 100%;
-                    padding-top: 8.1333vw;
-                    padding-bottom: 5.3333vw;
-                }
-                .footer-menus>nav>ul>li {
-                    font-size: 3.7333vw;
-                    line-height: 3.7333vw;
-                    margin-bottom: 13.3333vw;
-                    min-width: 33.4667vw;
-                    margin-left: 4vw;
-                    margin-right: 4vw
-                }
-                .footer-menus>nav a {
-                    font-size: 3.7333vw;
-                }
-                .footer-menus>nav>ul>li>a:after {
-                    margin-top: 2.8vw;
-                    width: 8.5467vw;
-                    height: 0.4267vw;
-                }
-                .footer-menus>nav>ul>li ul li:first-child {
-                    margin-top: 3.1733vw;
-                }
-                .footer-menus>nav>ul>li ul li {
-                    margin-top: 4.3067vw;
-                    font-size: 3.4667vw;
-                    line-height: 3.4667vw;
-                }
-                .footer-menus>nav>ul>li ul li a {
-                    font-size: 3.4667vw;
-                }
-                .footer-menus>nav>ul {
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    box-sizing: border-box;
-                    padding: 0 8.5334vw 0 8.5334vw;
-                }
-                .footer-menus>nav {
-                    margin: 0;
-                }
-                .footer-container .footer-copyright, .footer-container .footer-copyright a {
-                    font-size: 2.9333vw;
-                    line-height: 2.9333vw;
-                }
-                .footer-container .footer-copyright p {
-                    margin-top: 0;
-                }
-                .footer-container .footer-copyright {
-                    margin-top: 0;
-                    margin-bottom: 0;
-                }
-            }
-                .content {
-                    word-break: break-word;
-                }
-                .content * {
-                    max-width: 100%;
-                }
-                hr {
-                    border: none;
-                    background: #e6e6e6;
-                    width: 100%;
-                    height: 0.0595vw;
-                    margin-top: 2.381vw;
-                    margin-bottom: 2.381vw;
-                }
-                .post-password-form>p>label>input {
-                    margin-left: 0.893vw;
-                    margin-right: 0.8333vw;
-                    width: 19.0476vw;
-                    height: 2.381vw;
-                    border-radius: 0.2381vw;
-                    border: 0.0595vw #E6E6E6 solid;
-                    padding-left: 1.1905vw;
-                    padding-right: 1.1905vw;
-                    vertical-align: middle
-                } 
-                .post-password-form>p>input {
-                    font-size: 0.9524vw;
-                    color: white;
-                    background: #464646;
-                    border-radius: 0.2381vw;
-                    padding: 0.8452vw 1.131vw 0.8452vw 1.131vw;
-                    border: none;
-                }
-                .content figure{
-                    margin: 0;
-                }
-                h2.article-title {
-                    margin-top: 1.3095vw;
-                    font-size: 1.9048vw;
-                    line-height: 2.8571vw;
-                    margin-bottom: 1.9048vw;
-                }
-                h2.article-title a {
-                    color: black;
-                    text-decoration: none;
-                }
-                .article-info .post-meta-box {
-                    margin-top: 0;
-                }
-                .article-info .post-meta-box a.edit-link:after {
-                    display: none;
-                }
-                .article-info .post-meta-box a.edit-link:before {
-                    content: '';
-                    display: flex;
-                    background: #979797;
-                    margin-right: 1.4881vw;
-                    width: 0.0595vw;
-                    height: 0.6548vw;
-                }
-                .article-info .post-meta:first-child {
-                    margin-left: 0;
-                }
-                .article-info .post-meta-box {
-                    margin-bottom: 0.9524vw;
-                }
-                .content blockquote {
-                    margin-left:0;
-                    margin-right:0;
-                    margin-top: 1.4286vw;
-                    margin-bottom: 1.4286vw;
-                    position: relative;
-                    padding-left: 3.5714vw;
-                }
-                .content blockquote p {
-                    margin: 0;
-                    font-size: 1.3095vw;
-                    line-height: 1.9048vw;
-                    color: black;
-                }
-                .content blockquote:before {
-                    content: '\e648';
-                    font-family: "iconfont";
-                    color: #E6E6E6;
-                    font-size: 2.1072vw;
-                    margin-right: 1.6667vw;
-                    -webkit-font-smoothing: antialiased;
-                    -moz-osx-font-smoothing: grayscale;
-                    position: absolute;
-                    left: 0;
-                }
-                .content h1,
-                .content h2,
-                .content h3,
-                .content h4,
-                .content h5,
-                .content h6 {
-                    margin-top: 1.7857vw;
-                    margin-bottom: 1.7857vw;
-                }
-                .content h1 {
-                    font-size: 1.6667vw;
-                }
-                .content h2 {
-                    font-size: 1.5476vw;
-                }
-                .content h3 {
-                    font-size: 1.4286vw;
-                }
-                .content h4 {
-                    font-size: 1.3095vw;
-                }
-                .content h5 {
-                    font-size: 1.1905vw;
-                }
-                .content h6 {
-                    font-size: 1.0714vw;
-                }  
-                .content p {
-                    margin-top: 2.0238vw;
-                    margin-bottom: 2.0238vw;
-                    font-size: 1.0714vw;
-                    line-height: 1.9048vw;
-                    color: #666666;
-                    display: flex;
-                } 
-                .content .aligncenter {
-                margin-left: auto;
-                margin-right: auto;
-                }
-                .content>figure {
-                    margin: 2.0238vw 0 2.0238vw 0;
-                }
-                
-                .blocks-gallery-item figure img{
-                    display: flex;
-                }
-                .content ul, .content ol {
-                    padding-left: 1.4881vw;
-                    font-size: 1.0714vw;
-                    line-height: 1.9048vw;
-                    margin-top: 2.0238vw;  
-                    margin-bottom: 2.0238vw;  
-                }
-                .content figcaption {
-                    font-size: 1.1905vw;
-                    color: #666666;
-                    text-align: center;
-                    margin-top: 0.2976vw;
-                }
-                .wp-block-cover {
-                    margin: 2.0238vw 0 2.0238vw 0;
-                }
-                .wp-block-cover-image, .wp-block-cover {
-                    position: relative;
-                    background-color: #000;
-                    background-size: cover;
-                    background-position: center center;
-                    min-height: 25.5952vw;
-                    height: 100%;
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    overflow: hidden;
-                }
-                .wp-block-cover-image.has-background-dim::before, 
-                .wp-block-cover.has-background-dim::before {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    bottom: 0;
-                    right: 0;
-                    background-color: inherit;
-                    opacity: 0.5;
-                    z-index: 1;
-                }
-                .wp-block-cover .wp-block-cover__inner-container p {
-                    margin: 0;
-                    text-align: center;
-                }
-                .wp-block-cover-image .wp-block-cover__inner-container, .wp-block-cover .wp-block-cover__inner-container {
-                    z-index: 1;
-                    color: #f8f9f9;
-                }
-                .wp-block-cover__inner-containe,.wp-block-cover__inner-container p {
-                    color:white;
-                    font-size:1.7857vw;
-                }
-                figure.wp-block-gallery ul{
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                    max-width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                }
-                li.blocks-gallery-item {
-                    max-width: 100%;
-                }
-                .wp-block-gallery ul li figure {
-                    margin: 0;
-                    position: relative;
-                }
-                .wp-block-gallery ul li figure>figcaption {
-                    position: absolute;
-                    bottom: 0;
-                    width: 100%;
-                    font-size: 1.1905vw;
-                    line-height: 1.7857vw;
-                    padding-top: 1.3542%;
-                    padding-bottom: 1.0417%;
-                    margin: 0;
-                    color: white;
-                    background: linear-gradient(to top, rgba(13,13,13,0.85), transparent);
-                }
-                .wp-block-gallery, .blocks-gallery-grid {
-                    display: flex;
-                    flex-wrap: wrap;
-                    list-style-type: none;
-                    padding: 0;
-                    margin: 0;
-                }
-                .wp-block-gallery ul>li {
-                    margin-bottom: 0.9524vw;
-                }
-                
-                .wp-block-gallery ul>li:first-child:last-child
-                {
-                    width: 100%;
-                }
-                .wp-block-gallery ul>li:first-child:nth-last-child(n+2),
-                .wp-block-gallery ul>li:first-child:nth-last-child(n+2) ~ li
-                {
-                    width: calc((100% - 3%) / 2);
-                }
-                .wp-block-gallery ul>li:first-child:nth-last-child(3n),
-                .wp-block-gallery ul>li:first-child:nth-last-child(3n) ~ li
-                {
-                    width: calc((100% - 3%) / 3);
-                }
-                .wp-block-file {
-                    background: #F6F6F7;
-                    padding-left: 1.4881vw;
-                    padding-right: 1.0119vw;
-                    padding-top: 1.0714vw;
-                    padding-bottom: 1.0714vw;
-                    margin: 2.0238vw 0 2.0238vw 0;
-                    font-size: 0.9524vw;
-                    line-height: 2.381vw;
-                }
-                .wp-block-file:before {
-                    content: 'Download:';
-                    color: black;
-                    margin-right: 0.5952vw;
-                }
-                .wp-block-file a:last-child,
-                a.wp-block-file__button {
-                    float: right;
-                    display:flex;
-                    padding: 0.7143vw 1.131vw 0.7143vw 1.131vw;
-                    border: 0.0595vw #004578 solid;
-                    line-height: 0.7619vw;
-                }
-                .wp-block-file a:last-child:hover,
-                a.wp-block-file__button:hover {
-                    background: #004578;
-                    color: white;
-                }
-                .wp-block-file a:last-child:after,
-                a.wp-block-file__button:after {
-                    content: '\e645';
-                    font-family: "iconfont";
-                    font-size: 0.9524vw;
-                    margin-left: 0.8333vw;
-                    -webkit-font-smoothing: antialiased;
-                    -moz-osx-font-smoothing: grayscale;
-                }
-                .content a {
-                    color: #004578;
-                    text-decoration: none;
-                }
-                .content .wp-block-code {
-                    width: 100%;
-                    background: #F6F6F7;
-                    padding: 0.9524vw;
-                    font-size: 1.1905vw;
-                    line-height: 1.7857vw;
-                    color: #666666;
-                    box-sizing: border-box;
-                }
-                .wp-block-table table {
-                    width: 100%;
-                    border-collapse: collapse;
-                    font-size: 1.1905vw;
-                }
-                .wp-block-table table td {
-                    color: #666666;
-                    border: 0.0595vw #cccccc solid;
-                    padding: 0.4762vw;
-                }
-                .wp-block-button {
-                    margin: 2.0238vw 0 2.0238vw 0;
-                }
-                .wp-block-button a {
-                    text-decoration: underline;
-                }
-                .wp-block-media-text {
-                    display: flex;
-                    margin: 2.0238vw 0 2.0238vw 0;
-                }
-                .wp-block-media-text figure {
-                    width: 50%;
-                    margin: 0;
-                }
-                .wp-block-media-text .wp-block-media-text__content {
-                    margin-left: 0.893vw;
-                }
-                
-                .wp-block-column {
-                    flex-grow: 1;
-                    min-width: 0;
-                    word-break: break-word;
-                    overflow-wrap: break-word;
-                }
-                .wp-block-columns {
-                    flex-wrap: nowrap;
-                    display: flex;
-                }
-                .likes-form {
-                    text-align: center;
-                    margin-bottom: 3.5714vw;
-                }
-                .likes-button {
-                    width: 4.7619vw;
-                    height: 4.7619vw;
-                    border-radius: 100%;
-                    border: 0.0595vw solid #C4C4C4;
-                    background: white;
-                    color: #1A1A1A;
-                    font-size: 0.8333vw;
-                    display: inline-flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-                .likes-button:hover,.likes-button-active{
-                    color: #004578;
-                }
-                .likes-button:before {
-                    content: '\e64a';
-                    font-family: "iconfont";
-                    font-size: 1.9048vw;
-                    margin-bottom: 0.3571vw;
-                    -webkit-font-smoothing: antialiased;
-                    -moz-osx-font-smoothing: grayscale;
-                }
-                .likes-form .likes-button-active:before {
-                    content: '\e63d';
-                }
-                .post-nav {
-                    display: flex;
-                    justify-content: space-between; 
-                    margin-bottom: 4.5238vw;           
-                }
-                .post-nav .nav-previous a,.post-nav .nav-next a {
-                    color: #c5c5c5;
-                    font-size: 1.0714vw;
-                    text-decoration: none;
-                    font-weight: bold;
-                    display: inline-flex;
-                }
-                .post-nav a.post-nav-link-active {
-                    color: black;
-                }
-                .post-nav a.post-nav-link-active:hover {
-                    color: #004578;
-                }
-                .post-nav .nav-previous a:before {
-                    content: '\e640';
-                    font-family: "iconfont";
-                    font-size: 1.5476vw;
-                    margin-right: 0.875vw;
-                    -webkit-font-smoothing: antialiased;
-                    -moz-osx-font-smoothing: grayscale;         
-                }
-                .post-nav .nav-next a:after {
-                    content: '\e649';
-                    font-family: "iconfont";
-                    font-size: 1.5476vw;
-                    margin-left: 0.875vw;
-                    -webkit-font-smoothing: antialiased;
-                    -moz-osx-font-smoothing: grayscale;         
-                }
-                .social-share {
-                    display: flex;
-                    max-width: 100%;
-                }
-                .social-share-box {
-                    width: 2.9762vw;
-                    height: 2.9762vw;
-                    margin-right: 1.7857vw;
-                }
-                amp-social-share.rounded {
-                    display: flex;
-                    border-radius: 50%;
-                    background-size: 60%;
-                    color: #fff;
-                    background-color: black;
-                }
-                amp-social-share.rounded:hover {
-                    background-color: #004578;
-                }
-                .post-tags {
-                    display: flex;
-                    margin-top: 1.9644vw;
-                flex-wrap: wrap;
-                }
-                .post-tags a{
-                    display: inline-flex;
-                    background: #F2F2F2;
-                    padding-left: 1.3393vw;
-                    padding-right: 1.3393vw;
-                    padding-top: 0.6548vw;
-                    padding-bottom: 0.6548vw;
-                    margin-right: 0.3571vw;
-                margin-bottom: 0.3571vw;
-                    color: #666666;
-                    font-size: 0.8333vw;
-                    line-height: 0.8333vw;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                }
-                #comments {
-                    margin-top: 4.7619vw;
-                }
-                .comments>h2 {
-                    text-align: center;
-                    margin-bottom: 3.5714vw;
-                    font-size: 1.0714vw;
-                    line-height: 1.0714vw;
-                    text-transform: uppercase;
-                }
-                .comments>ul {
-                    list-style: none;
-                    padding-left: 0.9524vw;
-                    margin-top: 0;
-                    margin-bottom: 1.7857vw;
-                }
-                .comments>ul .comment-author .avatar {
-                    border-radius: 100%;
-                    width: 4.7619vw;
-                    height: 4.7619vw;
-                    position: absolute;
-                    left: 0.9524vw;
-                }
-                .comments>ul cite.fn a {
-                    font-weight: bold;
-                    font-size: 1.0714vw;
-                    color: black;
-                    font-style: normal;
-                }
-                .comments>ul span.says {
-                    display: none;
-                }
-                .comments>ul cite.fn {
-                    font-weight: bold;
-                    font-style: normal;
-                }
-                .comments>ul .comment-meta a:first-child{
-                    color: #B5B5B5;
-                    font-size: 0.9524vw;
-                    line-height: 0.9524vw;
-                    font-style: italic;
-                }
-                .comments>ul .comment-meta {
-                    margin-bottom: 1.9048vw;
-                }
-                .comments>ul .comment-body {
-                    position: relative;
-                    padding-left: 7.7381vw;
-                    padding-bottom: 0.5952vw;
-                    padding-top: 2.381vw;
-                    
-                }
-                #comments>ul>li.comment ul {
-                    list-style: none;
-                }
-                #comments>ul>li.comment ul .comment-body:before {
-                    content: ' ';
-                    height: 2.9762vw;
-                    width: 0.2381vw;
-                    background: #EEEEEE;
-                    display: flex;
-                    position: absolute;
-                    left: -0.5952vw;
-                    top: 3.2738vw;
-                }
-                #comments>ul>li.comment {
-                    border-bottom: 0.0595vw solid #E6E6E6;
-                }
-                #comments>ul>li.comment:last-child {
-                    border-bottom: none;
-                }
-                .comments>ul .comment-body .reply {
-                    text-transform: uppercase;
-                    position: absolute;
-                    right: 0;
-                    top: 2.381vw;
-                    font-size: 1.0714vw;
-                }
-                .comment-respond .comment-reply-title{
-                    font-size: 1.0714vw;
-                    text-transform: uppercase;
-                }
-                .comment-respond .comment-reply-title>small {
-                    text-transform: uppercase;
-                    float: right
-                }
-                .comment-form {
-                    font-size: 0;  /* css hack for fix blank position */
-                }
-                .comment-form>.logged-in-as a:first-child {
-                    color: #666666;
-                }
-                .comment-form>.logged-in-as {
-                    margin-bottom: 1.7857vw;
-                }
-                .comment-form>.form-submit {
-                    margin-bottom: 4.7619vw
-                }
-                .comment-form .comment-error {
-                    color: red;
-                    font-size: 1.0714vw;
-                    margin-bottom: 0.2976vw;
-                }
-                .comment-form-comment .comment-content {
-                    width: 48.2143vw;
-                    height: 11.9048vw;
-                    resize: none;
-                    border: 0.0595vw #E6E6E6 solid;
-                    padding: 1.1905vw 1.3095vw 1.1905vw 1.3095vw;
-                    font-size: 1.0952vw;
-                    line-height: 1.0952vw;
-                    box-sizing: border-box;
-                }
-                .comment-form-comment .comment-content::placeholder {
-                    font-size: 1.0952vw;
-                    line-height: 1.0952vw;
-                }
-                .comment-form>.form-submit>.submit {
-                    border: 0.0595vw solid #004578;
-                    text-transform: uppercase;
-                    color: #004578;
-                    font-size: 1.0952vw;
-                    line-height: 1.0952vw;
-                    background: white;
-                    box-sizing: border-box;
-                    padding: 0.9644vw 1.5059vw 0.9644vw 1.5059vw;
-                    cursor: pointer;
-                }
-                .comment-form>.form-submit>.submit:hover {
-                    background: #004578;
-                    color: white; 
-                }
-                .comment-form-author {
-                    margin-right: 1.3095vw;
-                }
-                .comment-form-author,
-                .comment-form-email,
-                .comment-form-url
-                {
-                    display: inline-flex;
-                }
-                .comment-form-author input,
-                .comment-form-email input,
-                .comment-form-url input
-                {
-                    width: 23.4524vw;
-                    height: 3.4524vw;
-                    border: 0.0595vw solid #E6E6E6;
-                    padding:  1.369vw;
-                    font-size: 0.9524vw;
-                    line-height: 0.9524vw;
-                    color: #333333;
-                    box-sizing: border-box;
-                }
-                .comment-form-url input {
-                    width: 48.2143vw;
-                }
-                #wp-comment-cookies-consent {
-                    width: 1.0714vw;
-                    height: 1.0714vw;
-                    margin: 0;
-                    vertical-align: middle;
-                    margin-right: 0.2976vw;
-                } 
-                .comment-form-cookies-consent>label {
-                    color: #B5B5B5;
-                    font-size: 0.9524vw;
-                    line-height: 0.9524vw;
-                }
-                @media only screen and (max-width: 640px){
-                    .likes-form {
-                        margin-bottom: 8vw;
-                    }
-                    .article-info .post-meta-box a.edit-link:before {
-                        margin-right: 3.2133vw;
-                        width: 0.1333vw;
-                        height: 1.68vw;
-                    }
-                    h2.article-title {
-                        margin-top: 5.3333vw;
-                        font-size: 5.0667vw;
-                        line-height: 6.9334vw;
-                        margin-bottom: 5.3333vw;
-                    }
-                    .article-info .post-meta-box {
-                        margin-bottom: 0;
-                    }
-                    .content blockquote {
-                        margin-top: 6.4666vw;
-                        margin-bottom: 6.4666vw;
-                        padding-left: 8vw;   
-                    }
-                    .content blockquote:before {
-                        font-size: 4.7201vw;
-                        margin-right: 3.7333vw;
-                    }
-                    .content blockquote p {
-                        font-size: 4vw;
-                        line-height: 5.6vw;
-                    }
-                    .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
-                        margin-top: 5.3333vw;
-                        margin-bottom: 5.3333vw;
-                    }
-                    .content h1 {
-                        font-size: 5.6vw;
-                    }
-                    .content h2 {
-                        font-size: 5.3333vw;
-                    }  
-                    .content h3 {
-                        font-size: 5.0667vw;
-                    } 
-                    .content h4 {
-                        font-size: 4.8vw;
-                    } 
-                    .content h5 {
-                        font-size: 4.5333vw;
-                    } 
-                    .content h6 {
-                        font-size: 4.2667vw;
-                    } 
-                    .content p {
-                        margin-top: 4.5333vw;
-                        margin-bottom: 4.5333vw;
-                        font-size: 4vw;
-                        line-height: 5.8667vw;
-                    }
-                    .content ul, .content ol {
-                        padding-left: 3.3333vw;
-                        font-size: 4vw;
-                        line-height: 5.8667vw;  
-                        margin-top: 5.3333vw;    
-                        margin-bottom: 5.3333vw;    
-                    }
-                    .content figcaption {
-                        font-size: 3.2vw;
-                        margin-top: 0.6666vw;
-                    }
-                    .content>figure {
-                        margin: 4.5333vw 0 4.5333vw 0;
-                    }
-                    .wp-block-cover-image, .wp-block-cover {
-                        min-height: 50vw;
-                        margin: 4.5333vw 0 4.5333vw 0;
-                    }
-                    .wp-block-gallery ul>li {
-                        margin-bottom: 2.1333vw;
-                    }
-                    .content .wp-block-code {
-                        padding: 2.1333vw;
-                        font-size: 3.3vw;
-                        line-height: 4.2667vw; 
-                    }
-                    .wp-block-table table {
-                        font-size: 3.4667vw;
-                    }
-                    .wp-block-file {
-                        padding-left: 3.4667vw;
-                        padding-right: 2.6667vw;
-                        padding-top: 1.3333vw;
-                        padding-bottom: 1.3333vw;
-                        margin: 4.5333vw 0 4.5333vw 0;
-                        font-size: 3.4667vw;
-                        line-height: 5.3333vw;
-                    }
-                    .wp-block-file a:last-child, a.wp-block-file__button {
-                        padding: 1.6vw 3.2vw 1.6vw 3.2vw;
-                        border: 0.1333vw #004578 solid;
-                        line-height: 2.1333vw;
-                    }
-                    .wp-block-file a:last-child:after, a.wp-block-file__button:after {
-                        font-size: 2.6667vw;
-                        margin-left: 2.4vw;
-                    }
-                    
-                    .nav-links {
-                        margin-top: 4.5333vw;
-                        margin-bottom: 4.5333vw;
-                    }
-                    .wp-block-button {
-                        margin: 4.5333vw 0 4.5333vw 0;
-                    }
-                    .likes-button {
-                        width: 16vw;
-                        height: 16vw;
-                        border: 0.1333vw solid #C4C4C4;
-                        font-size: 2.6667vw;
-                        margin-top: 2.6667vw;
-                    }
-                    .likes-button:before {
-                        font-size: 5.6vw;
-                        margin-bottom: 1.8667vw;
-                    }
-                    .post-nav {
-                        margin-bottom: 12.6667vw;           
-                    }
-                    .post-nav .nav-previous a, .post-nav .nav-next a {
-                        font-size: 3.7333vw;
-                    }
-                    .social-share-box {
-                        width: 6.6667vw;
-                        height: 6.6667vw;
-                        margin-right: 4vw;
-                    }
-                    .post-tags {
-                        margin-top: 8.8vw;;
-                    }
-                    .post-tags a{
-                        padding-left: 3.5333vw;
-                        padding-right: 3.5333vw;
-                        padding-top: 1.7333vw;
-                        padding-bottom: 1.7333vw;
-                        margin-right: 1.3333vw;
-                        font-size: 2.2vw;
-                        line-height: 2.2vw;
-                    }
-                    .comments>ul .comment-author .avatar {
-                        width: 10.6667vw;
-                        height: 10.6667vw;
-                        left: 0;
-                    }
-                    #comments>ul {
-                        padding-left: 0;
-                    }
-                    .comments>ul .comment-body {
-                        padding-left: 15.7067vw;
-                        padding-bottom: 1.8667vw;
-                        padding-top: 5.3333vw;         
-                    }
-                    .comments>ul cite.fn a {
-                        font-size: 3.7333vw;
-                    }
-                    .comments>ul .comment-meta a:first-child {
-                        font-size: 3.2vw;
-                        line-height: 3.2vw;
-                    }
-                    .comments>ul .comment-body .reply {
-                        font-size: 3.7333vw;
-                        top: 5.3333vw;       
-                    }
-                    .comments>h2,.comment-respond .comment-reply-title {
-                        font-size: 3.7333vw;
-                    }
-                    .comment-form-comment .comment-content {
-                        width: 92vw;
-                        height: 26.6667vw;
-                        border: 0.1333vw #E6E6E6 solid;
-                        padding: 4vw 3.3333vw 4vw 3.3333vw;
-                        font-size: 3.4667vw;
-                        line-height: 3.4667vw;     
-                    }
-                    .comment-form-comment .comment-content::placeholder {
-                        font-size: 3.4667vw;
-                        line-height: 3.4667vw;   
-                    }
-                    .comment-form>.form-submit>.submit {
-                        border: 0.1333vw solid #004578;
-                        font-size: 3.2vw;
-                        line-height: 3.2vw;
-                        padding: 2.8133vw 4.4vw 2.8133vw 4.4vw;
-                        cursor: pointer;
-                    }
-                    .comment-form .comment-error {
-                        font-size: 3.4667vw;
-                    }
-                    #comments>ul>li.comment {
-                        border-bottom: 0.1333vw solid #E6E6E6;
-                    }
-                    .comment-form-author input, .comment-form-email input, .comment-form-url input {
-                        width: 92vw;
-                        height: 10.6667vw;
-                        border: 0.1333vw solid #E6E6E6;
-                        padding: 2.5333vw;
-                        font-size: 3.4667vw;
-                        line-height: 3.4667vw;
-                    }
-                    #wp-comment-cookies-consent {
-                        width: 5.3333vw;
-                        height: 5.3333vw;
-                        margin-right: 1.3333vw;
-                    }
-                    .comment-form-cookies-consent>label {
-                        font-size: 3.2vw;
-                        line-height: 4.8vw;
-                    }
-                    .comment-form-cookies-consent {
-                        display: flex;
-                    }
-                    .post-nav .nav-previous a:before {
-                        font-size: 5.3333vw;
-                        margin-right: 2.8vw;         
-                    }
-                    .post-nav .nav-next a:after {
-                        font-size: 5.3333vw; 
-                        margin-left: 2.8vw;        
-                    }
-                    hr {
-                        height: 0.1333vw;
-                        margin-top: 5.3333vw;
-                        margin-bottom: 5.3333vw;
-                    }
-                    .post-password-form>p>label>input {
-                        margin-left: 2.0001vw;
-                        margin-right: 1.8667vw;
-                        width: 42.6667vw;
-                        height: 5.3333vw;
-                        border-radius: 0.5333vw;
-                        border: 0.1334vw #E6E6E6 solid;
-                        padding-left: 2.6667vw;
-                        padding-right: 2.6667vw;
-                    } 
-                
-                    .post-password-form>p>input {
-                        font-size: 2.1333vw;
-                        border-radius: 0.5333vw;
-                        padding: 1.8934vw 2.5334vw 1.8934vw 2.5334vw;
-                    }
-                    #comments>ul>li.comment ul .comment-body:before {
-                        height: 6.6667vw;
-                        width: 0.5333vw;
-                        left: -3.3333vw;
-                        top: 7.3334vw;
-                    }
-                    #comments {
-                        margin-top: 12vw;
-                    }
-                    .wp-block-table table td {
-                        border: 0.2667vw #cccccc solid;
-                        padding: 1.0667vw;
-                    }
-                    .wp-block-gallery ul li figure>figcaption {
-                        font-size: 1.7333vw;
-                        line-height: 2.9333vw;
-                    }
-                }
-                pre, code {
-                font-family: "Lucida Console", Monaco, monospace;
-                font-size: 12pt;
-                background-color: #F1F1F1;
-                    padding: .5em;
-                }
-                code {
-                    padding: 0.1em;
-                }
-                :root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-681d4ff{text-align:center;margin-top:.5vw}
-            </style>
-    
-
-
-<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
-<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-<link rel="canonical" href="https://liidan.github.io/post/zhong-qiu-guo-qing-kuai-le/" />
-<link rel="shortcut icon" href="https://liidan.github.io/favicon.ico?v=1601541478323">
-
-<meta name="author" content="liidan">
-
-<meta itemprop="name" content="中秋+国庆+快乐！ | liidan&#39;s blog">
-<meta itemprop="description" content="今天是中秋节，也是国庆节的第一天。
-虽然，是一个人，但也要保持快乐。
-一个人，也要有节日的氛围和过节的仪式。
-😊😊😊😊😊😊
-">
-<meta itemprop="image" content="">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="中秋+国庆+快乐！ | liidan&#39;s blog">
-<meta name="twitter:description" content="今天是中秋节，也是国庆节的第一天。
-虽然，是一个人，但也要保持快乐。
-一个人，也要有节日的氛围和过节的仪式。
-😊😊😊😊😊😊
-">
-<meta name="twitter:image" content="" />
-<meta name="twitter:image:alt" content="中秋+国庆+快乐！ | liidan&#39;s blog" />
-
-
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://liidan.github.io/post/zhong-qiu-guo-qing-kuai-le/">
-<meta property="og:title" content="中秋+国庆+快乐！ | liidan&#39;s blog">
-<meta property="og:description" content="今天是中秋节，也是国庆节的第一天。
-虽然，是一个人，但也要保持快乐。
-一个人，也要有节日的氛围和过节的仪式。
-😊😊😊😊😊😊
-">
-<meta property="og:image" content="">
-<meta property="og:image:alt" content="中秋+国庆+快乐！ | liidan&#39;s blog" />
-<meta property="og:site_name" content="liidan&#39;s blog">
-<meta property="og:locale" content="zh_CN">
-<meta property="tag" content="中秋+国庆+快乐！ | liidan&#39;s blog" />
-
-
-<script type="application/ld+json">
-  {
-"@context": "https://schema.org",
-"@type": "BlogPosting",
-"mainEntityOfPage": {
-  "@type": "WebPage",
-  "@id": "https://liidan.github.io/post/zhong-qiu-guo-qing-kuai-le/"
-},
-"headline": "中秋+国庆+快乐！ | liidan&#39;s blog",
-"datePublished": "Thu Oct 01 2020 14:45:10 GMT+0800",
-"dateModified": "Thu Oct 01 2020 14:45:10 GMT+0800",
-"author": {
-  "@type": "Person",
-  "name": "liidan"
-},
-"publisher": {
-  "@type": "Organization",
-  "name": "liidan",
-  "logo": {
-    "@type": "ImageObject",
-    "url": "https://liidan.github.io/favicon.ico"
-  }
-},
-"image": [
-""
-],
-"description": "今天是中秋节，也是国庆节的第一天。
-虽然，是一个人，但也要保持快乐。
-一个人，也要有节日的氛围和过节的仪式。
-😊😊😊😊😊😊
-"
- }
-
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ["\\(", "\\)"]],
+      displayMath: [['$$', '$$'], ["\\[", "\\]"]]
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'a', 'annotation', 'annotation-xml'],
+      ignoreHtmlClass: 'tex2jax_ignore|crayon-.*', // 'crayon-' 开头的类，属于Wordpress代码高亮库，这部分不需要处理，否则会导致显示不正确,这部分是正则式，多条之间用'|'分割
+      processHtmlClass: 'tex2jax_process'
+    },
+    //禁用右键菜单	
+    renderActions: {
+      addMenu: [0, '', '']
+    }
+  };
 </script>
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org/", 
-    "@type": "BreadcrumbList", 
-    "itemListElement": [{
-      "@type": "ListItem", 
-      "position": 1, 
-      "name": "Home",
-      "item": "https://liidan.github.io"  
-    },{
-      "@type": "ListItem", 
-      "position": 2, 
-      "name": "中秋+国庆+快乐！ | liidan&#39;s blog",
-      "item": "https://liidan.github.io/post/zhong-qiu-guo-qing-kuai-le/"  
-    }]
-  }
-  </script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 
 
-
-<!--
-  <PageMap>
-    <DataObject type="action">
-      <Attribute name="label" value="View"/>
-      <Attribute name="url" value="https://liidan.github.io/post/zhong-qiu-guo-qing-kuai-le/"/>
-      <Attribute name="class" value="fullscreen"/>
-    </DataObject>
-  </PageMap>
--->
-  
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?3e0841a8b187cf49df4cded50c206cac";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
 
 
-<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-<script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
-<script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
-
-
-
-<script async custom-element="amp-addthis" src="https://cdn.ampproject.org/v0/amp-addthis-0.1.js"></script>
-
-
-<script async custom-element="amp-gist" src="https://cdn.ampproject.org/v0/amp-gist-0.1.js"></script>
-
-<link rel="alternate" type="application/atom+xml" title="中秋+国庆+快乐！ | liidan&#39;s blog - Atom Feed" href="https://liidan.github.io/atom.xml">
-
-
-
-  
-
-
-
-  
-
-
+  <meta name="description" content="中秋+国庆+快乐！" />
+  <meta name="keywords" content="随笔" />
 </head>
 
 <body>
-  <input type="checkbox" id="header-menu-button">
-  <header id="commonTop">
-  <div class="top-container">
-    <div class="title-menus-area">
-      <a class="blog-title" href="https://liidan.github.io">liidan&#39;s blog</a>
-      <label for="header-menu-button" class="top-menus">
-        <nav class="menu-menu-1-container">
-          <ul id="menu-menu-1" class="menu">
-            
-            
-            <li>
-              <a href="https://liidan.github.io" aria-current="page">首页</a></li>
-            
-            
-            
-            <li>
-              <a href="/archives" aria-current="page">归档</a></li>
-            
-            
-            
-            <li>
-              <a href="https://liidan.github.io/tags" aria-current="page">标签</a></li>
-            
-            
-            
-            <li>
-              <a href="https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu" aria-current="page">关于</a></li>
-            
-            
-          </ul>
-        </nav>
-      </label>
-    </div>
+  <div class="head-top-line"></div>
+  <div class="header-box">
     
-    <div class="tagline">
-      <div class="tagline-main">&#34;要么忙着活，要么忙着死&#34;</div>
-      <div class="tagline-sub">-《肖生克的救赎》-</div>
+<div class="gemini">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>liidan&#39;s blog</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">“要么忙着活。要么忙着死”</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://liidan.github.io/" target="_self">
+                  <i class="fa fa-globe"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives/" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://liidan.github.io/tags/" target="_self">
+                  <i class="fa fa-globe"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu/" target="_self">
+                  <i class="fa fa-globe"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+            
+              <li class="nav-item ">
+                <a href="/friends/" target="_self">
+                  
+                    <i class="fa fa-address-book"></i> 友情链接
+                  
+                </a>
+              </li>
+            
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout gemini ">
+      <div class="section-layout-wrapper">
+        
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active language" data-lan="index">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item language" data-lan="preview">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/images/avatar.png"/>
+    <p class="site-author-name">liidan</p>
+    
+    <div class="site-description right-motion">
+      
+        <p id="binft">2020年，一年都很无聊的我，偶然间遇到了Gridea，于是开启了我的博客之旅。\n虽然搭建的过程充满各种问题，但依然有趣。\n探索新的领域，学习新的知识，也许这是我的新篇章。\n这里主要分享我平时的生活感悟和学习中的笔记记录，希望能和你们交朋友，嘿嘿🤭</p>
+      
     </div>
     
   </div>
-</header>
-  <main>
-    <div class="main-container">
-
-      <div class="article-info">
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
         
-          <div class="flex-box meta-category">
-            <a class="post-cate" href="https://liidan.github.io/tag/WqR8ySVI6/">随笔</a></div>
-          
-        <h2 class="article-title">
-          <a href="https://liidan.github.io/post/zhong-qiu-guo-qing-kuai-le/">中秋+国庆+快乐！</a>
-        </h2>
-        <div class="flex-box">
-          <div class="flex-box post-meta-box">
-            <a class="post-meta" href="https://liidan.github.io"><span
-                class="iconfont icon-mr-postmeta"></span>liidan</a>
-            <span class="post-meta"><span class="iconfont icon-mr-postmeta"></span>2020 年 10	月 1日</span>
-            
-
-
-          </div>
-        </div>
+        <span class="site-item-stat-count">5</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">4</span>
+        <span class="site-item-stat-name language" data-lan="category">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">4</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://liidan.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
       </div>
-      <div class="content">
-        <p>今天是中秋节，也是国庆节的第一天。<br>
+    
+  
+  
+    <div class="sidebar-item sidebar-item-social">
+      <div class="social-item">
+        
+          
+            <a href="https://www.zcool.com.cn/u/14361750">
+              <i class="fa fa-user-circle" title="站酷"></i>
+            </a>
+          
+            <a href="https://weibo.com/3518707355/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo&amp;is_all=1">
+              <i class="fa fa-weibo" title="微博"></i>
+            </a>
+          
+            <a href="https://github.com/liidan/liidan.github.io">
+              <i class="fa fa-github" title="Github"></i>
+            </a>
+          
+        
+        
+      </div>
+    </div>
+  
+
+
+
+</div>
+          
+        
+      </div>
+    </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <section class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://liidan.github.io/post/zhong-qiu-guo-qing-kuai-le/">
+      中秋+国庆+快乐！
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span class="publish-time" data-t="2020-10-01 14:45:10">2020-10-01</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show language" data-lan="category-in">分类于</span>
+      
+      
+      <a href="https://liidan.github.io/tag/WqR8ySVI6/">
+        <span>随笔</span>
+      </a>
+      
+      
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>1<span class="language" data-lan="minute">分钟</span></span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>45<span class="pc-show language" data-lan="words">字数</span></span>
+    </span>
+    
+    
+    
+    <span id="/post/zhong-qiu-guo-qing-kuai-le/" data-flag-title="中秋+国庆+快乐！" class="meta-item pc-show leancloud_visitors">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-eye"></i>
+      <span><span class="language" data-lan="view">浏览量</span>：<span class="leancloud-visitors-count"></span></span>
+    </span>
+    
+  </div>
+</section>
+            <div class="post-body next-md-body" id="post_body">
+              <p>今天是中秋节，也是国庆节的第一天。<br>
 虽然，是一个人，但也要保持快乐。<br>
 一个人，也要有节日的氛围和过节的仪式。<br>
 😊😊😊😊😊😊</p>
 
-      </div>
-
-      
-      <nav class="post-nav">
-        
-        <div class="nav-previous">
-          <a class="post-nav-link-active" title="我的声明" href="https://liidan.github.io/post/wo-de-sheng-ming/">上一篇文章</a>
-        </div>
-        
-        
-        <div class="nav-next">
-          <a class="post-nav-link-active" title="关于手机端不能访问的问题" href="https://liidan.github.io/post/guan-yu-shou-ji-duan-bu-neng-fang-wen-de-wen-ti/">下一篇文章</a>
-          
-
-        </div>
-      </nav>
-      
-
-      
-      
-        
-  
-    <amp-addthis
-    width="320"
-    height="92"
-    layout="responsive"
-    data-pub-id="ra-5f7590433f5235dd"
-    data-widget-id="y02h"
-    data-widget-type="inline"
-    data-title="中秋+国庆+快乐！"
-    data-url="https://liidan.github.io/post/zhong-qiu-guo-qing-kuai-le/"
-    data-media=""
-    data-description="今天是中秋节，也是国庆节的第一天。
-虽然，是一个人，但也要保持快乐。
-一个人，也要有节日的氛围和过节的仪式。
-😊😊😊😊😊😊
-"
-  >
-  </amp-addthis>
-   
- 
-
-      
-
-      <div class="post-tags">
-        
-        <a href="https://liidan.github.io/tag/WqR8ySVI6/" rel="tag">随笔</a>        
-               
-      </div>
-
-
-        
-
-    </div>
-
-    <div class="sidebar">
-  <aside id="profile-2" class="widget widget_profile">
-    <div class="profile-box">
-      <div class="profile-avatar">
-        <amp-img src="https://liidan.github.io/images/avatar.png?v=1601541478323" alt="avatar"
-          layout="fill"></amp-img>
-      </div>
-      <div class="profile-content">
-        <div class="amp-wp-681d4ff">
-          要么忙着活，要么忙着死！
-        </div>
-
-      </div>
-    </div>
-  </aside>
-  
-    <aside id="search-10" class="widget widget_search">
-      <form target="_top" role="search" method=get class="search-form" action="https://www.google.com/search">
-        <input type=hidden name=domains value="https://liidan.github.io">
-        <input type=hidden name=sitesearch value="https://liidan.github.io">
-        <input name="hl" value="zh-CN" type="hidden">
-        <input required type="text" class="search-field" placeholder="搜索…" name="q">
-        <button type="submit"
-          class="search-submit"></button>
-      </form>
-    </aside>
-    
-    
-      <aside id="recent-posts-2" class="widget widget_recent_entries">
-        <h4 class="widget-title">近期文章</h4>
-         <ul>
-          
+            </div>
             
-          <li>
-           <a href="https://liidan.github.io/post/wo-de-sheng-ming/" aria-current="page">我的声明</a>
-          </li>
-          
-          
             
-          <li>
-           <a href="https://liidan.github.io/post/zhong-qiu-guo-qing-kuai-le/" aria-current="page">中秋+国庆+快乐！</a>
-          </li>
-          
-          
-            
-          <li>
-           <a href="https://liidan.github.io/post/guan-yu-shou-ji-duan-bu-neng-fang-wen-de-wen-ti/" aria-current="page">关于手机端不能访问的问题</a>
-          </li>
-          
-          
-            
-          
-            
-          
-        </ul>
-     </aside>
-     
-  
-     
-      <aside id="categories-2" class="widget widget_categories">
-        <h4 class="widget-title">标签</h4>
-        <ul>
-            
-              <li class="cat-item"><a href="https://liidan.github.io/tag/_WxHeT5OW/">
-              转载声明
-            </a>
-            
-              <li class="cat-item"><a href="https://liidan.github.io/tag/WqR8ySVI6/">
-              随笔
-            </a>
-            
-              <li class="cat-item"><a href="https://liidan.github.io/tag/QrU_cIM3y/">
-              问题集
-            </a>
-            
-              <li class="cat-item"><a href="https://liidan.github.io/tag/VUuXTctZ4/">
-              Markdown语法
-            </a>
-            
-          </li>
-    
-        </ul>
-      </aside>
-      
-
-
-  <aside id="linkcat-2" class="widget widget_links">
-  <h4 class="widget-title">友链</h4>
-  <ul class="xoxo blogroll">
-    
-      
-    <li><a href="" target="_blank"></a></li>
-    
-    
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong class="language" data-lan="author">本文作者：</strong>
+      liidan
+    </li>
+    <li class="post-copyright-link">
+      <strong class="language" data-lan="link">本文链接：</strong>
+      <a href="https://liidan.github.io/post/zhong-qiu-guo-qing-kuai-le/" title="中秋+国庆+快乐！">https://liidan.github.io/post/zhong-qiu-guo-qing-kuai-le/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong class="language" data-lan="copyright">版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
   </ul>
-</aside>
-
-
-</div>
-    <div class="scrolltop-wrap">
-  <span tabindex="0" role="button" class="go-top" on="tap:commonTop.scrollTo(duration=500, position=top)">
-    <span class="iconfont"></span>
-  </span>
-</div>
-  </main>
-  <footer>
-  <div class="footer-container">
-    <div class="footer-menus">
+  <div class="tags">
+    
+      <a href="https://liidan.github.io/tag/WqR8ySVI6/"># 随笔</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="我的声明" href="https://liidan.github.io/post/wo-de-sheng-ming/">我的声明</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="我的声明" href="https://liidan.github.io/post/wo-de-sheng-ming/">上一篇</a>
+      
     </div>
-    <div class="footer-copyright">
-      Powered by <a href="https://github.com/liidan/liidan.github.io" target="_blank">liidan</a>
+    <div class="nav-next">
       
+        <a class="nav-pc-next" title="关于手机端不能访问的问题" href="https://liidan.github.io/post/guan-yu-shou-ji-duan-bu-neng-fang-wen-de-wen-ti/">关于手机端不能访问的问题</a>
+        <a class="nav-mobile-next" title="关于手机端不能访问的问题" href="https://liidan.github.io/post/guan-yu-shou-ji-duan-bu-neng-fang-wen-de-wen-ti/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
-        <p>
-        主题版本：1.3.0-beta.0；最新版本：<br><br><br><br>
-        <a href="https://github.com/jiansing/gridea-theme-inlineamp/releases" rel="nofollow">
-        <amp-img alt="InlineAMP release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/jiansing/gridea-theme-inlineamp?include_prereleases" height="20" width="140"></amp-img>
-        </p>
-        
-
     </div>
   </div>
-</footer>
+</div>
+            
+            
+  <script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
+
+<style>
+  .v .veditor {
+    min-height: 10rem;
+    background-image: url('');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+  }
+
+  .v .vwrap {
+    border: 1px solid #000 !important;
+  }
+
+  .v .vbtn {
+    padding: .4rem 1.2rem !important;
+    border-color: #fff !important;
+    background-color: #49b1f5 !important;
+    color: #fff !important;
+    font-size: .7rem !important;
+  }
+
+  .v .vcards .vcard .vh .vmeta .vat {
+    padding: 0 .8rem !important;
+    border: 1px solid #00c4b6 !important;
+    border-radius: 5px !important;
+    color: #00c4b6 !important;
+  }
+</style>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: 'deqHtSHqhdo0N7QL2qtkbcSA-gzGzoHsz',
+    appKey: 'Ahb3HlrTBXgm3H8re1bALkp5',
+    avatar: 'robohash',
+    placeholder: '留下你的足迹吧！',
+    pageSize: '',
+    lang: 'zh-cn',
+    enableQQ: 'true' === 'false',
+    visitor: 'true' === 'true',
+    highlight: 'true' === 'true',
+    avatarForce: 'true' === 'false',
+  });
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a
+        href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+    </div>
+    <div class="poweredby">
+      Powered by <a href="https://github.com/liidan/liidan.github.io" target="_blank">liidan</a>
+    </div>
+  </footer>
+  
+  
+  <div class="gemini back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/live2d/css/live2d.css" />
+<div class="box-scale">
+  <div id="landlord" style="left: 20px;bottom: 50px;"
+    data-key="142f6195b6df8e66">
+    <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
+    
+
+      <div class="message" style="opacity:0"></div>
+      <div class="live_talk_input_body">
+        <div class="live_talk_input_name_body">
+          <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off"
+            placeholder="你的名字" />
+        </div>
+        <div class="live_talk_input_text_body">
+          <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off"
+            placeholder="要和我聊什么呀？" />
+          <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
+        </div>
+      </div>
+      <input name="live_talk" id="live_talk" value="1" type="hidden" />
+      <div class="live_ico_box">
+        <div class="live_ico_item type_info" id="showInfoBtn"></div>
+        <div class="live_ico_item type_talk" id="showTalkBtn"></div>
+        
+        <div class="live_ico_item type_youdu" id="youduButton"></div>
+        <div class="live_ico_item type_quit" id="hideButton"></div>
+        <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
+        <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
+        <input id="duType" value="douqilai" type="hidden">
+        
+      </div>
+    
+  </div>
+</div>
+<div id="open_live2d">召唤看板娘</div>
+<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+  var message_Path = 'https://cdn.jsdelivr.net/gh/hsxyhao/live2d.github.io@master/';
+  let landlord = document.querySelector('#landlord');
+  var apiKey = landlord.dataset.key;
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/live2d/js/live2d.js"></script>
+<script>
+	var home_Path = document.location.protocol + '//' + window.document.location.hostname + ":" + window.document.location.port + '/';
+	var userAgent = window.navigator.userAgent.toLowerCase();
+	var norunAI = ["android", "iphone", "ipod", "ipad", "windows phone", "mqqbrowser", "msie", "trident/7.0"];
+	var norunFlag = false;
+
+	for (var i = 0; i < norunAI.length; i++) {
+		if (userAgent.indexOf(norunAI[i]) > -1) {
+			norunFlag = true;
+			break;
+		}
+	}
+
+	if (!window.WebGLRenderingContext) {
+		norunFlag = true;
+	}
+
+	if (!norunFlag) {
+		var hitFlag = false;
+		var AIFadeFlag = false;
+		var liveTlakTimer = null;
+		var sleepTimer_ = null;
+		var AITalkFlag = false;
+		var talkNum = 0;
+		(function () {
+			function renderTip(template, context) {
+				var tokenReg = /(\\)?\{([^\{\}\\]+)(\\)?\}/g;
+				return template.replace(tokenReg, function (word, slash1, token, slash2) {
+					if (slash1 || slash2) {
+						return word.replace('\\', '');
+					}
+					var variables = token.replace(/\s/g, '').split('.');
+					var currentObject = context;
+					var i, length, variable;
+					for (i = 0, length = variables.length; i < length; ++i) {
+						variable = variables[i];
+						currentObject = currentObject[variable];
+						if (currentObject === undefined || currentObject === null) return '';
+					}
+					return currentObject;
+				});
+			}
+
+			String.prototype.renderTip = function (context) {
+				return renderTip(this, context);
+			};
+
+			var re = /x/;
+			re.toString = function () {
+				showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 5000);
+				return '';
+			};
+
+			$(document).on('copy', function () {
+				showMessage('你都复制了些什么呀，转载要记得加上出处哦~~', 5000);
+			});
+
+			function initTips() {
+				$.ajax({
+					cache: true,
+					url: message_Path + 'message.json',
+					dataType: "json",
+					success: function (result) {
+						$.each(result.mouseover, function (index, tips) {
+							$(tips.selector).mouseover(function () {
+								var text = tips.text;
+								if (Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1) - 1];
+								text = text.renderTip({ text: $(this).text() });
+								showMessage(text, 3000);
+								talkValTimer();
+								clearInterval(liveTlakTimer);
+								liveTlakTimer = null;
+							});
+							$(tips.selector).mouseout(function () {
+								showHitokoto();
+								if (liveTlakTimer == null) {
+									liveTlakTimer = window.setInterval(function () {
+										showHitokoto();
+									}, 15000);
+								};
+							});
+						});
+						$.each(result.click, function (index, tips) {
+							$(tips.selector).click(function () {
+								if (hitFlag) {
+									return false
+								}
+								hitFlag = true;
+								setTimeout(function () {
+									hitFlag = false;
+								}, 8000);
+								var text = tips.text;
+								if (Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1) - 1];
+								text = text.renderTip({ text: $(this).text() });
+								showMessage(text, 3000);
+							});
+							clearInterval(liveTlakTimer);
+							liveTlakTimer = null;
+							if (liveTlakTimer == null) {
+								liveTlakTimer = window.setInterval(function () {
+									showHitokoto();
+								}, 15000);
+							};
+						});
+					}
+				});
+			}
+			initTips();
+
+			var text;
+			if (document.referrer !== '') {
+				var referrer = document.createElement('a');
+				referrer.href = document.referrer;
+				text = '嗨！来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友！';
+				var domain = referrer.hostname.split('.')[1];
+				if (domain == 'baidu') {
+					text = '嗨！ 来自 百度搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				} else if (domain == 'so') {
+					text = '嗨！ 来自 360搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				} else if (domain == 'google') {
+					text = '嗨！ 来自 谷歌搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				}
+			} else {
+				if (window.location.href == home_Path) { //主页URL判断，需要斜杠结尾
+					var now = (new Date()).getHours();
+					if (now > 23 || now <= 5) {
+						text = '你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？';
+					} else if (now > 5 && now <= 7) {
+						text = '早上好！一日之计在于晨，美好的一天就要开始了！';
+					} else if (now > 7 && now <= 11) {
+						text = '上午好！工作顺利嘛，不要久坐，多起来走动走动哦！';
+					} else if (now > 11 && now <= 14) {
+						text = '中午了，工作了一个上午，现在是午餐时间！';
+					} else if (now > 14 && now <= 17) {
+						text = '午后很容易犯困呢，今天的运动目标完成了吗？';
+					} else if (now > 17 && now <= 19) {
+						text = '傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红~~';
+					} else if (now > 19 && now <= 21) {
+						text = '晚上好，今天过得怎么样？';
+					} else if (now > 21 && now <= 23) {
+						text = '已经这么晚了呀，早点休息吧，晚安~~';
+					} else {
+						text = '嗨~ 快来逗我玩吧！';
+					}
+				} else {
+					text = '欢迎阅读<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				}
+			}
+			showMessage(text, 12000);
+		})();
+
+		liveTlakTimer = setInterval(function () {
+			showHitokoto();
+		}, 15000);
+
+		function showHitokoto() {
+			if (sessionStorage.getItem("Sleepy") !== "1") {
+				if (!AITalkFlag) {
+					$.getJSON('https://v1.hitokoto.cn/', function (result) {
+						talkValTimer();
+						showMessage(result.hitokoto, 0);
+					});
+				}
+			} else {
+				hideMessage(0);
+				if (sleepTimer_ == null) {
+					sleepTimer_ = setInterval(function () {
+						checkSleep();
+					}, 200);
+				}
+			}
+		}
+
+		function checkSleep() {
+			var sleepStatu = sessionStorage.getItem("Sleepy");
+			if (sleepStatu !== '1') {
+				talkValTimer();
+				showMessage('你回来啦~', 0);
+				clearInterval(sleepTimer_);
+				sleepTimer_ = null;
+			}
+		}
+
+		function showMessage(text, timeout) {
+			if (Array.isArray(text)) text = text[Math.floor(Math.random() * text.length + 1) - 1];
+			$('.message').stop();
+			$('.message').html(text);
+			$('.message').fadeTo(200, 1);
+			//if (timeout === null) timeout = 5000;
+			//hideMessage(timeout);
+		}
+		function talkValTimer() {
+			$('#live_talk').val('1');
+		}
+
+		function hideMessage(timeout) {
+			//$('.message').stop().css('opacity',1);
+			if (timeout === null) timeout = 5000;
+			$('.message').delay(timeout).fadeTo(200, 0);
+		}
+
+		function initLive2d() {
+			$('#hideButton').on('click', function () {
+				if (AIFadeFlag) {
+					return false;
+				} else {
+					AIFadeFlag = true;
+					localStorage.setItem("live2dhidden", "0");
+					$('#landlord').fadeOut(200);
+					$('#open_live2d').delay(200).fadeIn(200);
+					setTimeout(function () {
+						AIFadeFlag = false;
+					}, 300);
+				}
+			});
+			$('#open_live2d').on('click', function () {
+				if (AIFadeFlag) {
+					return false;
+				} else {
+					AIFadeFlag = true;
+					localStorage.setItem("live2dhidden", "1");
+					$('#open_live2d').fadeOut(200);
+					$('#landlord').delay(200).fadeIn(200);
+					setTimeout(function () {
+						AIFadeFlag = false;
+					}, 300);
+				}
+			});
+			$('#youduButton').on('click', function () {
+				if ($('#youduButton').hasClass('doudong')) {
+					var typeIs = $('#youduButton').attr('data-type');
+					$('#youduButton').removeClass('doudong');
+					$('body').removeClass(typeIs);
+					$('#youduButton').attr('data-type', '');
+				} else {
+					var duType = $('#duType').val();
+					var duArr = duType.split(",");
+					var dataType = duArr[Math.floor(Math.random() * duArr.length)];
+
+					$('#youduButton').addClass('doudong');
+					$('#youduButton').attr('data-type', dataType);
+					$('body').addClass(dataType);
+				}
+			});
+			if (apiKey) {
+				$('#showInfoBtn').on('click', function () {
+					var live_statu = $('#live_statu_val').val();
+					if (live_statu == "0") {
+						return
+					} else {
+						$('#live_statu_val').val("0");
+						$('.live_talk_input_body').fadeOut(500);
+						AITalkFlag = false;
+						showHitokoto();
+						$('#showTalkBtn').show();
+						$('#showInfoBtn').hide();
+					}
+				});
+				$('#showTalkBtn').on('click', function () {
+					var live_statu = $('#live_statu_val').val();
+					if (live_statu == "1") {
+						return
+					} else {
+						$('#live_statu_val').val("1");
+						$('.live_talk_input_body').fadeIn(500);
+						AITalkFlag = true;
+						$('#showTalkBtn').hide();
+						$('#showInfoBtn').show();
+
+					}
+				});
+				$('#talk_send').on('click', function () {
+					var info_ = $('#AIuserText').val();
+					var userid_ = $('#AIuserName').val();
+					if (info_ == "") {
+						showMessage('写点什么吧！', 0);
+						return;
+					}
+					if (userid_ == "") {
+						showMessage('聊之前请告诉我你的名字吧！', 0);
+						return;
+					}
+					showMessage('思考中~', 0);
+					let protocol = window.location.protocol.indexOf("s") > 0 ? "https" : "http";
+					$.ajax({
+						type: "get",
+						url: `${protocol}://www.tuling123.com/openapi/api?key=${apiKey}&info=${info_}`,
+						dataType: "json",
+						success: function (res) {
+							talkValTimer();
+							showMessage(res.text, 0);
+							$('#AIuserText').val("");
+							sessionStorage.setItem("live2duser", userid_);
+						},
+						error: function (e) {
+							talkValTimer();
+							showMessage('似乎有什么错误，请和站长联系！', 0);
+						}
+					});
+				});
+			} else {
+				$('#showInfoBtn').hide();
+				$('#showTalkBtn').hide();
+			}
+			//获取音乐信息初始化
+			var bgmListInfo = $('input[name=live2dBGM]');
+			if (bgmListInfo.length == 0) {
+				$('#musicButton').hide();
+			} else {
+				var bgmPlayNow = parseInt($('#live2d_bgm').attr('data-bgm'));
+				var bgmPlayTime = 0;
+				var live2dBGM_Num = sessionStorage.getItem("live2dBGM_Num");
+				var live2dBGM_PlayTime = sessionStorage.getItem("live2dBGM_PlayTime");
+				if (live2dBGM_Num) {
+					if (live2dBGM_Num <= $('input[name=live2dBGM]').length - 1) {
+						bgmPlayNow = parseInt(live2dBGM_Num);
+					}
+				}
+				if (live2dBGM_PlayTime) {
+					bgmPlayTime = parseInt(live2dBGM_PlayTime);
+				}
+				var live2dBGMSrc = bgmListInfo.eq(bgmPlayNow).val();
+				$('#live2d_bgm').attr('data-bgm', bgmPlayNow);
+				$('#live2d_bgm').attr('src', live2dBGMSrc);
+				$('#live2d_bgm')[0].currentTime = bgmPlayTime;
+				$('#live2d_bgm')[0].volume = 0.5;
+				var live2dBGM_IsPlay = sessionStorage.getItem("live2dBGM_IsPlay");
+				var live2dBGM_WindowClose = sessionStorage.getItem("live2dBGM_WindowClose");
+				if (live2dBGM_IsPlay == '0' && live2dBGM_WindowClose == '0') {
+					$('#live2d_bgm')[0].play();
+					$('#musicButton').addClass('play');
+				}
+				sessionStorage.setItem("live2dBGM_WindowClose", '1');
+				$('#musicButton').on('click', function () {
+					if ($('#musicButton').hasClass('play')) {
+						$('#live2d_bgm')[0].pause();
+						$('#musicButton').removeClass('play');
+						sessionStorage.setItem("live2dBGM_IsPlay", '1');
+					} else {
+						$('#live2d_bgm')[0].play();
+						$('#musicButton').addClass('play');
+						sessionStorage.setItem("live2dBGM_IsPlay", '0');
+					}
+				});
+				window.onbeforeunload = function () {
+					sessionStorage.setItem("live2dBGM_WindowClose", '0');
+					if ($('#musicButton').hasClass('play')) {
+						sessionStorage.setItem("live2dBGM_IsPlay", '0');
+					}
+				}
+				document.getElementById('live2d_bgm').addEventListener("timeupdate", function () {
+					var live2dBgmPlayTimeNow = document.getElementById('live2d_bgm').currentTime;
+					sessionStorage.setItem("live2dBGM_PlayTime", live2dBgmPlayTimeNow);
+				});
+				document.getElementById('live2d_bgm').addEventListener("ended", function () {
+					var listNow = parseInt($('#live2d_bgm').attr('data-bgm'));
+					listNow++;
+					if (listNow > $('input[name=live2dBGM]').length - 1) {
+						listNow = 0;
+					}
+					var listNewSrc = $('input[name=live2dBGM]').eq(listNow).val();
+					sessionStorage.setItem("live2dBGM_Num", listNow);
+					$('#live2d_bgm').attr('src', listNewSrc);
+					$('#live2d_bgm')[0].play();
+					$('#live2d_bgm').attr('data-bgm', listNow);
+				});
+				document.getElementById('live2d_bgm').addEventListener("error", function () {
+					$('#live2d_bgm')[0].pause();
+					$('#musicButton').removeClass('play');
+					showMessage('音乐似乎加载不出来了呢！', 0);
+				});
+			}
+			//获取用户名
+			var live2dUser = sessionStorage.getItem("live2duser");
+			if (live2dUser !== null) {
+				$('#AIuserName').val(live2dUser);
+			}
+			//获取位置
+			var landL = sessionStorage.getItem("historywidth");
+			var landB = sessionStorage.getItem("historyheight");
+			if (landL == null || landB == null) {
+				landL = '5px'
+				landB = '0px'
+			}
+			$('#landlord').css('left', landL + 'px');
+			$('#landlord').css('bottom', landB + 'px');
+			//移动
+			function getEvent() {
+				return window.event || arguments.callee.caller.arguments[0];
+			}
+			var smcc = document.getElementById("landlord");
+			var moveX = 0;
+			var moveY = 0;
+			var moveBottom = 0;
+			var moveLeft = 0;
+			var moveable = false;
+			var docMouseMoveEvent = document.onmousemove;
+			var docMouseUpEvent = document.onmouseup;
+			smcc.onmousedown = function () {
+				var ent = getEvent();
+				moveable = true;
+				moveX = ent.clientX;
+				moveY = ent.clientY;
+				var obj = smcc;
+				moveBottom = parseInt(obj.style.bottom);
+				moveLeft = parseInt(obj.style.left);
+				if (isFirefox = navigator.userAgent.indexOf("Firefox") > 0) {
+					window.getSelection().removeAllRanges();
+				}
+				document.onmousemove = function () {
+					if (moveable) {
+						var ent = getEvent();
+						var x = moveLeft + ent.clientX - moveX;
+						var y = moveBottom + (moveY - ent.clientY);
+						obj.style.left = x + "px";
+						obj.style.bottom = y + "px";
+					}
+				};
+				document.onmouseup = function () {
+					if (moveable) {
+						var historywidth = obj.style.left;
+						var historyheight = obj.style.bottom;
+						historywidth = historywidth.replace('px', '');
+						historyheight = historyheight.replace('px', '');
+						sessionStorage.setItem("historywidth", historywidth);
+						sessionStorage.setItem("historyheight", historyheight);
+						document.onmousemove = docMouseMoveEvent;
+						document.onmouseup = docMouseUpEvent;
+						moveable = false;
+						moveX = 0;
+						moveY = 0;
+						moveBottom = 0;
+						moveLeft = 0;
+					}
+				};
+			};
+		}
+		$(document).ready(function () {
+			var AIimgSrc = [];
+			let chooseLive2d = 'hijiki'
+			if (chooseLive2d === 'histoire') {
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_00.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_01.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_02.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_03.png");
+			} else if (chooseLive2d === 'rem') {
+				AIimgSrc.push(message_Path + "model/rem/remu2048/texture_00.png");
+			} else if (chooseLive2d === 'aoba') {
+				AIimgSrc.push(message_Path + "model/aoba/textures/texture_00.png");
+			} else if (chooseLive2d === 'hijiki') {
+				AIimgSrc.push(message_Path + "model/hijiki/moc/hijiki.2048/texture_00.png");
+			} else if (chooseLive2d === 'tororo') {
+				AIimgSrc.push(message_Path + "model/tororo/moc/tororo.2048/texture_00.png");
+			}
+			var images = [];
+			var imgLength = AIimgSrc.length;
+			var loadingNum = 0;
+			for (var i = 0; i < imgLength; i++) {
+				images[i] = new Image();
+				images[i].src = AIimgSrc[i];
+				images[i].onload = function () {
+					loadingNum++;
+					if (loadingNum === imgLength) {
+						var live2dhidden = localStorage.getItem("live2dhidden");
+						if (live2dhidden === "0") {
+							setTimeout(function () {
+								$('#open_live2d').fadeIn(200);
+							}, 1300);
+						} else {
+							setTimeout(function () {
+								$('#landlord').fadeIn(200);
+							}, 1300);
+						}
+						let model = '';
+						if (chooseLive2d === 'histoire') {
+							model = message_Path + "model/histoire/model.json";
+						} else if (chooseLive2d === 'rem') {
+							model = message_Path + "model/rem/model.json";
+						} else if (chooseLive2d === 'aoba') {
+							model = message_Path + "model/aoba/model.json";
+						} else if (chooseLive2d === 'hijiki') {
+							model = message_Path + "model/hijiki/hijiki.model.json";
+						} else if (chooseLive2d === 'tororo') {
+							model = message_Path + "model/tororo/tororo.model.json";
+						}
+						setTimeout(function () {
+							loadlive2d("live2d", model);
+						}, 1000);
+						initLive2d();
+						images = null;
+					}
+				}
+			}
+		});
+	}
+</script>
+  
+  
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <div class="aplayer" id="aplayer"></div>
+  <script>
+  let musics = JSON.parse('[{"author":"傲七爷","cover":"http://p4.music.126.net/cIR63lyPGgQ4mAyuOTg8lA==/109951165109878587.jpg?param=300y300","lrc":"","musicLink":"http://m10.music.126.net/20200923154120/14ef6979b870287059f24d83bcd72204/ymusic/obj/w5zDlMODwrDDiGjCn8Ky/3095294234/34c7/d75f/deeb/7fad0c8b3c7eb1e6e5b04f894f75acc6.mp3","musicName":"是想你的声音啊"},{"author":"h3R3","cover":"http://p3.music.126.net/mX6DKxPxdt2nInfNCIz9Fw==/109951165015483353.jpg?param=300y300","lrc":"","musicLink":"http://m10.music.126.net/20200923154120/14ef6979b870287059f24d83bcd72204/ymusic/obj/w5zDlMODwrDDiGjCn8Ky/3095294234/34c7/d75f/deeb/7fad0c8b3c7eb1e6e5b04f894f75acc6.mp3","musicName":"他只是经过"},{"author":"毛不易","cover":"http://p3.music.126.net/vmCcDvD1H04e9gm97xsCqg==/109951163350929740.jpg?param=300y300","lrc":"","musicLink":"http://m10.music.126.net/20200923155144/b0f6fccbc736ce32450096da23d51539/ymusic/8667/e098/1c44/52fae5790c731c41491bb252958e4ed7.mp3","musicName":"向我这样的人"},{"author":"毛不易","cover":"http://p4.music.126.net/vmCcDvD1H04e9gm97xsCqg==/109951163350929740.jpg?param=300y300","lrc":"","musicLink":"http://m10.music.126.net/20200923155144/b0f6fccbc736ce32450096da23d51539/ymusic/8667/e098/1c44/52fae5790c731c41491bb252958e4ed7.mp3","musicName":"消愁"},{"author":"毛不易","cover":"http://p4.music.126.net/vmCcDvD1H04e9gm97xsCqg==/109951163350929740.jpg?param=300y300","lrc":"","musicLink":"http://m10.music.126.net/20200923155342/ccb001ec32a3672e561515cd81317fd4/ymusic/974f/8268/7abe/8564ba8ba2e9ff9151f9c9266ab0c402.mp3","musicName":"借"},{"author":"毛不易","cover":"http://p4.music.126.net/vmCcDvD1H04e9gm97xsCqg==/109951163350929740.jpg?param=300y300","lrc":"","musicLink":"http://m10.music.126.net/20200923155411/09c3d59805c43231fccd1166bb052e40/ymusic/afec/8b3a/6745/ec2c0046e5a80032f377012448795bb2.mp3","musicName":"不染"},{"author":"毛不易","cover":"http://p4.music.126.net/vmCcDvD1H04e9gm97xsCqg==/109951163350929740.jpg?param=300y300","lrc":"","musicLink":"http://m10.music.126.net/20200923155519/8670f4955d7d3cf7821fc1eb1df6b307/ymusic/7df8/b21b/6fdd/a635fac93e78eb00cf9b592257c909ac.mp3","musicName":"想你想你"}]');
+  let mediaMusic = [];
+  for (let i = 0; i < musics.length; i++) {
+    let item = musics[i];
+    mediaMusic.push({
+      name: item.musicName,
+      artist: item.author,
+      url: item.musicLink,
+      lrc: item.lrc,
+      cover: item.cover
+    });
+  }
+
+  const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      lrcType: 3,
+      listFolded: false,
+      listMaxHeight: 90,
+      audio: mediaMusic
+  });
+  window.addEventListener('load', function() {
+    let postBody = document.querySelector('#post_body');
+    let hs = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+    postBody && hs.forEach(h => {
+      let helems = postBody.querySelectorAll(h);
+      if (helems.length > 0) {
+        helems.forEach(elem => {
+          elem.id = encodeURI(elem.id);
+        })
+      }
+    })
+  })
+  </script>
 
 
   
+</div>
+<script>
 
-    
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+    back2TopText = document.querySelector('#back_to_top_text'),
+    drawerBox = document.querySelector('#drawer_box'),
+    rightSideBar = document.querySelector('.sidebar'),
+    viewport = document.querySelector('body');
+
+  function scrollAnimation(currentY, targetY) {
+
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener('scroll', function (e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+
+  let hasCacu = false;
+  window.onresize = function () {
+    calcuHeight();
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function () {
+            window.Velocity(rightMotions, transitionDir, {});
+          }
+        })
+        window.Velocity(viewport, openProp, {
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function () {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = 'true'
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target", "_blank");
+      }
+    })
+  }
+
+  let faSearch = document.querySelector('#fa_search');
+  faSearch.addEventListener('click', function () {
+    document.querySelector('#search_mask').style = ''
+  })
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+  
+  // 离开当前页title变化
+  var leaveTitle = "我们一起做个小小的梦吧";
+  if (leaveTitle) {
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState == 'hidden') {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
+
+</script>
+    <div class="light-box" id="light_box"></div>
+<script>
+  let imgs = document.querySelectorAll('.post-body img');
+  let lightBox = document.querySelector('#light_box');
+  lightBox.addEventListener('mousedown', (e) => {
+    e.preventDefault()
+  })
+  lightBox.addEventListener('mousewheel', (e) => {
+    e.preventDefault()
+  })
+  let width = window.innerWidth * 0.8;
+  lightBox.onclick = () => {
+    let img = lightBox.querySelector('img');
+    lightBox.style = '';
+    img && img.remove();
+  }
+  imgs.forEach(item => {
+    item.onclick = function (e) {
+      let lightImg = document.createElement('img');
+      lightImg.src = this.src;
+      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
+      lightImg.style = `width: ${width}px;border-radius: 2px;`;
+      lightImg.onclick = function () {
+        lightBox.style = '';
+        this.remove();
+      }
+      lightBox.append(lightImg);
+    }
+  })
+</script>
+    <div class="reward-mask" style="display: none;">
+  <div class="reward-relative">
+    <span class="close" aria-hidden="true">x</span>
+    <div class="reward-body">
+      <h2>感谢您的支持，我会继续努力的!</h2>
+      <div class="reward-img-box">
+        <div style="position: relative; width: 140px; height: 140px;">
+          
+          
+            <img id="zfb" class="reward-img" src="\media\images\custom-zfbImg.jpg" alt="赞赏码">
+          
+          
+            <img id="wx" class="reward-img" src="\media\images\custom-wxImg.png" alt="赞赏码">
+          
+        </div>
+      </div>
+      <p class="reward-word">扫码打赏，你说多少就多少</p>
+      <p class="reward-tip">打开微信扫一扫，即可进行扫码打赏哦</p>
+    </div>
+    <div class="bottom">
+      
+      <div id="zfbBtn" class="pay-text">
+        支付宝
+      </div>
       
       
+      <div id="wxBtn" class="pay-text">
+        微信支付
+      </div>
+      
+    </div>
+  </div>
+</div>
+<style>
+  .reward-mask {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000054;
+  }
 
+  .reward-relative {
+    position: relative;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+    top: 50%;
+    margin-top: -205px;
+  }
 
+  .reward-relative .close {
+    position: absolute;
+    right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #929292;
+  }
+
+  .reward-body {
+    padding: 40px 20px 20px;
+  }
+
+  .bottom {
+    display: flex;
+  }
+
+  .reward-btn {
+    text-align: center;
+  }
+
+  .reward-btn-text {
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #ff9734;
+    color: #FFF;
+    margin-top: 20px;
+  }
+
+  .pay-text {
+    margin-top: 10px;
+    padding: 10px;
+    flex: 1;
+    transition: all .2s linear;
+  }
+
+  .pay-text:hover {
+    background-color: #a5a5a536;
+  }
+
+  .reward-body h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 20px;
+  }
+
+  .reward-body h2:after,
+  .reward-body h2:before {
+    font-family: Arial, Helvetica, sans-serif;
+    background: 0 0;
+    width: 0;
+    height: 0;
+    font-style: normal;
+    color: #eee;
+    font-size: 80px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .reward-body h2:before {
+    content: '\201c';
+    left: 50px;
+  }
+
+  .reward-body h2:after {
+    content: '\201d';
+    right: 80px;
+  }
+
+  .reward-img-box {
+    display: inline-block;
+    padding: 10px;
+    border: 6px solid #ea5f00;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .reward-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .reward-relative {
+      height: 100%;
+      top: 0px;
+      margin-top: 0;
+      width: auto;
+    }
+
+    .reward-relative .bottom {
+      flex-direction: column;
+    }
+
+    .reward-relative .pay-text {
+      width: 80%;
+      margin: 5px auto;
+      border: 1px solid silver;
+      padding: 6px;
+      border-radius: 4px;
+    }
+
+    .reward-body h2:after {
+      right: 40px;
+    }
+
+    .reward-body h2:after,
+    .reward-body h2:before {
+      font-size: 60px;
+    }
+
+    .reward-body h2:before {
+      left: 20px;
+    }
+  }
+</style>
+<script>
+  !function () {
+    var mask = document.querySelector('.reward-mask');
+    let close = document.querySelector('.reward-relative .close');
+    let rewardBtn = document.querySelector('.reward-btn');
+
+    let zfb = document.querySelector('#zfb'),
+      wx = document.querySelector('#wx'),
+      zfbBtn = document.querySelector('#zfbBtn'),
+      wxBtn = document.querySelector('#wxBtn');
+
+    if (zfbBtn && wxBtn) {
+      zfbBtn.addEventListener('click', () => {
+        window.Velocity(zfb, 'transition.slideLeftIn', {
+          duration: 400
+        });
+        window.Velocity(wx, 'transition.slideRightOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+
+      wxBtn.addEventListener('click', () => {
+        window.Velocity(wx, 'transition.slideRightIn', {
+          duration: 400
+        });
+        window.Velocity(zfb, 'transition.slideLeftOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+    }
+
+    rewardBtn.addEventListener('click', (e) => {
+      window.Velocity(mask, 'transition.slideDownIn', {
+        duration: 400
+      })
+    });
+
+    close.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.Velocity(mask, 'transition.slideUpOut', {
+        duration: 400
+      })
+    })
+  }()
+</script>
+
+  </div>
 </body>
+
+<div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://liidan.github.io/post/wo-de-sheng-ming/"" data-c="
+          &lt;p&gt;博客文章内容，未经同意谢绝转载使用。&lt;/p&gt;
+">我的声明</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://liidan.github.io/post/zhong-qiu-guo-qing-kuai-le/"" data-c="
+          &lt;p&gt;今天是中秋节，也是国庆节的第一天。&lt;br&gt;
+虽然，是一个人，但也要保持快乐。&lt;br&gt;
+一个人，也要有节日的氛围和过节的仪式。&lt;br&gt;
+😊😊😊😊😊😊&lt;/p&gt;
+">中秋+国庆+快乐！</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://liidan.github.io/post/guan-yu-shou-ji-duan-bu-neng-fang-wen-de-wen-ti/"" data-c="
+          &lt;p&gt;  嗯嘛，本来一切都坎坎坷坷的一步一步的，总算是建立好了这个博客网站，但是问题总是有的，手机端不能访问！！&lt;/p&gt;
+&lt;p&gt;  这个也不是绝对的不能访问，我询问了我的朋友，他说可能是手机机型的问题，又或者网络服务器的问题，但他也不能确定具体是什么原因。&lt;/p&gt;
+&lt;p&gt;  我也让我妹妹打开网站，她和她的朋友可以打开，她们的手机是：opp，也让朋友尝试打开，也有打开的，vivo，苹果手机好像都可以打开，就我的荣耀20 pro 不能打开，我真的快郁闷了。&lt;/p&gt;
+&lt;p&gt;  建立这个网站的过程中，问题多到爆炸，可能我是小白吧，啥都不懂，代码啥的也看不懂，虽说这个是个傻瓜式的，但对我这种小白来说就是有点挑战性了。😂😂&lt;/p&gt;
+&lt;p&gt;  尝试多方操作，也翻烂了网上的回答，关于这方面的问题简直是少的可怜，那是根本没有啊！！抓狂，有不有！😣&lt;/p&gt;
+&lt;p&gt;  然后，我认命了。&lt;/p&gt;
+&lt;p&gt;  我尝试了最后一种方式，科学上网，竟然可以访问。😱&lt;/p&gt;
+&lt;p&gt;  具体是什么原因，我是真的不懂。&lt;/p&gt;
+&lt;p&gt;  要是有懂的朋友，欢迎留言救助在下。😘😘&lt;/p&gt;
+">关于手机端不能访问的问题</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://liidan.github.io/post/wo-kai-qi-liao-xin-da-lu-zhi-lu/"" data-c="
+          &lt;p&gt;我前天看到一篇关于自己创建静态博客的文章，于兴趣来了，就开始搜索此类相关的信息，就找到了Gride，然后开始安装，又发现写文章需要了解Markdown语法，然后又开始搜索关于语法的信息，真是越来越有趣了。在学习语法夫人过程中，我在插入图片这里，产生了疑问，本地保存的图片长期累积不是会占用大量的电脑空间，于是又开始搜索关于图片的信息，哇！我发现新大陆了（原谅我这个土鳖)，可以利用图床来完成图片的存储，多翻折腾后，最后，找到我现在的搭配：Gridea+Typora+PicGo+Github图床+阿里云oss图床。不过到这里，依然还存在问题，但是这个过程还是很有趣，这种探索新知识，新领域的感觉相当不错呢！&lt;/p&gt;
+">我开启了新大陆之旅！</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://liidan.github.io/post/ce-shi-2/"" data-c="
+          &lt;h1 id=&#34;一-标题&#34;&gt;一、标题&lt;/h1&gt;
+&lt;p&gt;&lt;mark&gt;几个#号表示几级&lt;/mark&gt;&lt;/p&gt;
+&lt;h1 id=&#34;这里是一级标题&#34;&gt;这里是一级标题#&lt;/h1&gt;
+&lt;h2 id=&#34;这里是二级标题&#34;&gt;这里是二级标题##&lt;/h2&gt;
+&lt;h3 id=&#34;这里是三级标题&#34;&gt;这里是三级标题##&lt;/h3&gt;
+&lt;h4 id=&#34;这里是四级标题&#34;&gt;这里是四级标题####&lt;/h4&gt;
+&lt;h5 id=&#34;这里是五级标题&#34;&gt;这里是五级标题#####&lt;/h5&gt;
+&lt;h6 id=&#34;这里是六级标题&#34;&gt;这里是六级标题######&lt;/h6&gt;
+&lt;h1 id=&#34;二-列表&#34;&gt;二、列表&lt;/h1&gt;
+&lt;h2 id=&#34;1-无序列表&#34;&gt;1. 无序列表&lt;/h2&gt;
+&lt;p&gt;&lt;mark&gt;加号，减号，星号都可以，下一级别前加两个空格&lt;/mark&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;我爱学习-
+&lt;ul&gt;
+&lt;li&gt;我很爱学习+
+&lt;ul&gt;
+&lt;li&gt;我真的很爱学习*&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-有序列表&#34;&gt;2. 有序列表&lt;/h2&gt;
+&lt;p&gt;&lt;mark&gt;数字前加英文句号 . 按空格&lt;/mark&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;我是美女&lt;/li&gt;
+&lt;li&gt;我长的很像美女&lt;/li&gt;
+&lt;li&gt;我真的是一个长得很像的美女&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;三-引用&#34;&gt;三、引用&lt;/h1&gt;
+&lt;p&gt;&lt;mark&gt;在文本前加入 &amp;gt;，下一级别前加 &amp;gt;&amp;gt;，以此类推&lt;/mark&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;世界真美好&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;现实很残酷&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;今年我失恋了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;mark&gt;要注意符号和文本之间的空格&lt;/mark&gt;&lt;/p&gt;
+&lt;h1 id=&#34;四-图片和链接&#34;&gt;四、图片和链接&lt;/h1&gt;
+&lt;h2 id=&#34;1-插入链接&#34;&gt;1. 插入链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;在需要添加超链接的位置，[ ] 中括号内输入描述信息，( ) 括号内输入超链接地址&lt;/li&gt;
+&lt;li&gt;菜单方式，点击“格式”-&amp;gt; “超链接”，同样在 [ ] 和 ( ) 内编辑相应信息&lt;/li&gt;
+&lt;li&gt;快捷键 Ctrl+k&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.baidu.com/&#34;&gt;遇到问题不要慌，上百度&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-插入图片&#34;&gt;2. 插入图片&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;语法输入：英文感叹号+英文中括号（内容为名称）+英文圆括号（内容为链接）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;中括号里是名称，圆括号里是链接&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不建议本地存储，建议使用图床：picgo+github图床+阿里云图床&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;五-字体&#34;&gt;五、字体&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;这里是粗体&lt;/strong&gt; ：前后用两个 * *包含一段文本&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;这里是斜体&lt;/em&gt;：用一个 * 包含一段文本&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;这里是斜体加粗&lt;/strong&gt;&lt;/em&gt; ：前后用三个 * **包含一段文本&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;s&gt;这里是删除线&lt;/s&gt;：删除线：前后用两个 ~~ 包含一段文字&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;这里是&lt;sup&gt;上标&lt;/sup&gt;：用两个 ^^ 包含一段文字，注意用英文字符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;这里是&lt;sub&gt;下标&lt;/sub&gt;：用两个 ~~ 包含一段文字，注意用英文字符&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;六-表格&#34;&gt;六、表格&lt;/h1&gt;
+&lt;p&gt;&lt;mark&gt;语法添加：用 | 隔开，如：|你好|你好|你好|，横线|----|----|----|，类推多加几行就可以了&lt;/mark&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;一&lt;/th&gt;
+&lt;th&gt;二&lt;/th&gt;
+&lt;th&gt;三&lt;/th&gt;
+&lt;th&gt;四&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;学习&lt;/td&gt;
+&lt;td&gt;学习&lt;/td&gt;
+&lt;td&gt;学习&lt;/td&gt;
+&lt;td&gt;学习&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;mark&gt;在 Typora 中，也可以按 Ctrl+T 直接添加表格&lt;/mark&gt;&lt;/p&gt;
+&lt;h1 id=&#34;七-分割线&#34;&gt;七、分割线&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;mark&gt;用-或者*，多输入几个，按回车&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;八、代码框&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;用两个 ` 把中间的代码/文字包裹起来&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;用三个 ` 把中间的代码/文字包裹起来，就是代码框&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;我是代码&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;我是 代码框
+可以用来画流程图之类的
+	按 tab 键即可缩进
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;新增内容 2020/9/23&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;九-首行缩进&#34;&gt;九、首行缩进&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;输入法半角改为全角，两次空格之后就有两个汉字的缩进&lt;/li&gt;
+&lt;li&gt;输入下代码，然后紧跟着输入文本，分号也不要掉&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;半方大的空白 &amp;amp; ensp; 或 &amp;amp; #8194;&lt;/li&gt;
+&lt;li&gt;全方大的空白 &amp;amp; emsp; 或 &amp;amp; #8195;&lt;/li&gt;
+&lt;li&gt;不断行的空白格&amp;amp; nbsp; 或 &amp;amp; #160;&lt;/li&gt;
+&lt;li&gt;一个 &amp;amp; emsp; 的宽度刚好是一个中文字符的宽度，两个 &amp;amp; emsp; 即可替代传统的缩进两个字符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;mark&gt;&lt;strong&gt;（这里的&amp;amp;和ensp; 之间没有空格健，写再一起的）&lt;/strong&gt;&lt;/mark&gt;&lt;/p&gt;
+">Markdonw语法规则</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
+
+<input hidden id="copy" />
+<script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/js/motion.js"></script>
+
+
+<script src="/media/js/mouse/love.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/liidan/liidan.github.io@master/media/js/cool.js"></script>
+
+
 
 </html>
