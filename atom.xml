@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://liidan.github.io</id>
     <title>liidan&apos;s blog</title>
-    <updated>2020-10-01T08:57:13.062Z</updated>
+    <updated>2020-10-01T09:00:30.490Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://liidan.github.io"/>
     <link rel="self" href="https://liidan.github.io/atom.xml"/>
@@ -10,15 +10,6 @@
     <logo>https://liidan.github.io/images/avatar.png</logo>
     <icon>https://liidan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, liidan&apos;s blog</rights>
-    <entry>
-        <title type="html"><![CDATA[我的声明]]></title>
-        <id>https://liidan.github.io/post/wo-de-sheng-ming/</id>
-        <link href="https://liidan.github.io/post/wo-de-sheng-ming/">
-        </link>
-        <updated>2020-10-01T07:38:41.000Z</updated>
-        <content type="html"><![CDATA[<p>博客文章内容，未经同意谢绝转载使用。</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[中秋+国庆+快乐！]]></title>
         <id>https://liidan.github.io/post/zhong-qiu-guo-qing-kuai-le/</id>
